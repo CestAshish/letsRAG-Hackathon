@@ -1,0 +1,147 @@
+[
+  {
+    "question": "What is the deadline for the Commission to adopt an implementing act laying down detailed provisions establishing a template for the post-market monitoring plan?",
+    "expected_answer": "The deadline is 2 February 2026.",
+    "source": "EU_AI_Act.pdf",
+    "page": 101,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 101
+      }
+    ]
+  },
+  {
+    "question": "In the event of non-compliance with the prohibition of AI practices referred to in Article 5, what is the reduced period for the three-month objection window for provisional measures?",
+    "expected_answer": "The three-month period is reduced to 30 days.",
+    "source": "EU_AI_Act.pdf",
+    "page": 107,
+    "category": "factual",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 107
+      }
+    ]
+  },
+  {
+    "question": "Under formal non-compliance, name three reasons related to documentation or marking for which a market surveillance authority can require a provider to put an end to the non-compliance.",
+    "expected_answer": "Examples include: the CE marking has not been affixed, the EU declaration of conformity has not been drawn up, or the technical documentation is not available.",
+    "source": "EU_AI_Act.pdf",
+    "page": 109,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 109
+      }
+    ]
+  },
+  {
+    "question": "How does the maximum reporting deadline for a serious incident involving the death of a person compare to the standard maximum reporting deadline for a serious incident?",
+    "expected_answer": "For a serious incident involving a death, the report must be made no later than 10 days after becoming aware of it, whereas the standard maximum deadline is no later than 15 days.",
+    "source": "EU_AI_Act.pdf",
+    "page": 102,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "medium",
+    "priority": true,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 102
+      }
+    ]
+  },
+  {
+    "question": "According to Article 77, by what date must each Member State identify and publish the list of public authorities protecting fundamental rights, and what power do these authorities have regarding documentation?",
+    "expected_answer": "By 2 November 2024, they must identify the authorities. These authorities have the power to request and access any documentation created or maintained under the Regulation when necessary to fulfill their mandates.",
+    "source": "EU_AI_Act.pdf",
+    "page": 105,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 105
+      }
+    ]
+  },
+  {
+    "question": "If a provider becomes aware of a widespread infringement on a Monday, what is the latest day by which they must report it to the market surveillance authorities?",
+    "expected_answer": "They must report it no later than two days after becoming aware, which would be Wednesday.",
+    "source": "EU_AI_Act.pdf",
+    "page": 102,
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 102
+      }
+    ]
+  },
+  {
+    "question": "Are national competent authorities allowed to unconditionally disclose confidential information exchanged among themselves regarding high-risk AI systems used for border control?",
+    "expected_answer": "No. Information exchanged on a confidential basis shall not be disclosed without prior consultation of the originating national competent authority and the deployer when it would jeopardise public and national security interests.",
+    "source": "EU_AI_Act.pdf",
+    "page": 106,
+    "category": "stress-test",
+    "sub_type": "negation",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 106
+      }
+    ]
+  },
+  {
+    "question": "Can a Member State maintain a national measure against an AI system if the Commission evaluates and considers the measure to be unjustified?",
+    "expected_answer": "No. If the Commission considers the national measure to be unjustified, the Member State concerned shall withdraw the measure.",
+    "source": "EU_AI_Act.pdf",
+    "page": 108,
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 108
+      }
+    ]
+  },
+  {
+    "question": "What is the specific budget allocated for the Union AI testing support structures in the years 2026-2028?",
+    "expected_answer": "I cannot answer this question as the provided text does not contain information about the specific budget allocated for the Union AI testing support structures.",
+    "source": "EU_AI_Act.pdf",
+    "page": 109,
+    "category": "out-of-scope",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": null
+  },
+  {
+    "question": "What actions should be taken if an AI system is found to be bad?",
+    "expected_answer": "This question is too vague. 'Bad' could refer to presenting a risk to health or safety, formal non-compliance, or misclassification. Please specify the type of non-compliance or risk you are referring to.",
+    "source": "EU_AI_Act.pdf",
+    "page": 107,
+    "category": "ambiguous",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": null
+  }
+]

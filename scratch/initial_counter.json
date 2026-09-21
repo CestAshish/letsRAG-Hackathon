@@ -1,0 +1,15 @@
+{
+  "total_questions": 0,
+  "factual": 0,
+  "cross-reference": {
+    "total": 0,
+    "sub_types_used": []
+  },
+  "stress-test": {
+    "total": 0,
+    "sub_types_used": []
+  },
+  "out-of-scope": 0,
+  "ambiguous": 0,
+  "priority_count": 0
+}

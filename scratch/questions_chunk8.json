@@ -1,0 +1,155 @@
+[
+  {
+    "question": "What must accompany an application for notification by a conformity assessment body?",
+    "expected_answer": "A description of the conformity assessment activities, modules, types of AI systems, and an accreditation certificate (if it exists) issued by a national accreditation body.",
+    "source": "EU_AI_Act.pdf",
+    "page": 71,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 71
+      }
+    ]
+  },
+  {
+    "question": "How long should a notified body keep the relevant documents concerning the assessment of qualifications of a subcontractor or subsidiary?",
+    "expected_answer": "For a period of five years from the termination date of the subcontracting.",
+    "source": "EU_AI_Act.pdf",
+    "page": 73,
+    "category": "factual",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 73
+      }
+    ]
+  },
+  {
+    "question": "Under what conditions can a law-enforcement authority put a specific high-risk AI system into service without prior authorisation from a market surveillance authority?",
+    "expected_answer": "In a duly justified situation of urgency for exceptional reasons of public security or in the case of specific, substantial and imminent threat to the life or physical safety of natural persons, provided authorisation is requested during or after use without undue delay.",
+    "source": "EU_AI_Act.pdf",
+    "page": 80,
+    "category": "factual",
+    "difficulty": "hard",
+    "priority": true,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 80
+      }
+    ]
+  },
+  {
+    "question": "How do the rules for the validity of certificates differ when a notified body ceases activities versus when its designation is withdrawn?",
+    "expected_answer": "When a notified body ceases activities, certificates may remain valid for nine months if another notified body assumes responsibility and completes a full assessment by the end of that period. When a designation is withdrawn, certificates remain valid for nine months if the national competent authority confirms no risk and another notified body completes assessment within 12 months. The provisional validity can be extended up to 12 months.",
+    "source": "EU_AI_Act.pdf",
+    "page": 74,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 74
+      },
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 75
+      }
+    ]
+  },
+  {
+    "question": "What is the general rule for the conformity assessment procedure for high-risk AI systems listed in points 2 to 8 of Annex III, and what is the specific exception regarding this rule?",
+    "expected_answer": "The general rule is to follow the conformity assessment procedure based on internal control (Annex VI) without a notified body. The exception is that the Commission is empowered to adopt delegated acts to amend this and subject them to the conformity assessment procedure involving a notified body (Annex VII).",
+    "source": "EU_AI_Act.pdf",
+    "page": 78,
+    "category": "cross-reference",
+    "sub_type": "summary_vs_detail",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 78
+      },
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 79
+      }
+    ]
+  },
+  {
+    "question": "Are conformity assessment bodies allowed to offer consultancy services to the providers of high-risk AI systems they are assessing?",
+    "expected_answer": "No. Notified bodies and their personnel must not engage in any activity that might conflict with their independence of judgement, particularly consultancy services.",
+    "source": "EU_AI_Act.pdf",
+    "page": 72,
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 72
+      }
+    ]
+  },
+  {
+    "question": "What is NOT considered a substantial modification for high-risk AI systems that continue to learn after being placed on the market?",
+    "expected_answer": "Changes to the high-risk AI system and its performance that have been pre-determined by the provider at the moment of the initial conformity assessment and are part of the information contained in the technical documentation.",
+    "source": "EU_AI_Act.pdf",
+    "page": 78,
+    "category": "stress-test",
+    "sub_type": "negation",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 78
+      }
+    ]
+  },
+  {
+    "question": "If a notified body's designation is suspended, what confirmation must the provider of a system covered by an affected certificate give, and to whom, if the notifying authority determines the notified body cannot support existing certificates?",
+    "expected_answer": "The provider must confirm in writing to the national competent authorities of the Member State where it has its registered place of business, within three months of the suspension, that another qualified notified body is temporarily assuming the functions of the notified body to monitor and remain responsible for the certificates.",
+    "source": "EU_AI_Act.pdf",
+    "page": 74,
+    "category": "stress-test",
+    "sub_type": "multi_hop",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 74
+      }
+    ]
+  },
+  {
+    "question": "What specific technical metrics are required to prove the energy-efficient development of a general-purpose AI model under the harmonised standards?",
+    "expected_answer": "The text mentions that standardisation requests shall ask for deliverables on the energy-efficient development of general-purpose AI models, but it does not specify the exact technical metrics required.",
+    "source": "EU_AI_Act.pdf",
+    "page": 76,
+    "category": "out-of-scope",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": null
+  },
+  {
+    "question": "What happens if they don't do it right?",
+    "expected_answer": "Please clarify who 'they' are (e.g., notified bodies, providers, market surveillance authorities) and what action 'it' refers to (e.g., conformity assessment, notifying changes).",
+    "source": "EU_AI_Act.pdf",
+    "page": 74,
+    "category": "ambiguous",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": null
+  }
+]

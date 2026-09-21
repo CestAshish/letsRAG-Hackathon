@@ -1,0 +1,159 @@
+[
+  {
+    "question": "According to Annex V, what must be stated in the EU declaration of conformity if an AI system involves the processing of personal data?",
+    "expected_answer": "A statement that the AI system complies with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680.",
+    "source": "EU_AI_Act.pdf",
+    "page": 132,
+    "category": "factual",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 132
+      }
+    ]
+  },
+  {
+    "question": "Based on Annex IX, what kind of identification number must be provided when registering a high-risk AI system for testing in real world conditions?",
+    "expected_answer": "A Union-wide unique single identification number of the testing in real world conditions.",
+    "source": "EU_AI_Act.pdf",
+    "page": 138,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 138
+      }
+    ]
+  },
+  {
+    "question": "Under Annex XIII, how many registered business users established in the Union create a presumption that a general-purpose AI model has a high impact on the internal market due to its reach?",
+    "expected_answer": "At least 10,000 registered business users.",
+    "source": "EU_AI_Act.pdf",
+    "page": 144,
+    "category": "factual",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 144
+      }
+    ]
+  },
+  {
+    "question": "What are the differences between the information a provider must submit when registering a high-risk AI system under Annex VIII Section A versus the general description they must provide for a general-purpose AI model under Annex XI Section 1?",
+    "expected_answer": "Annex VIII Section A requires details like the AI system trade name, status (on the market/in service), and certificates from a notified body. Conversely, Annex XI Section 1 requires information such as the model's tasks, architecture and number of parameters, modality, acceptable use policies, and license.",
+    "source": "EU_AI_Act.pdf",
+    "page": 136,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 136
+      },
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 141
+      }
+    ]
+  },
+  {
+    "question": "How does the technical documentation for general-purpose AI models provided by all providers (Annex XI) differ from the transparency information given to downstream providers (Annex XII) regarding energy consumption?",
+    "expected_answer": "Annex XI Section 1 requires information on the known or estimated energy consumption of the model, whereas Annex XII does not require this information to be passed to downstream providers.",
+    "source": "EU_AI_Act.pdf",
+    "page": 141,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "hard",
+    "priority": true,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 141
+      },
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 143
+      }
+    ]
+  },
+  {
+    "question": "Does Regulation (EU) 2018/1860 concern the Visa Information System according to Annex X?",
+    "expected_answer": "No, Regulation (EU) 2018/1860 concerns the use of the Schengen Information System for the return of illegally staying third-country nationals. The Visa Information System is covered by Regulations like 2021/1133 and 2021/1134.",
+    "source": "EU_AI_Act.pdf",
+    "page": 139,
+    "category": "stress-test",
+    "sub_type": "exact_term",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 139
+      }
+    ]
+  },
+  {
+    "question": "Under Annex VII, is the notified body forbidden from directly carrying out adequate tests if they are not satisfied with the tests carried out by the provider?",
+    "expected_answer": "No, the notified body is not forbidden. If they are not satisfied with the tests carried out by the provider, the notified body shall itself directly carry out adequate tests, as appropriate.",
+    "source": "EU_AI_Act.pdf",
+    "page": 135,
+    "category": "stress-test",
+    "sub_type": "negation",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 135
+      }
+    ]
+  },
+  {
+    "question": "If a deployer is submitting information under Annex VIII Section C, do they need to provide a scanned copy of the notified body certificate?",
+    "expected_answer": "No, providing a scanned copy of the notified body certificate is a requirement for providers submitting information under Section A, not for deployers under Section C. Deployers must submit details like a summary of the fundamental rights impact assessment and the URL of the entry in the EU database.",
+    "source": "EU_AI_Act.pdf",
+    "page": 137,
+    "category": "stress-test",
+    "sub_type": "multi_hop",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 136
+      },
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 137
+      }
+    ]
+  },
+  {
+    "question": "How much does it cost in euros to train a general-purpose AI model with 1 trillion parameters according to the text?",
+    "expected_answer": "The text does not provide specific cost estimates in euros for training general-purpose AI models, though it mentions the estimated cost of training as a criteria variable.",
+    "source": "EU_AI_Act.pdf",
+    "page": 144,
+    "category": "out-of-scope",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": null
+  },
+  {
+    "question": "What are the exact criteria for the models mentioned in the document?",
+    "expected_answer": "This question is ambiguous. It requires clarification on whether it refers to the criteria for designating general-purpose AI models with systemic risk (Annex XIII) or the elements required in the technical documentation of models (Annex XI/XII).",
+    "source": "EU_AI_Act.pdf",
+    "page": 144,
+    "category": "ambiguous",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": null
+  }
+]

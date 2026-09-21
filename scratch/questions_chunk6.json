@@ -1,0 +1,125 @@
+[
+  {
+    "question": "Under Article 5, is it permissible to use an AI system for untargeted scraping of facial images from the internet to create facial recognition databases?",
+    "expected_answer": "No, Article 5 explicitly prohibits the placing on the market, putting into service, or use of AI systems that create or expand facial recognition databases through untargeted scraping of facial images from the internet or CCTV footage.",
+    "source": "EU_AI_Act.pdf",
+    "page": 51,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": true,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 51}
+    ]
+  },
+  {
+    "question": "For how long can the use of a real-time remote biometric identification system for law enforcement be commenced in an urgent situation without prior authorisation?",
+    "expected_answer": "In a duly justified situation of urgency, the use can commence without authorization provided it is requested without undue delay, at the latest within 24 hours.",
+    "source": "EU_AI_Act.pdf",
+    "page": 52,
+    "category": "factual",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 52}
+    ]
+  },
+  {
+    "question": "According to Article 6, what specific AI function overrides the derogations and always causes an Annex III AI system to be considered high-risk?",
+    "expected_answer": "An AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons.",
+    "source": "EU_AI_Act.pdf",
+    "page": 54,
+    "category": "factual",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 54}
+    ]
+  },
+  {
+    "question": "How does the requirement for human oversight in Article 14 connect to the risk management system detailed in Article 9 for high-risk AI systems?",
+    "expected_answer": "The human oversight measures described in Article 14 aim to prevent or minimise risks that may persist despite the application of other requirements, complementing the continuous iterative risk management system established in Article 9 that identifies, evaluates, and adopts targeted measures to address risks throughout the AI system's lifecycle.",
+    "source": "EU_AI_Act.pdf",
+    "page": 60,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 56},
+      {"source": "EU_AI_Act.pdf", "page": 60}
+    ]
+  },
+  {
+    "question": "If an AI system falls under Annex III but is designed solely to perform a narrow procedural task as per Article 6, and a provider uses special categories of personal data to correct bias in this system under Article 10, is this data processing permissible given the system's risk classification?",
+    "expected_answer": "If the Annex III AI system is designed solely to perform a narrow procedural task (and does not perform profiling), it is not considered high-risk under Article 6 (Page 54). The exception to process special categories of personal data under Article 10 (Page 58) applies strictly to bias detection and correction in relation to high-risk AI systems. Therefore, unless it is classified as high-risk, it would not benefit from the specific exception in Article 10(5).",
+    "source": "EU_AI_Act.pdf",
+    "page": 58,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 54},
+      {"source": "EU_AI_Act.pdf", "page": 58}
+    ]
+  },
+  {
+    "question": "Which AI practices are NOT prohibited by Article 5 when it comes to biometric categorisation systems based on biometric data?",
+    "expected_answer": "The prohibition does not cover any labelling or filtering of lawfully acquired biometric datasets, such as images, based on biometric data or categorizing of biometric data in the area of law enforcement.",
+    "source": "EU_AI_Act.pdf",
+    "page": 52,
+    "category": "stress-test",
+    "sub_type": "negation",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 52}
+    ]
+  },
+  {
+    "question": "Is it legal to use artificial intelligence to guess a student's feelings in a university setting if the goal is purely to monitor classroom engagement?",
+    "expected_answer": "No. Article 5 prohibits the use of AI systems to infer emotions of a natural person in the areas of workplace and education institutions, except where the use is intended for medical or safety reasons. Monitoring classroom engagement does not qualify as a medical or safety reason.",
+    "source": "EU_AI_Act.pdf",
+    "page": 51,
+    "category": "stress-test",
+    "sub_type": "paraphrased",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 51}
+    ]
+  },
+  {
+    "question": "Yes or No: Can a start-up developing a high-risk AI system provide the elements of the technical documentation in a simplified manner?",
+    "expected_answer": "Yes. SMEs, including start-ups, may provide the elements of the technical documentation specified in Annex IV in a simplified manner.",
+    "source": "EU_AI_Act.pdf",
+    "page": 58,
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 58}
+    ]
+  },
+  {
+    "question": "What are the specific penalties or fines imposed on a company if they fail to maintain automatic recording of events (logs) as required by Article 12?",
+    "expected_answer": "The provided text mentions the requirement for record-keeping and logging capabilities in Article 12, but it does not specify the exact penalties, fines, or financial sanctions for non-compliance with this provision.",
+    "source": "EU_AI_Act.pdf",
+    "page": 59,
+    "category": "out-of-scope",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": null
+  },
+  {
+    "question": "Is it allowed to use the AI system in public places?",
+    "expected_answer": "This question is too vague. It does not specify what type of AI system is being used (e.g., 'real-time' remote biometric identification), what the purpose of the use is (e.g., law enforcement), or which public spaces are involved. Clarification is needed to provide an accurate answer based on the EU AI Act.",
+    "source": "EU_AI_Act.pdf",
+    "page": 52,
+    "category": "ambiguous",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": null
+  }
+]

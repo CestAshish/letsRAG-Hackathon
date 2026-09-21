@@ -1,0 +1,151 @@
+[
+  {
+    "question": "How many representatives per Member State comprise the European Artificial Intelligence Board?",
+    "expected_answer": "The Board shall be composed of one representative per Member State.",
+    "source": "EU_AI_Act.pdf",
+    "page": 95,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 95
+      }
+    ]
+  },
+  {
+    "question": "What specific action must be taken with the informed consent obtained for real-world testing, according to Article 61?",
+    "expected_answer": "The informed consent shall be dated and documented and a copy shall be given to the subjects of testing or their legal representative.",
+    "source": "EU_AI_Act.pdf",
+    "page": 94,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 94
+      }
+    ]
+  },
+  {
+    "question": "How often must the advisory forum hold meetings, according to Article 67?",
+    "expected_answer": "The advisory forum shall hold meetings at least twice a year.",
+    "source": "EU_AI_Act.pdf",
+    "page": 98,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 98
+      }
+    ]
+  },
+  {
+    "question": "What is the deadline for Member States to make information publicly available on how to reach the single points of contact that act as representatives vis-à-vis the European Artificial Intelligence Board?",
+    "expected_answer": "Member States must make this information publicly available through electronic communication means by 2 August 2025.",
+    "source": "EU_AI_Act.pdf",
+    "page": 99,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 95
+      },
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 99
+      }
+    ]
+  },
+  {
+    "question": "Article 59 allows personal data to be processed in an AI regulatory sandbox for safeguarding substantial public interest. How does the Regulation detail the areas of public interest specifically related to the environment and energy?",
+    "expected_answer": "It details them as: (ii) a high level of protection and improvement of the quality of the environment, protection of biodiversity, protection against pollution, green transition measures, climate change mitigation and adaptation measures; and (iii) energy sustainability.",
+    "source": "EU_AI_Act.pdf",
+    "page": 91,
+    "category": "cross-reference",
+    "sub_type": "summary_vs_detail",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 91
+      }
+    ]
+  },
+  {
+    "question": "Is the withdrawal of informed consent by a subject in real-world testing permitted to retroactively invalidate the testing activities that were already carried out?",
+    "expected_answer": "No, the withdrawal of the informed consent shall not affect the activities already carried out.",
+    "source": "EU_AI_Act.pdf",
+    "page": 93,
+    "category": "stress-test",
+    "sub_type": "negation",
+    "difficulty": "medium",
+    "priority": true,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 93
+      }
+    ]
+  },
+  {
+    "question": "When the Commission updates the 'functional specifications' of the EU database for high-risk AI systems, whom are they strictly required to consult?",
+    "expected_answer": "The Commission shall consult the Board.",
+    "source": "EU_AI_Act.pdf",
+    "page": 100,
+    "category": "stress-test",
+    "sub_type": "exact_term",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 100
+      }
+    ]
+  },
+  {
+    "question": "What is the maximum initial duration allowed for testing high-risk AI systems in real world conditions before an extension is required, and how long can the extension be?",
+    "expected_answer": "It must not last longer than six months, which may be extended for an additional period of six months.",
+    "source": "EU_AI_Act.pdf",
+    "page": 93,
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 93
+      }
+    ]
+  },
+  {
+    "question": "Which software programming languages are specifically banned by the EU AI Office when developing the EU database for high-risk AI systems?",
+    "expected_answer": "The text does not provide information about which software programming languages are banned for developing the EU database.",
+    "source": "EU_AI_Act.pdf",
+    "page": 100,
+    "category": "out-of-scope",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": null
+  },
+  {
+    "question": "What happens if they don't respond in time during the testing phase?",
+    "expected_answer": "Clarification needed: Who is 'they' and what testing phase are you referring to? (e.g., a market surveillance authority responding to a real-world testing plan within 30 days).",
+    "source": "EU_AI_Act.pdf",
+    "page": 92,
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": null
+  }
+]

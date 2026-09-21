@@ -1,0 +1,151 @@
+[
+  {
+    "question": "At what cumulative amount of computation used for training is a general-purpose AI model presumed to have high impact capabilities according to Article 51?",
+    "expected_answer": "When the cumulative amount of computation used for its training measured in floating point operations is greater than 10^25.",
+    "source": "EU_AI_Act.pdf",
+    "page": 83,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 83
+      }
+    ]
+  },
+  {
+    "question": "What must deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake disclose?",
+    "expected_answer": "They must disclose that the content has been artificially generated or manipulated.",
+    "source": "EU_AI_Act.pdf",
+    "page": 82,
+    "category": "factual",
+    "difficulty": "medium",
+    "priority": true,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 82
+      }
+    ]
+  },
+  {
+    "question": "By what date must Member States ensure that their competent authorities establish at least one AI regulatory sandbox at the national level?",
+    "expected_answer": "By 2 August 2026.",
+    "source": "EU_AI_Act.pdf",
+    "page": 88,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 88
+      }
+    ]
+  },
+  {
+    "question": "What additional obligations do providers of general-purpose AI models with systemic risk have compared to providers of standard general-purpose AI models?",
+    "expected_answer": "In addition to the obligations for standard models (Article 53), providers of models with systemic risk must perform model evaluation including adversarial testing, assess and mitigate possible systemic risks at Union level, report serious incidents without undue delay, and ensure an adequate level of cybersecurity protection (Article 55).",
+    "source": "EU_AI_Act.pdf",
+    "page": 86,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 84
+      },
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 86
+      }
+    ]
+  },
+  {
+    "question": "In Article 50, what common exception is repeatedly mentioned regarding transparency obligations for interacting with AI systems, marking synthetic content, and deep fake disclosures?",
+    "expected_answer": "The obligations repeatedly state that they do not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences.",
+    "source": "EU_AI_Act.pdf",
+    "page": 82,
+    "category": "cross-reference",
+    "sub_type": "repeated",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 82
+      }
+    ]
+  },
+  {
+    "question": "Is a general-purpose AI model presumed to have high impact capabilities if the cumulative amount of computation used for its training is greater than 10^24 floating point operations?",
+    "expected_answer": "No, according to Article 51(2), it is presumed to have high impact capabilities when the cumulative amount of computation is greater than 10^25 floating point operations.",
+    "source": "EU_AI_Act.pdf",
+    "page": 83,
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 83
+      }
+    ]
+  },
+  {
+    "question": "Do the obligations to draw up technical documentation and provide information to downstream providers apply to all free and open-source general-purpose AI models, and does this include those with systemic risks?",
+    "expected_answer": "No, these obligations generally do not apply to providers of AI models released under a free and open-source licence whose parameters are made publicly available. However, this exception does not apply to general-purpose AI models with systemic risks.",
+    "source": "EU_AI_Act.pdf",
+    "page": 85,
+    "category": "stress-test",
+    "sub_type": "multi_part",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 85
+      }
+    ]
+  },
+  {
+    "question": "After what minimum timeframe can a provider request a reassessment of a general-purpose AI model that has been designated as presenting systemic risks by the Commission?",
+    "expected_answer": "Providers may request reassessment at the earliest six months after the designation decision, and if the designation is maintained, at the earliest six months after that subsequent decision.",
+    "source": "EU_AI_Act.pdf",
+    "page": 84,
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {
+        "source": "EU_AI_Act.pdf",
+        "page": 84
+      }
+    ]
+  },
+  {
+    "question": "Which specific open-source testing frameworks must be used for adversarial testing within the national AI regulatory sandboxes?",
+    "expected_answer": "The provided text does not specify the exact open-source testing frameworks to be used within the national AI regulatory sandboxes; it only outlines general requirements and provisions for establishing these sandboxes.",
+    "source": "EU_AI_Act.pdf",
+    "page": 90,
+    "category": "out-of-scope",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": null
+  },
+  {
+    "question": "How can the threshold be changed over time?",
+    "expected_answer": "It is unclear which threshold the question refers to. It could be the computational threshold for general-purpose AI models with systemic risk, which the Commission can amend via delegated acts, or another threshold in the regulation. Please specify which threshold you are referring to.",
+    "source": "EU_AI_Act.pdf",
+    "page": 83,
+    "category": "ambiguous",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": null
+  }
+]

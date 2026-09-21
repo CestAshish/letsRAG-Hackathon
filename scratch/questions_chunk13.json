@@ -1,0 +1,125 @@
+[
+  {
+    "question": "By what date must providers of general-purpose AI models that were placed on the market before 2 August 2025 comply with the obligations in the Regulation?",
+    "expected_answer": "They must take the necessary steps to comply with the obligations laid down in the Regulation by 2 August 2027.",
+    "source": "EU_AI_Act.pdf",
+    "page": 121,
+    "category": "factual",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 121}
+    ]
+  },
+  {
+    "question": "According to Annex III, what type of AI systems in the area of biometrics are classified as high-risk?",
+    "expected_answer": "High-risk AI systems in biometrics include remote biometric identification systems (with exceptions for simple verification), systems for biometric categorisation based on sensitive attributes, and systems for emotion recognition.",
+    "source": "EU_AI_Act.pdf",
+    "page": 127,
+    "category": "factual",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 127}
+    ]
+  },
+  {
+    "question": "What specific information regarding the elements and development process of the AI system must be included in the technical documentation under Annex IV?",
+    "expected_answer": "It must include the methods/steps for development, design specifications (logic, choices, expected output), system architecture, data requirements (training methodologies, data sets), assessment of human oversight measures, pre-determined changes, and validation and testing procedures.",
+    "source": "EU_AI_Act.pdf",
+    "page": 130,
+    "category": "factual",
+    "difficulty": "medium",
+    "priority": true,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 130}
+    ]
+  },
+  {
+    "question": "While Annex II lists criminal offences for which certain exceptions may apply, does Annex III classify AI systems used by law enforcement to evaluate the reliability of evidence in the prosecution of these offences as high-risk?",
+    "expected_answer": "Yes, under Annex III, AI systems intended to be used by law enforcement authorities to evaluate the reliability of evidence in the course of the investigation or prosecution of criminal offences are classified as high-risk AI systems.",
+    "source": "EU_AI_Act.pdf",
+    "page": 128,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 126},
+      {"source": "EU_AI_Act.pdf", "page": 128}
+    ]
+  },
+  {
+    "question": "Is the Commission required to submit its first report on the evaluation and review of the AI Act before or after the Regulation's general application date of 2 August 2026?",
+    "expected_answer": "After. The general application date is 2 August 2026, while the first report on the evaluation and review of the Regulation is due by 2 August 2029.",
+    "source": "EU_AI_Act.pdf",
+    "page": 122,
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 122},
+      {"source": "EU_AI_Act.pdf", "page": 123}
+    ]
+  },
+  {
+    "question": "Does the classification of high-risk remote biometric identification systems include AI systems used solely for verifying that a person is who they claim to be?",
+    "expected_answer": "No, Annex III explicitly states that remote biometric identification systems do not include AI systems intended for biometric verification where the sole purpose is to confirm the natural person is who they claim to be.",
+    "source": "EU_AI_Act.pdf",
+    "page": 127,
+    "category": "stress-test",
+    "sub_type": "negation",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 127}
+    ]
+  },
+  {
+    "question": "Are 'environmental crime' and 'sabotage' specifically listed as criminal offences in Annex II?",
+    "expected_answer": "Yes, both 'environmental crime' and 'sabotage' are specifically listed as criminal offences in Annex II.",
+    "source": "EU_AI_Act.pdf",
+    "page": 126,
+    "category": "stress-test",
+    "sub_type": "exact_term",
+    "difficulty": "easy",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 126}
+    ]
+  },
+  {
+    "question": "Will the third report on the progress of standardisation deliverables for the energy-efficient development of general-purpose AI models be due by 2 August 2036?",
+    "expected_answer": "Yes. According to Article 112, the first report is due by 2 August 2028, and they are submitted every four years thereafter. The second would be in 2032, and the third by 2 August 2036.",
+    "source": "EU_AI_Act.pdf",
+    "page": 122,
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": [
+      {"source": "EU_AI_Act.pdf", "page": 122}
+    ]
+  },
+  {
+    "question": "What specific monetary budget has been allocated to the AI Office for the year 2028?",
+    "expected_answer": "I cannot answer this question because the provided text does not contain specific monetary budget allocations for the AI Office.",
+    "source": "EU_AI_Act.pdf",
+    "page": 122,
+    "category": "out-of-scope",
+    "difficulty": "medium",
+    "priority": false,
+    "expected_chunks": null
+  },
+  {
+    "question": "Are the systems evaluated by 2030?",
+    "expected_answer": "This question is too vague. It is unclear whether you are referring to the large-scale IT systems mentioned in Article 111(1) that must be brought into compliance by 31 December 2030, or the high-risk AI systems used by public authorities mentioned in Article 111(2) that must comply by 2 August 2030. Could you please specify?",
+    "source": "EU_AI_Act.pdf",
+    "page": 121,
+    "category": "ambiguous",
+    "difficulty": "hard",
+    "priority": false,
+    "expected_chunks": null
+  }
+]
