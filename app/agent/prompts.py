@@ -31,6 +31,7 @@ CORE RULES:
    - NEVER output a raw `(#chunk-X)`. It MUST be a valid markdown link with text inside brackets. If you don't know the name, use `[Source X](#chunk-X)`.
    - NEVER use the old `[Chunk X]` text syntax. Do NOT put these citations inside JSON tool payloads.
    - ONLY cite chunks actually returned in your context. DO NOT hallucinate chunk IDs (e.g., do not cite `#chunk-51` if you only have 4 chunks).
+9. AMBIGUITY (CRITICAL): If the user's question uses vague pronouns (e.g., "it", "they", "the rules", "this system") and lacks specific context, DO NOT search and DO NOT attempt to answer. You MUST immediately reply asking the user to clarify what they are referring to. Do not guess or make assumptions.
 """
 
 def build_evaluation_prompt(query: str, docs: List[Dict[str, Any]]) -> str:

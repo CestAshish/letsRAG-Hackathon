@@ -1,0 +1,128 @@
+[
+  {
+    "question": "Are the rules for it applied everywhere?",
+    "expected_answer": "It is unclear what 'it' and 'everywhere' refer to. Clarification is needed to determine whether 'it' refers to the AI Act or a specific AI system, and whether 'everywhere' refers to the EU, specific sectors, or globally.",
+    "actual_answer": "Could you clarify what specific rules or provisions you are referring to?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The response appropriately requests clarification, matching the expected answer that the question is unclear and needs more detail."
+  },
+  {
+    "question": "What does the threshold mean for the systems?",
+    "expected_answer": "It is unclear which threshold is being referred to (e.g., the floating point operations threshold for systemic risk) and what type of 'systems' (general-purpose models, high-risk AI systems) is being discussed.",
+    "actual_answer": "Could you please clarify which threshold you are referring to? For example, are you asking about the risk\u2011tier threshold for high\u2011risk AI systems, the data quality threshold, or another specific threshold defined in the EU AI Act?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The response correctly acknowledges that the threshold in question is unclear and requests clarification, matching the expected answer."
+  },
+  {
+    "question": "What happens if they don't respond in time during the testing phase?",
+    "expected_answer": "Clarification needed: Who is 'they' and what testing phase are you referring to? (e.g., a market surveillance authority responding to a real-world testing plan within 30 days).",
+    "actual_answer": "Could you clarify who \u201cthey\u201d refers to and which testing phase you\u2019re asking about?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The actual answer correctly requests clarification about the ambiguous pronoun and testing phase, matching the expected answer's intent."
+  },
+  {
+    "question": "Does it apply to my biometric data?",
+    "expected_answer": "This is ambiguous because 'it' is not defined (could refer to a specific system or the regulation as a whole) and 'my' does not provide the context of where or how the biometric data is being processed, which is crucial for determining how the regulation applies.",
+    "actual_answer": "The EU AI Act treats **biometric data** as a special category of personal data and sets out specific rules for AI systems that process it.  \n- **Definition**: \u201cbiometric data\u201d is personal data derived from physical, physiological or behavioural characteristics (e.g., facial images, fingerprints)\u3010Chunk\u202f1\u3011.  \n- **High\u2011risk classification**: AI systems that perform remote biometric identification, biometric categorisation on sensitive attributes, or emotion\u2011recognition based on biometric data are classified as **high\u2011risk** and are subject to the most stringent regulatory requirements (risk assessment, conformity assessment, post\u2011market monitoring, etc.)\u3010Chunk\u202f3\u3011.  \n- **Law\u2011enforcement use**: If the biometric data is processed for real\u2011time remote biometric identification in publicly accessible spaces for law\u2011enforcement purposes, the Act imposes additional safeguards and authorisation requirements, and the processing must also comply with Directive\u202f2016/680 and the GDPR\u3010Chunk\u202f4\u3011.  \n\nTherefore, if your biometric data is being used by an AI system for any of the above purposes, the EU AI Act applies to that processing. If the data is only stored or used for non\u2011AI purposes (e.g., simple authentication without AI), the Act does not directly apply, though other EU data\u2011protection rules (GDPR, Directive\u202f2016/680) still govern the processing.  \n\n**References**:  \n[Article 3 \u2013 Definitions](#chunk-1), [Recital 54 \u2013 High\u2011risk classification](#chunk-3), [Recital 38 \u2013 Law\u2011enforcement use](#chunk-4)",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 0,
+    "reason": "The expected answer indicates the question is ambiguous and cannot be answered definitively. The actual answer provides a specific, definitive explanation about the EU AI Act's applicability to biometric data, which does not align with the expected answer. Therefore, the answer is not grounded according to the expected response."
+  },
+  {
+    "question": "When does the law start applying to the systems and models?",
+    "expected_answer": "Could you please clarify which specific systems or models you are referring to? The AI Act has different application dates (e.g., 2 August 2026 for general provisions, 2 February 2025 for prohibitions, 2 August 2025 for general-purpose AI models and governance, etc.).",
+    "actual_answer": "The EU AI Act becomes legally binding 20\u202fdays after its publication in the Official Journal of the European Union.  \nIt applies to AI systems and general\u2011purpose AI models from **2\u202fAugust\u202f2026**.  \n\n**Key dates for specific provisions**\n\n| Provision | Effective date |\n|-----------|----------------|\n| General provisions (Chapters\u202fI &\u202fII) | 2\u202fFebruary\u202f2025 |\n| Prohibitions (Article\u202f5 and related rules) | 2\u202fFebruary\u202f2025 |\n| Chapters\u202fIII\u202f\u00a74,\u202fV,\u202fVII,\u202fXII and Article\u202f78 | 2\u202fAugust\u202f2025 |\n| Obligations for providers of general\u2011purpose AI models | 2\u202fAugust\u202f2025 |\n| Governance, conformity\u2011assessment, and penalties | 2\u202fAugust\u202f2025 |\n| Article\u202f6(1) and related obligations | 2\u202fAugust\u202f2027 |\n| High\u2011risk AI systems placed on the market before 2\u202fAugust\u202f2026 | Compliance required only if significant design changes occur after that date; full compliance by 2\u202fAugust\u202f2030 |\n\nThese dates are set out in Article\u202f113 (Entry into force and application) and the related transitional provisions in the preamble and recitals.\n\n**References**  \nReferences: [Article\u202f113](#chunk-7), [Recital\u202f178](#chunk-6)",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 0,
+    "reason": "The expected answer requests clarification before giving dates, but the actual answer provides dates directly, which does not align with the expected response."
+  },
+  {
+    "question": "What are the exact criteria for the models mentioned in the document?",
+    "expected_answer": "This question is ambiguous. It requires clarification on whether it refers to the criteria for designating general-purpose AI models with systemic risk (Annex XIII) or the elements required in the technical documentation of models (Annex XI/XII).",
+    "actual_answer": "Could you please clarify which specific models you are referring to? For example, are you asking about the criteria for high\u2011risk AI systems, the requirements for AI models used in certain sectors, or something else? This will help me provide the precise information you need.",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies the ambiguity in the question and requests clarification, matching the expected response."
+  },
+  {
+    "question": "Who runs the testing?",
+    "expected_answer": "It is ambiguous whether the question refers to third-party conformity assessments run by notified bodies, real-world testing plans submitted by prospective providers, or testing within the AI regulatory sandboxes supervised by national competent authorities.",
+    "actual_answer": "Could you clarify which testing you\u2019re referring to? For example, are you asking about the testing of AI systems for compliance with the EU AI Act, or something else?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly acknowledges the ambiguity in the question and requests clarification, which aligns with the expected answer that the testing could refer to multiple contexts."
+  },
+  {
+    "question": "Is it allowed to use the AI system in public places?",
+    "expected_answer": "This question is too vague. It does not specify what type of AI system is being used (e.g., 'real-time' remote biometric identification), what the purpose of the use is (e.g., law enforcement), or which public spaces are involved. Clarification is needed to provide an accurate answer based on the EU AI Act.",
+    "actual_answer": "Could you please clarify which AI system you\u2019re referring to and in what context you intend to use it in public places?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The response appropriately requests clarification, matching the expected answer that the question is too vague."
+  },
+  {
+    "question": "Does the system need to be stopped if there's a problem during the period?",
+    "expected_answer": "This question is too vague. It is unclear what 'system', 'problem', or 'period' refers to.",
+    "actual_answer": "I\u2019m not sure which system or period you\u2019re referring to. Could you clarify which AI system you mean and what \u201cperiod\u201d you have in mind?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer appropriately declines due to insufficient context, matching the expected response."
+  },
+  {
+    "question": "What happens if they don't do it right?",
+    "expected_answer": "Please clarify who 'they' are (e.g., notified bodies, providers, market surveillance authorities) and what action 'it' refers to (e.g., conformity assessment, notifying changes).",
+    "actual_answer": "Could you clarify what specific action or requirement you\u2019re referring to, and who \u201cthey\u201d are in this context?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The actual answer correctly requests clarification about who 'they' are and what action 'it' refers to, matching the expected answer."
+  },
+  {
+    "question": "How can the threshold be changed over time?",
+    "expected_answer": "It is unclear which threshold the question refers to. It could be the computational threshold for general-purpose AI models with systemic risk, which the Commission can amend via delegated acts, or another threshold in the regulation. Please specify which threshold you are referring to.",
+    "actual_answer": "Could you clarify which threshold you\u2019re referring to? For example, are you asking about the risk\u2011tolerance threshold for high\u2011risk AI systems, the data quality threshold, or another specific parameter in the EU AI Act?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies that the question is ambiguous and requests clarification, matching the expected answer's core conclusion."
+  },
+  {
+    "question": "What actions should be taken if an AI system is found to be bad?",
+    "expected_answer": "This question is too vague. 'Bad' could refer to presenting a risk to health or safety, formal non-compliance, or misclassification. Please specify the type of non-compliance or risk you are referring to.",
+    "actual_answer": "Could you clarify what you mean by \u201cbad\u201d? Are you referring to an AI system that is non\u2011compliant with the EU AI Act, a high\u2011risk system that has failed its conformity assessment, or a system that engages in a prohibited practice? This will help me provide the correct actions.",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies that the question is too vague and requests clarification, matching the expected response."
+  },
+  {
+    "question": "What is the maximum fine if they don't give the requested information?",
+    "expected_answer": "The question is ambiguous as it does not specify who 'they' are or what 'information' is being requested. It could refer to providers of general-purpose AI models failing to provide information under Article 91 or 92 (fines up to EUR 15 000 000 or 3% of turnover), or general operators failing to provide information to notified bodies or national competent authorities (fines up to EUR 7 500 000 or 1% of turnover).",
+    "actual_answer": "Could you clarify which type of entity you\u2019re referring to?  \n- A provider of a general\u2011purpose AI model?  \n- A Union institution, body, office or agency?  \n- Another type of organization?  \n\nThe maximum fine varies depending on the entity and the specific article that applies.",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer appropriately acknowledges the ambiguity of the question and requests clarification, which is the correct response for an unanswerable or poorly formed query."
+  },
+  {
+    "question": "Are the systems evaluated by 2030?",
+    "expected_answer": "This question is too vague. It is unclear whether you are referring to the large-scale IT systems mentioned in Article 111(1) that must be brought into compliance by 31 December 2030, or the high-risk AI systems used by public authorities mentioned in Article 111(2) that must comply by 2 August 2030. Could you please specify?",
+    "actual_answer": "Could you clarify which systems you are referring to? For example, are you asking about the evaluation of high\u2011risk AI systems, the overall compliance assessment, or something else?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The actual answer correctly identifies the ambiguity in the question and requests clarification, matching the expected answer's intent."
+  }
+]

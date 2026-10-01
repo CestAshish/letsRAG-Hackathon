@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --bg-primary: #e5e7eb; /* Gray-200 (grayish background for main panel) */
+  --bg-secondary: #f3f4f6; /* Gray-100 (sidebars and headers) */
+  --bg-tertiary: #ffffff; /* White (inputs and elevated cards) */
+  --text-primary: #111827; /* Almost black */
+  --text-secondary: #4b5563; /* Dark gray */
+  --border-color: #d1d5db;
+  --accent-color: #0ea5e9;
+  --accent-hover: #0284c7;
+  --ai-msg-bg: transparent;
+  --ai-msg-text: #111827;
+}
+
+.dark {
+  --bg-primary: #000000; /* Pitch black */
+  --bg-secondary: #171717; /* Dark gray for sidebars/headers */
+  --bg-tertiary: #262626; /* Lighter gray for inputs/cards */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border-color: #404040;
+  --accent-color: #0ea5e9;
+  --accent-hover: #38bdf8;
+  --ai-msg-bg: transparent;
+  --ai-msg-text: #f8fafc;
+}
+
+/* Prose overrides to guarantee text visibility (especially for inline code blocks) */
+.prose {
+    color: var(--text-primary) !important;
+    --tw-prose-body: var(--text-primary) !important;
+    --tw-prose-headings: var(--text-primary) !important;
+    --tw-prose-lead: var(--text-secondary) !important;
+    --tw-prose-links: var(--accent-color) !important;
+    --tw-prose-bold: var(--text-primary) !important;
+    --tw-prose-counters: var(--text-secondary) !important;
+    --tw-prose-bullets: var(--text-secondary) !important;
+    --tw-prose-hr: var(--border-color) !important;
+    --tw-prose-quotes: var(--text-secondary) !important;
+    --tw-prose-quote-borders: var(--accent-color) !important;
+    --tw-prose-captions: var(--text-secondary) !important;
+    --tw-prose-code: var(--text-primary) !important;
+    --tw-prose-pre-code: var(--text-primary) !important;
+    --tw-prose-pre-bg: var(--bg-secondary) !important;
+    --tw-prose-th-borders: var(--border-color) !important;
+    --tw-prose-td-borders: var(--border-color) !important;
+}
+
+.prose code {
+    background-color: var(--bg-tertiary);
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: var(--text-primary) !important;
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Force strict markdown table borders globally */
+.prose table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin: 1.5rem 0 !important;
+}
+
+.prose th, .prose td {
+    border: 1px solid var(--border-color) !important;
+    padding: 0.75rem !important;
+}
+
+.prose th {
+    font-weight: 600 !important;
+    background-color: var(--bg-tertiary) !important;
+    text-align: left !important;
+}
+
+/* Hide scrollbars completely as requested */
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

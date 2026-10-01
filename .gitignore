@@ -1,8 +1,41 @@
+# Python
 .venv/
-.env
-data/
 __pycache__/
 *.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
 
+# Environment
+.env
+
+# Corpus data (shared via Teams, not GitHub)
+data/
+
+# Pre-computed indexes & runtime data
+app/data/*.bin
+app/data/*.pkl
+app/chat_handler/data/
+app/data/telemetry/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# IDE
 .idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
 scratch/
+*.pdf
+!frontend/public/EU_AI_Act.pdf
