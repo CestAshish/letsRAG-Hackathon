@@ -8,6 +8,9 @@ dependencies = [
     "faiss-cpu>=1.15.1",
     "fastapi>=0.141.1",
     "fpdf2>=2.8.8",
+    "huggingface-hub>=0.32.0",
+    "markdown>=3.8",
+    "openai>=1.82.0",
     "playwright>=1.52.0",
     "pydantic>=2.13.5",
     "pymupdf>=1.28.2",
@@ -19,3 +22,12 @@ dependencies = [
     "tqdm>=4.70.1",
     "uvicorn>=0.54.0",
 ]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
