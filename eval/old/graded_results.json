@@ -1,0 +1,1262 @@
+[
+  {
+    "question": "Does the classification of high-risk remote biometric identification systems include AI systems used solely for verifying that a person is who they claim to be?",
+    "expected_answer": "No, Annex III explicitly states that remote biometric identification systems do not include AI systems intended for biometric verification where the sole purpose is to confirm the natural person is who they claim to be.",
+    "actual_answer": "No.  \nThe EU AI Act explicitly excludes AI systems that are used only for biometric verification (i.e., authentication or identity confirmation) from the high\u2011risk category for remote biometric identification systems.\n\n**References**  \n[Chunk\u202f1](#chunk-1), [Chunk\u202f2](#chunk-2)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The actual answer correctly states that AI systems used solely for biometric verification are excluded from the high\u2011risk category for remote biometric identification systems, matching the expected answer."
+  },
+  {
+    "question": "Are AI systems used to predict the likelihood of the localization of narcotics by customs authorities based on known trafficking routes prohibited under this regulation?",
+    "expected_answer": "No, risk analytics that are not based on the profiling of individuals or on personality traits, such as tools to predict the localization of narcotics on the basis of known trafficking routes, are not prohibited.",
+    "actual_answer": "AI systems that predict where customs authorities are likely to find narcotics or other illicit goods\u2014using known trafficking routes, for example\u2014are **not** prohibited under the EU AI Act.  \nThe Act explicitly states that risk\u2011analytics tools used for such purposes are exempt from the prohibition on profiling natural persons (see Recital\u202f42).  \n\n**References**  \n[Recital\u202f42](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 1,
+    "reason": "The answer correctly states that AI systems predicting narcotics localization based on trafficking routes are not prohibited, matching the expected answer."
+  },
+  {
+    "question": "Which operators are NOT subject to fines based on their worldwide annual turnover for non-compliance with the prohibition of AI practices referred to in Article 5?",
+    "expected_answer": "Union institutions, bodies, offices, and agencies are not subject to turnover-based fines; their maximum fine is a fixed amount of up to EUR 1 500 000.",
+    "actual_answer": "Operators that are **not** subject to fines calculated on their worldwide annual turnover for non\u2011compliance with the prohibition of AI practices in Article\u202f5 are those that are **not undertakings**.  \nSpecifically:\n\n| Operator type | Reason it is not subject to turnover\u2011based fines |\n|---------------|-------------------------------------------------|\n| **Union institutions, bodies, offices and agencies** | Article\u202f100 limits fines for non\u2011Article\u202f5 infringements to a fixed amount (up to\u202fEUR\u202f750\u202f000) and does not apply the turnover\u2011based calculation. |\n| **Public authorities and bodies established in Member States** | Article\u202f99, paragraph\u202f8 allows Member States to set rules for public authorities; the turnover\u2011based fine is not automatically applied. |\n\nThus, only undertakings (private companies, SMEs, etc.) are subject to the 7\u202f% of worldwide annual turnover fine for Article\u202f5 violations. Public\u2011sector entities are exempt from that turnover\u2011based calculation.  \n\n**References:**  \n[Article\u202f99, paragraph\u202f3](#chunk-3), [Article\u202f100](#chunk-4).",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 0,
+    "reason": "The answer incorrectly states the fixed fine amount (EUR 750,000) and adds public authorities as exempt, which does not match the expected answer that only Union institutions, bodies, offices, and agencies are exempt with a fixed fine up to EUR 1,500,000."
+  },
+  {
+    "question": "How does the quality management system mentioned in Article 17 relate to the documentation keeping requirements in Article 18?",
+    "expected_answer": "Article 18 requires that the documentation concerning the quality management system referred to in Article 17 must be kept at the disposal of national competent authorities for 10 years.",
+    "actual_answer": "The quality\u2011management system (QMS) required in **Article\u202f17** is a set of documented policies, procedures, and instructions that providers of high\u2011risk AI systems must establish to ensure compliance with the Regulation.  Article\u202f17 lists the specific elements that must be included in the QMS, such as a compliance strategy, design and development procedures, risk\u2011management integration, post\u2011market monitoring, incident reporting, and record\u2011keeping systems.\n\n**Article\u202f18** then specifies the *documentation\u2011keeping* obligations that arise from that QMS.  For a period of ten years after a high\u2011risk AI system is placed on the market or put into service, the provider must keep the documentation concerning the QMS (Article\u202f18(1)(b)) available to national competent authorities.  This means that all the written policies, procedures, and instructions that were documented in Article\u202f17 must be preserved, organized, and made accessible for inspection.\n\nIn short, Article\u202f17 defines what must be documented in the QMS, while Article\u202f18 mandates that those documents be retained and kept on file for a specified period so that authorities can verify compliance.  \n\nReferences: [Article\u202f17](#chunk-1), [Article\u202f18](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states that Article 18 requires the documentation concerning the quality management system from Article 17 to be kept for 10 years at the disposal of national competent authorities, matching the expected answer."
+  },
+  {
+    "question": "What are the specific technical metrics and mathematical formulas needed to achieve technical robustness and safety in a high-risk AI system?",
+    "expected_answer": "The document mentions the principle of technical robustness and safety, but it does not provide specific mathematical formulas, metrics, or low-level technical implementation details to achieve it in this section.",
+    "actual_answer": "The EU AI Act does not prescribe explicit numerical metrics or mathematical formulas for technical robustness and safety.  \nInstead, it sets out the following requirements:\n\n| Provision | What it requires |\n|-----------|------------------|\n| **Article\u202f15(1)** | High\u2011risk AI systems must be designed and developed to achieve an \u201cappropriate level of accuracy, robustness, and cybersecurity\u201d and to perform consistently throughout their lifecycle. |\n| **Article\u202f15(2)** | The Commission, together with stakeholders and metrology/benchmarking authorities, is to encourage the development of **benchmarks and measurement methodologies** that can be used to assess those levels. |\n| **Article\u202f15(3)** | The levels of accuracy and the relevant accuracy metrics must be declared in the accompanying instructions of use. |\n| **Article\u202f15(4\u20116)** | Robustness must be achieved through technical redundancy, fail\u2011safe plans, and mitigation of feedback\u2011loop risks. Cybersecurity measures must protect against data poisoning, model poisoning, adversarial examples, confidentiality attacks, and other AI\u2011specific vulnerabilities. |\n\n**Key take\u2011away:**  \n- The Act does **not** list specific formulas (e.g., \u201caccuracy\u202f=\u202fTP/(TP+FP)\u201d) or fixed thresholds (e.g., \u201c\u2265\u202f95\u202f% accuracy\u201d).  \n- It mandates that the Commission develop and promote **benchmarks and measurement methodologies** that can be applied to high\u2011risk AI systems.  \n- Providers must declare the chosen metrics and the expected performance levels in their instructions of use, but the exact metrics are left to be defined by the Commission and relevant stakeholders.\n\n**References**  \nReferences: [Article\u202f15](#chunk-1)",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the EU AI Act does not provide specific mathematical formulas or fixed metrics for technical robustness and safety, aligning with the expected answer."
+  },
+  {
+    "question": "Which specific open-source license version (e.g., GPLv3, MIT, or Apache 2.0) is mandated by the AI Office for general-purpose AI models to qualify for the transparency exception?",
+    "expected_answer": "The regulation discusses free and open-source licenses conceptually and their conditions but does not mandate a specific license version like GPLv3, MIT, or Apache 2.0.",
+    "actual_answer": "The EU AI Act does **not** prescribe a particular open\u2011source licence version (e.g., GPLv3, MIT, Apache\u202f2.0) for general\u2011purpose AI models to qualify for the transparency exception.  \nInstead, it requires that the model be released under a **free and open\u2011source licence** that:\n\n* allows users to run, copy, distribute, study, change and improve the software and data;  \n* requires attribution of the original provider; and  \n* preserves identical or comparable distribution terms.\n\nNo specific licence name or version is mandated in the Act.\n\nReferences: [Chunk\u202f1](#chunk-1), [Chunk\u202f4](#chunk-4)",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that no specific license version is mandated, matching the expected answer."
+  },
+  {
+    "question": "If an AI system falls under Annex III but is designed solely to perform a narrow procedural task as per Article 6, and a provider uses special categories of personal data to correct bias in this system under Article 10, is this data processing permissible given the system's risk classification?",
+    "expected_answer": "If the Annex III AI system is designed solely to perform a narrow procedural task (and does not perform profiling), it is not considered high-risk under Article 6 (Page 54). The exception to process special categories of personal data under Article 10 (Page 58) applies strictly to bias detection and correction in relation to high-risk AI systems. Therefore, unless it is classified as high-risk, it would not benefit from the specific exception in Article 10(5).",
+    "actual_answer": "The special\u2011categories exception in Article\u202f10 applies **only to high\u2011risk AI systems**.  \nArticle\u202f6 makes Annex\u202fIII systems high\u2011risk unless they meet the derogation conditions, one of which is that the system performs a *narrow procedural task* and does not pose a significant risk to health, safety or fundamental rights.  \n\nBecause the system in question is a narrow procedural task, it falls under the derogation and is **not considered high\u2011risk**. Therefore the special\u2011categories exception of Article\u202f10 does not apply, and the provider\u2019s use of special\u2011categories personal data for bias correction would **not be permissible** under the EU AI Act.\n\n**References**  \n[Article\u202f6](#chunk-2), [Article\u202f10](#chunk-1)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states that the system is not high\u2011risk due to the narrow procedural task, and therefore the Article\u202f10 exception for special categories does not apply, matching the expected conclusion."
+  },
+  {
+    "question": "According to the definitions, what is the 'AI Office' and what actions can it take regarding general-purpose AI models according to Recital 164?",
+    "expected_answer": "The AI Office is the Commission\u2019s function of contributing to the implementation, monitoring and supervision of AI systems and general-purpose AI models. According to Recital 164, it can take necessary actions to monitor implementation and compliance, investigate infringements (including by requesting documentation/information and conducting evaluations), involve independent experts, and enforce compliance through requests to take appropriate measures like risk mitigation, restricting market availability, withdrawing, or recalling the model.",
+    "actual_answer": "The **AI Office** is a body established by the Commission to oversee the implementation and compliance of the obligations that apply to providers of general\u2011purpose AI models.  \nAccording to **Recital\u202f164** it is empowered to:\n\n* **Monitor** the effective implementation of the Regulation and the compliance of providers of general\u2011purpose AI models.  \n* **Investigate** possible infringements, using the powers set out in the Regulation.  \n* **Request** documentation and information from providers.  \n* **Conduct evaluations** of models, and may involve independent experts to carry out those evaluations.  \n* **Request measures** from providers, including risk\u2011mitigation actions, and may restrict the availability of a model on the market, withdraw it, or recall it.  \n* Enforce compliance through the procedural rights provided in Article\u202f18 of Regulation (EU)\u202f2019/1020, where appropriate.\n\nThese powers are designed to ensure that providers of general\u2011purpose AI models meet all obligations set out in the EU AI Act.\n\nReferences: [Recital\u202f164](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer accurately describes the AI Office as a Commission body overseeing implementation and compliance for general\u2011purpose AI models, and lists all actions it can take per Recital 164, matching the expected answer."
+  },
+  {
+    "question": "Are the rules for it applied everywhere?",
+    "expected_answer": "It is unclear what 'it' and 'everywhere' refer to. Clarification is needed to determine whether 'it' refers to the AI Act or a specific AI system, and whether 'everywhere' refers to the EU, specific sectors, or globally.",
+    "actual_answer": "Could you clarify what you mean by \u201cit\u201d? Are you asking whether the EU AI Act\u2019s rules apply in all EU member states, or are you referring to a specific type of AI system or jurisdiction?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies the ambiguity in the question and requests clarification, matching the expected answer."
+  },
+  {
+    "question": "Do the rules prohibit the use of AI systems to detect the emotional state of individuals strictly for medical or safety reasons?",
+    "expected_answer": "No, the prohibition on using AI systems to detect the emotional state of individuals applies to situations related to the workplace and education, and does not cover AI systems placed on the market strictly for medical or safety reasons, such as therapeutical use.",
+    "actual_answer": "The EU AI Act does **not** prohibit the use of emotion\u2011recognition AI systems when they are deployed **solely for medical or safety purposes**.  \nThe prohibition applies to workplace and education settings, but an explicit exception is carved out for medical or safety use.\n\n**References**  \n- [Recital 44](#chunk-1)  \n- [Article\u202f5](#chunk-4)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer correctly states that the prohibition does not apply to medical or safety use, matching the expected answer."
+  },
+  {
+    "question": "Is the European Data Protection Supervisor designated as a competent market surveillance authority under this Regulation?",
+    "expected_answer": "Yes, due to the specific nature of Union institutions, agencies, and bodies falling within the scope of this Regulation, the European Data Protection Supervisor is designated as a competent market surveillance authority for them.",
+    "actual_answer": "Yes.  \nArticle\u202f74\u202f\u00a79 of the EU AI Act expressly designates the European Data Protection Supervisor (EDPS) as the market\u2011surveillance authority for Union institutions, bodies, offices or agencies (except when the Court of Justice of the European Union is acting in its judicial capacity).  \n\n**References**  \n[Article\u202f74](#chunk-2)",
+    "category": "stress-test",
+    "sub_type": "edge_of_chunk",
+    "score": 1,
+    "reason": "The answer correctly states that the European Data Protection Supervisor is designated as a competent market surveillance authority under the Regulation, matching the expected answer."
+  },
+  {
+    "question": "How is the term 'deployer' interpreted in this Regulation?",
+    "expected_answer": "The term 'deployer' is interpreted as any natural or legal person, including a public authority, agency or other body, using an AI system under its authority, except where the AI system is used in the course of a personal non-professional activity.",
+    "actual_answer": "The Regulation defines a **deployer** as any natural or legal person\u2014including a public authority, agency or other body\u2014that uses an AI system under its authority. The definition excludes use of the system in the course of a personal, non\u2011professional activity.  \n\n**Reference**: [Recital\u202f13](#chunk-2)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer accurately captures the definition of 'deployer' as any natural or legal person, including public authorities, agencies or other bodies, using an AI system under its authority, and correctly notes the exclusion of personal non-professional use."
+  },
+  {
+    "question": "Do the obligations to draw up technical documentation and provide information to downstream providers apply to all free and open-source general-purpose AI models, and does this include those with systemic risks?",
+    "expected_answer": "No, these obligations generally do not apply to providers of AI models released under a free and open-source licence whose parameters are made publicly available. However, this exception does not apply to general-purpose AI models with systemic risks.",
+    "actual_answer": "The EU AI Act\u2019s technical\u2011documentation and downstream\u2011information obligations are **limited to high\u2011risk AI systems** (Article\u202f16).  \n* **Free\u2011and\u2011open\u2011source general\u2011purpose AI models** that are **not classified as high\u2011risk** are therefore **not required** to produce technical documentation or to supply detailed information to downstream providers.  \n* If such a model is **classified as high\u2011risk**\u2014for example, because it poses a systemic risk that could affect the functioning of the entire system\u2014then the provider must comply with Article\u202f16: draw up the technical documentation (Article\u202f11) and provide the required information to downstream parties (Article\u202f25).  \n* Article\u202f25, paragraph\u202f4, explicitly exempts **third parties that make general\u2011purpose AI models available under a free\u2011and\u2011open\u2011source licence** from the obligation to supply the necessary information to the provider of a high\u2011risk AI system. This exemption does **not** remove the obligation to produce technical documentation if the model itself is high\u2011risk.\n\n**Bottom line:**  \n- **All free\u2011and\u2011open\u2011source general\u2011purpose AI models are exempt from the downstream\u2011information requirement** unless they are classified as high\u2011risk.  \n- **If a free\u2011and\u2011open\u2011source model is deemed high\u2011risk (including systemic\u2011risk cases), the provider must still draw up technical documentation** and meet the other high\u2011risk obligations.\n\nReferences:  \n[Article\u202f16](#chunk-1), [Article\u202f25](#chunk-2), [Article\u202f25 paragraph\u202f4](#chunk-5)",
+    "category": "stress-test",
+    "sub_type": "multi_part",
+    "score": 1,
+    "reason": "The answer correctly states that free and open-source general\u2011purpose AI models are exempt from the technical documentation and downstream\u2011information obligations unless they are classified as high\u2011risk, including those with systemic risks, which aligns with the expected answer."
+  },
+  {
+    "question": "Can an initial provider of an AI system avoid the obligation to hand over documentation if a third party modifies it into a high-risk AI system?",
+    "expected_answer": "Yes, this obligation does not apply in cases where the initial provider has clearly specified that its AI system is not to be changed into a high-risk AI system.",
+    "actual_answer": "Yes.  \nArticle\u202f25(2) of the EU AI Act states that when a third party makes a substantial modification that turns a system into a high\u2011risk AI system, the **initial provider is no longer considered the provider for that specific system**. The initial provider must cooperate and provide the necessary information and technical access **unless** it has **clearly specified that its AI system is not to be changed into a high\u2011risk AI system**. In that case, the obligation to hand over the documentation does not apply.  \n\n**References:** [Article\u202f25](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer correctly states that the initial provider can avoid the documentation obligation if it has clearly specified that its AI system is not to be changed into a high\u2011risk AI system, matching the expected answer."
+  },
+  {
+    "question": "At what cumulative amount of computation used for training is a general-purpose AI model presumed to have high impact capabilities according to Article 51?",
+    "expected_answer": "When the cumulative amount of computation used for its training measured in floating point operations is greater than 10^25.",
+    "actual_answer": "A general\u2011purpose AI model is presumed to have high\u2011impact capabilities when the cumulative amount of computation used for its training, measured in floating\u2011point operations, exceeds **10\u00b2\u2075**.  \n\nReferences: [Article\u202f51](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that a general-purpose AI model is presumed to have high\u2011impact capabilities when the cumulative amount of computation used for its training exceeds 10^25 floating\u2011point operations, matching the expected answer."
+  },
+  {
+    "question": "Article 59 allows personal data to be processed in an AI regulatory sandbox for safeguarding substantial public interest. How does the Regulation detail the areas of public interest specifically related to the environment and energy?",
+    "expected_answer": "It details them as: (ii) a high level of protection and improvement of the quality of the environment, protection of biodiversity, protection against pollution, green transition measures, climate change mitigation and adaptation measures; and (iii) energy sustainability.",
+    "actual_answer": "Article\u202f59 specifies that AI systems developed in a regulatory sandbox may be aimed at \u201csafeguarding substantial public interest\u201d in a number of domains.  \nFor the **environment** and **energy** areas the Regulation lists the following objectives:\n\n| Domain | Specific public\u2011interest objectives |\n|--------|-------------------------------------|\n| **Environment** | \u2022 Protection of biodiversity<br>\u2022 Prevention of pollution<br>\u2022 Green\u2011transition measures<br>\u2022 Climate\u2011change mitigation and adaptation |\n| **Energy** | \u2022 Energy sustainability |\n\nThese objectives are set out in paragraph\u202f1(a)(ii) and (iii) of Article\u202f59, which enumerates the permissible areas for sandbox\u2011based AI development.\n\n**References**\n\n- [Article\u202f59](#chunk-1) \u2013 paragraphs\u202f1(a)(ii)\u2013(iii) detailing the environment and energy objectives.",
+    "category": "cross-reference",
+    "sub_type": "summary_vs_detail",
+    "score": 0,
+    "reason": "The answer omits the key phrase \"a high level of protection and improvement of the quality of the environment\" that is part of the Regulation\u2019s specification for the environment area, making it incomplete."
+  },
+  {
+    "question": "Which software programming languages are specifically banned by the EU AI Office when developing the EU database for high-risk AI systems?",
+    "expected_answer": "The text does not provide information about which software programming languages are banned for developing the EU database.",
+    "actual_answer": "I\u2019m sorry, but the EU AI Act does not contain any provisions that list or ban specific software programming languages for the development of the EU database for high\u2011risk AI systems.",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the EU AI Act does not provide information about banned programming languages, matching the expected answer."
+  },
+  {
+    "question": "According to Annex III, what type of AI systems in the area of biometrics are classified as high-risk?",
+    "expected_answer": "High-risk AI systems in biometrics include remote biometric identification systems (with exceptions for simple verification), systems for biometric categorisation based on sensitive attributes, and systems for emotion recognition.",
+    "actual_answer": "According to Annex\u202fIII, the following biometric\u2011related AI systems are classified as high\u2011risk:\n\n1. **Remote biometric identification systems** \u2013 AI systems that identify a person from a distance (e.g., facial recognition in public spaces).  \n2. **Biometric categorisation systems** \u2013 AI systems that classify individuals according to sensitive or protected attributes or infer such attributes (e.g., age, gender, ethnicity, health status).  \n3. **Emotion\u2011recognition systems** \u2013 AI systems that detect or interpret emotions of individuals.\n\nThese categories are explicitly listed in Annex\u202fIII, Article\u202f6(2) of the EU AI Act.  \n\n**References:** [Annex\u202fIII](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies the three high\u2011risk biometric AI categories\u2014remote biometric identification systems, biometric categorisation systems, and emotion\u2011recognition systems\u2014matching the expected answer."
+  },
+  {
+    "question": "If a notified body's designation is suspended, what confirmation must the provider of a system covered by an affected certificate give, and to whom, if the notifying authority determines the notified body cannot support existing certificates?",
+    "expected_answer": "The provider must confirm in writing to the national competent authorities of the Member State where it has its registered place of business, within three months of the suspension, that another qualified notified body is temporarily assuming the functions of the notified body to monitor and remain responsible for the certificates.",
+    "actual_answer": "The provider of a system covered by an affected certificate must **confirm in writing** to the national competent authorities of the Member State where it is registered that **another qualified notified body is temporarily assuming the functions of the notified body** to monitor and remain responsible for the certificates during the period of suspension or restriction. This confirmation must be given within **three months** of the suspension or restriction.  \n\n**References:**  \n[Article\u202f36](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "multi_hop",
+    "score": 1,
+    "reason": "The answer correctly states that the provider must confirm in writing to the national competent authorities of the Member State where it is registered, within three months of the suspension, that another qualified notified body is temporarily assuming the functions of the notified body to monitor and remain responsible for the certificates."
+  },
+  {
+    "question": "What are the specific penalties or fines imposed on a company if they fail to maintain automatic recording of events (logs) as required by Article 12?",
+    "expected_answer": "The provided text mentions the requirement for record-keeping and logging capabilities in Article 12, but it does not specify the exact penalties, fines, or financial sanctions for non-compliance with this provision.",
+    "actual_answer": "If a company fails to keep the automatic event\u2011logging (logs) required by Article\u202f12, the EU AI Act treats this as a non\u2011compliance with a requirement of the Regulation (other than the prohibited practices of Article\u202f5).  \nUnder **Article\u202f100 \u2013 Administrative fines on Union institutions, bodies, offices and agencies** (and the analogous provisions for undertakings), the maximum administrative fine that may be imposed for such a breach is **up to\u202fEUR\u202f750\u202f000**.  \n\nMember States may set their own rules on the extent of fines, but the Regulation caps the maximum at \u20ac750\u202f000 for non\u2011compliance with Article\u202f12.  \n\n**References**  \n[Article\u202f100](#chunk-3)",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 0,
+    "reason": "The actual answer incorrectly states a specific fine of up to \u20ac750,000, whereas the expected answer indicates that the text does not specify any penalties or fines for non\u2011compliance with Article\u202f12."
+  },
+  {
+    "question": "If a natural person uses an AI system exclusively in the course of a purely personal non-professional activity, are they considered a 'deployer' under the scope of this Regulation?",
+    "expected_answer": "No, definition (4) explicitly excludes a person using the AI system in the course of a personal non-professional activity from the definition of a 'deployer'. Furthermore, Article 2(10) explicitly states the Regulation does not apply to obligations of deployers who are natural persons using AI systems in a purely personal non-professional activity.",
+    "actual_answer": "No.  \nThe Regulation defines a \u201cdeployer\u201d as a natural or legal person, public authority, agency or other body **using an AI system under its authority except where the AI system is used in the course of a personal non\u2011professional activity** (Article\u202f3, definition of \u201cdeployer\u201d). Therefore, a natural person who uses an AI system solely for a purely personal, non\u2011professional activity is not considered a deployer under the EU AI Act.  \n\n**References:**  \n[Article\u202f3](#chunk-3)",
+    "category": "stress-test",
+    "sub_type": "multi_hop",
+    "score": 1,
+    "reason": "The answer correctly states that a natural person using an AI system only for personal non-professional activity is not considered a deployer, matching the expected answer."
+  },
+  {
+    "question": "According to Article 90, what must the scientific panel indicate in a qualified alert to the AI Office?",
+    "expected_answer": "A qualified alert must be duly reasoned and indicate at least: (a) the point of contact of the provider of the general-purpose AI model with systemic risk concerned; (b) a description of the relevant facts and the reasons for the alert; and (c) any other relevant information, including information gathered on its own initiative.",
+    "actual_answer": "According to Article\u202f90, a qualified alert issued by the scientific panel must be **duly reasoned and must indicate at least**:\n\n- **(a)** the point of contact of the provider of the general\u2011purpose AI model with the systemic risk concerned;  \n- **(b)** a description of the relevant facts and the reasons for the alert by the scientific panel;  \n- **(c)** any other information that the scientific panel considers relevant, including, where appropriate, information gathered on its own initiative.  \n\n**References:** [Article\u202f90](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly lists all required elements of a qualified alert as specified in Article 90: it is duly reasoned, includes the contact point of the provider, a description of relevant facts and reasons, and any other relevant information, including self\u2011initiated data."
+  },
+  {
+    "question": "What must deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake disclose?",
+    "expected_answer": "They must disclose that the content has been artificially generated or manipulated.",
+    "actual_answer": "Deployers of an AI system that generates or manipulates image, audio or video content that constitutes a deep\u2011fake must **clearly and distinguishably disclose** that the content has been artificially created or manipulated.  \nThe disclosure should be made in an appropriate manner that does not hamper the display or enjoyment of the work when the content is part of an evidently artistic, creative, satirical, fictional or analogous work. The obligation does **not** apply if the use is authorised by law to detect, prevent, investigate or prosecute a criminal offence. The disclosure must be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure, and must conform to applicable accessibility requirements.  \n\n**References**: [Article 50](#chunk-2)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that deployers must disclose that the content has been artificially generated or manipulated, matching the expected factual conclusion."
+  },
+  {
+    "question": "Is the Commission required to submit its first report on the evaluation and review of the AI Act before or after the Regulation's general application date of 2 August 2026?",
+    "expected_answer": "After. The general application date is 2 August 2026, while the first report on the evaluation and review of the Regulation is due by 2 August 2029.",
+    "actual_answer": "The Commission\u2019s first report on the evaluation and review of the Regulation is required **after** the general application date of 2\u202fAugust\u202f2026.  Article\u202f112 of the Regulation specifies that the Commission shall submit its first evaluation\u2011and\u2011review report on 2\u202fAugust\u202f2029 (and thereafter every four years).  The annual assessment of the list of high\u2011risk AI systems and prohibited practices (paragraph\u202f1) also takes place after the Regulation comes into force.  Therefore, the first report is scheduled **after** 2\u202fAugust\u202f2026.\n\nReferences: [Article 112](#chunk-2)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states that the Commission\u2019s first report is required after the general application date of 2 August 2026, matching the expected answer."
+  },
+  {
+    "question": "Is a high-risk AI system that undergoes an automatic algorithmic change after being placed on the market always considered a substantially modified new system that requires a new conformity assessment?",
+    "expected_answer": "No. While a change that affects compliance is generally a substantial modification requiring a new assessment, changes occurring to the algorithm and performance of systems that continue to 'learn' automatically do not constitute a substantial modification if they were pre-determined by the provider and assessed at the moment of the original conformity assessment.",
+    "actual_answer": "No.  \nThe EU AI Act distinguishes between **pre\u2011determined** algorithmic changes that are part of the initial conformity assessment and **unplanned** changes that occur after the system is on the market.\n\n* **Pre\u2011determined changes** \u2013 If the provider has already specified the algorithmic updates and included them in the technical documentation at the time of the initial conformity assessment, the Act explicitly states that such changes \u201cshould not constitute a substantial modification\u201d (see the discussion on \u201cchanges occurring to the algorithm and the performance of AI systems which continue to \u2018learn\u2019 after being placed on the market\u201d and the corresponding clause in Article\u202f43).  \n* **Unplanned changes** \u2013 If the changes were not foreseen or planned in the initial assessment, they fall under the definition of a \u201csubstantial modification\u201d (Article\u202f3(23)) and would trigger a new conformity assessment.\n\nTherefore, a high\u2011risk AI system that automatically changes its algorithm after market placement is **not automatically** considered a substantially modified new system; it depends on whether those changes were pre\u2011determined and assessed beforehand.\n\n**References**  \n[Source\u202f1](#chunk-1), [Source\u202f3](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "contradictory",
+    "score": 1,
+    "reason": "The answer correctly states that automatic algorithmic changes are not automatically considered substantial modifications; it depends on whether the changes were pre\u2011determined and assessed in the original conformity assessment, matching the expected answer."
+  },
+  {
+    "question": "According to Article 96, what elements should the Commission develop guidelines on?",
+    "expected_answer": "Guidelines on the practical implementation of the Regulation, including: application of requirements in Articles 8-15 and 25, prohibited practices in Article 5, provisions related to substantial modification, transparency obligations in Article 50, relationship with Union harmonisation legislation in Annex I and other Union law, and the application of the definition of an AI system.",
+    "actual_answer": "The Commission shall develop guidelines on the following elements:\n\n- the application of the requirements and obligations referred to in Articles\u202f8 to\u202f15 and in Article\u202f25;  \n- the prohibited practices referred to in Article\u202f5;  \n- the practical implementation of the provisions related to substantial modification;  \n- the practical implementation of transparency obligations laid down in Article\u202f50;  \n- detailed information on the relationship of this Regulation with the Union harmonisation legislation listed in Annex\u202fI, as well as with other relevant Union law, including as regards consistency in their enforcement;  \n- the application of the definition of an AI system as set out in Article\u202f3, point\u202f(1).  \n\nThese guidelines are to be tailored with particular attention to the needs of SMEs, start\u2011ups, local public authorities, and the sectors most likely to be affected by the Regulation.  \n\nReferences: [Article\u202f96](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer accurately lists all the elements the Commission must develop guidelines on as specified in Article\u202f96, matching the expected content. The additional detail about tailoring to SMEs and other stakeholders is supplementary but does not detract from correctness."
+  },
+  {
+    "question": "In Article 50, what common exception is repeatedly mentioned regarding transparency obligations for interacting with AI systems, marking synthetic content, and deep fake disclosures?",
+    "expected_answer": "The obligations repeatedly state that they do not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences.",
+    "actual_answer": "In Article\u202f50 the same exception is cited in each paragraph: the transparency obligations do **not apply** to AI systems that are **authorised by law to detect, prevent, investigate or prosecute criminal offences** (subject to appropriate safeguards for the rights and freedoms of third parties). This exception is repeated for the interaction\u2011with\u2011persons obligation, the marking of synthetic content, and the deep\u2011fake disclosure requirement.\n\nReferences: [Article\u202f50](#chunk-1), [Article\u202f50](#chunk-2)",
+    "category": "cross-reference",
+    "sub_type": "repeated",
+    "score": 1,
+    "reason": "The answer correctly identifies the exception that the transparency obligations do not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, matching the expected answer."
+  },
+  {
+    "question": "How often must the advisory forum hold meetings, according to Article 67?",
+    "expected_answer": "The advisory forum shall hold meetings at least twice a year.",
+    "actual_answer": "The advisory forum must hold meetings **at least twice a year**.  \n\n**References:** [Article\u202f67](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The actual answer correctly states that the advisory forum must hold meetings at least twice a year, matching the expected answer."
+  },
+  {
+    "question": "Why is the use of AI systems that create or expand facial recognition databases through untargeted scraping of facial images from the internet or CCTV footage prohibited?",
+    "expected_answer": "Because that practice adds to the feeling of mass surveillance and can lead to gross violations of fundamental rights, including the right to privacy.",
+    "actual_answer": "The EU AI Act prohibits the creation or expansion of facial\u2011recognition databases through untargeted scraping of facial images from the internet or CCTV footage because such practice:\n\n* **Creates a sense of mass surveillance** that can erode public trust and the feeling of personal freedom.  \n* **Presents a high risk of gross violations of fundamental rights**, notably the right to privacy, by collecting and processing biometric data without a clear, lawful purpose or individual consent.  \n* **Raises serious concerns about the scientific validity** of the systems (limited reliability, lack of specificity, and poor generalisability), which can lead to discriminatory outcomes and intrusive profiling.\n\nThese concerns are explicitly set out in the Act\u2019s recitals and in Article\u202f5, which lists the prohibited AI practices.\n\n**References:**  \n[Recital\u202f43](#chunk-1), [Article\u202f5](#chunk-3)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies that untargeted scraping of facial images leads to a sense of mass surveillance and gross violations of fundamental rights, including privacy, matching the expected answer."
+  },
+  {
+    "question": "When deciding on the amount of an administrative fine, what specific factors regarding the operator and the specific situation must be taken into account according to Article 99(7)?",
+    "expected_answer": "Factors include the nature, gravity and duration of the infringement and its consequences; prior fines by other market surveillance authorities or other authorities for the same or related infringements; the size, turnover and market share of the operator; aggravating or mitigating factors like financial benefits gained; degree of cooperation with national competent authorities; degree of responsibility considering technical and organisational measures; how the infringement became known; the intentional or negligent character; and actions taken to mitigate harm.",
+    "actual_answer": "When determining whether to impose an administrative fine and how large that fine should be, Article\u202f99(7) requires that **all relevant circumstances of the specific situation** be considered.  The Act lists the following factors that must be taken into account:\n\n| Factor | What it covers |\n|--------|----------------|\n| **(a)** | Nature, gravity, and duration of the infringement and its consequences, including the purpose of the AI system, the number of affected persons, and the level of damage suffered. |\n| **(b)** | Whether other market\u2011surveillance authorities have already imposed administrative fines on the same operator for the same infringement. |\n| **(c)** | Whether other authorities have already imposed fines on the same operator for infringements of other Union or national law that arise from the same activity or omission. |\n| **(d)** | Size, annual turnover, and market share of the operator committing the infringement. |\n| **(e)** | Any other aggravating or mitigating factor, such as financial benefits gained or losses avoided directly or indirectly from the infringement. |\n| **(f)** | Degree of cooperation with the national competent authorities to remedy the infringement and mitigate adverse effects. |\n| **(g)** | Degree of responsibility of the operator, taking into account the technical and organisational measures it has implemented. |\n| **(h)** | How the infringement became known to the national competent authorities, especially whether and to what extent the operator notified the infringement. |\n| **(i)** | Whether the infringement was intentional or negligent. |\n| **(j)** | Any action taken by the operator to mitigate the harm suffered by affected persons. |\n\nThese factors are the only ones explicitly required by Article\u202f99(7) for the decision\u2011making process on administrative fines.\n\n**References**  \n[Article\u202f99(7) \u2013 factors for fine calculation](#chunk-1)",
+    "category": "cross-reference",
+    "sub_type": "summary_vs_detail",
+    "score": 1,
+    "reason": "The answer accurately lists all the factors specified in Article 99(7) and aligns with the expected answer."
+  },
+  {
+    "question": "What is the maximum administrative fine for non-compliance with the prohibition of AI practices referred to in Article 5?",
+    "expected_answer": "Administrative fines of up to EUR 35 000 000 or, if the offender is an undertaking, up to 7 % of its total worldwide annual turnover for the preceding financial year, whichever is higher.",
+    "actual_answer": "The EU AI Act sets the maximum administrative fine for non\u2011compliance with the prohibition of AI practices referred to in Article\u202f5 at **up to\u202fEUR\u202f35\u202f000\u202f000, or, if the offender is an undertaking, up to\u202f7\u202f% of its total worldwide annual turnover for the preceding financial year, whichever is higher**.  \n\n**References**: [Article\u202f99](#chunk-11), [Article\u202f100](#chunk-8)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states the maximum administrative fine as up to EUR 35,000,000 or 7% of worldwide turnover, whichever is higher, matching the expected answer."
+  },
+  {
+    "question": "Based on Annex IX, what kind of identification number must be provided when registering a high-risk AI system for testing in real world conditions?",
+    "expected_answer": "A Union-wide unique single identification number of the testing in real world conditions.",
+    "actual_answer": "The registration requires a **Union\u2011wide unique single identification number of the testing in real\u2011world conditions**.  \n\nReferences: [Annex\u202fIX](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that a Union-wide unique single identification number must be provided for testing in real world conditions, matching the expected answer."
+  },
+  {
+    "question": "Are conformity assessment bodies allowed to offer consultancy services to the providers of high-risk AI systems they are assessing?",
+    "expected_answer": "No. Notified bodies and their personnel must not engage in any activity that might conflict with their independence of judgement, particularly consultancy services.",
+    "actual_answer": "Conformity\u2011assessment bodies (notified bodies) must remain independent of the AI\u2011system provider they assess.  \nArticle\u202f31(5) of the EU AI Act explicitly states that a notified body, its top\u2011level management or its personnel **shall not** be directly involved in the design, development, marketing or use of high\u2011risk AI systems, and that this prohibition **includes consultancy services**.  \n\n**Answer:** No, a conformity\u2011assessment body is not allowed to offer consultancy services to the provider of a high\u2011risk AI system that it is assessing.\n\n**References:**  \n[Article\u202f31](#chunk-4)",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 1,
+    "reason": "The answer correctly states that conformity assessment bodies are not allowed to offer consultancy services to the providers of high\u2011risk AI systems they assess, matching the expected answer."
+  },
+  {
+    "question": "Under what condition are providers of AI systems allowed to process special categories of personal data as a matter of substantial public interest?",
+    "expected_answer": "They are allowed to do so exceptionally, to the extent that it is strictly necessary for the purpose of ensuring bias detection and correction in relation to high-risk AI systems, subject to appropriate safeguards.",
+    "actual_answer": "Providers of AI systems may process special categories of personal data as a matter of substantial public interest **only when it is strictly necessary for bias detection and correction in high\u2011risk AI systems**.  This exception is subject to a set of safeguards and conditions (e.g., technical limitations, security measures, deletion after bias correction, documentation of necessity, etc.) that must be met in addition to the general data\u2011protection requirements.  \n\n**References:** [Article 10](#chunk-3)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that processing special categories of personal data is allowed only when strictly necessary for bias detection and correction in high\u2011risk AI systems, and notes the required safeguards, matching the expected answer."
+  },
+  {
+    "question": "What does the threshold mean for the systems?",
+    "expected_answer": "It is unclear which threshold is being referred to (e.g., the floating point operations threshold for systemic risk) and what type of 'systems' (general-purpose models, high-risk AI systems) is being discussed.",
+    "actual_answer": "Could you please clarify which threshold you are referring to? For example, are you asking about the risk\u2011threshold for high\u2011risk AI systems, the data\u2011quality threshold for training data, or another specific threshold defined in the EU AI Act?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies that the threshold is unclear and requests clarification, matching the expected answer."
+  },
+  {
+    "question": "What is the deadline for Member States to make information publicly available on how to reach the single points of contact that act as representatives vis-\u00e0-vis the European Artificial Intelligence Board?",
+    "expected_answer": "Member States must make this information publicly available through electronic communication means by 2 August 2025.",
+    "actual_answer": "The deadline for Member States to make publicly available information on how to reach the single points of contact that act as representatives vis\u2011\u00e0\u2011vis the European Artificial Intelligence Board is **2\u202fAugust\u202f2025**.  \n\nReferences: [Article\u202f70](#chunk-2)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states the deadline of 2 August 2025, matching the expected answer."
+  },
+  {
+    "question": "What happens if they don't respond in time during the testing phase?",
+    "expected_answer": "Clarification needed: Who is 'they' and what testing phase are you referring to? (e.g., a market surveillance authority responding to a real-world testing plan within 30 days).",
+    "actual_answer": "Could you clarify who you mean by \u201cthey\u201d? Are you asking about the provider, the deployer, the testing subjects, or another party involved in the testing phase?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly requests clarification about who 'they' refers to and what testing phase is meant, matching the expected answer's intent."
+  },
+  {
+    "question": "Does Regulation (EU) 2018/1860 concern the Visa Information System according to Annex X?",
+    "expected_answer": "No, Regulation (EU) 2018/1860 concerns the use of the Schengen Information System for the return of illegally staying third-country nationals. The Visa Information System is covered by Regulations like 2021/1133 and 2021/1134.",
+    "actual_answer": "Regulation (EU)\u202f2018/1860 is **not** listed as a regulation that directly concerns the Visa Information System in Annex\u202fX.  \nIn Annex\u202fX the Visa Information System section (lines\u202f10\u201115 of Chunk\u202f1) lists:\n\n* Regulation (EU)\u202f2021/1133 \u2013 amending several regulations for the Visa Information System  \n* Regulation (EU)\u202f2021/1134 \u2013 amending a number of regulations, including (EU)\u202f2018/1860, in the context of reforming the Visa Information System  \n\nThus, 2018/1860 itself is not a regulation that concerns the Visa Information System; it is only mentioned because it is amended by Regulation\u202f2021/1134, which does concern the system.  \n\n**References:**  \n[Annex\u202fX](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "exact_term",
+    "score": 1,
+    "reason": "The answer correctly states that Regulation (EU) 2018/1860 does not directly concern the Visa Information System and identifies the relevant regulations (2021/1133 and 2021/1134) that do."
+  },
+  {
+    "question": "Does it apply to my biometric data?",
+    "expected_answer": "This is ambiguous because 'it' is not defined (could refer to a specific system or the regulation as a whole) and 'my' does not provide the context of where or how the biometric data is being processed, which is crucial for determining how the regulation applies.",
+    "actual_answer": "The EU AI Act is a regulation that governs **AI systems** that process personal data, including biometric data.  \n- **Biometric data** is defined in Article\u202f3 as \u201cpersonal data resulting from specific technical processing relating to the physical, physiological or behavioural characteristics of a natural person\u201d (e.g., facial images, fingerprints).  \n- Recital\u202f54 explains that AI systems that use biometric data for remote identification or categorisation are considered **high\u2011risk** and are subject to the Act\u2019s obligations.  \n- Recital\u202f39 states that the processing of biometric data by AI systems (except for real\u2011time remote biometric identification used for law enforcement) must still comply with the GDPR and related directives.\n\n**What this means for you as a data subject**\n\n| Aspect | How the Act applies |\n|--------|---------------------|\n| **Direct regulation of your biometric data** | The Act does not directly regulate individuals\u2019 biometric data; it regulates the AI systems that process such data. |\n| **Obligations on deployers** | Any entity deploying an AI system that processes your biometric data must comply with the Act\u2019s high\u2011risk requirements (risk assessment, transparency, data quality, human oversight, etc.). |\n| **GDPR compatibility** | The Act works alongside the GDPR; any processing of your biometric data must still meet GDPR requirements (lawful basis, data minimisation, rights to access, etc.). |\n\nSo, the EU AI Act **does apply to the processing of your biometric data** insofar as it is handled by an AI system that falls under the Act\u2019s scope. It does not impose new rules on you personally beyond those already set out in the GDPR, but it does impose stricter obligations on the organisations that use AI to process that data.\n\n**References**  \n[Recital\u202f54](#chunk-1), [Recital\u202f39](#chunk-2), [Article\u202f3](#chunk-3)",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 0,
+    "reason": "The actual answer provides a definitive explanation that the EU AI Act applies to AI systems processing biometric data, whereas the expected answer states the question is ambiguous due to undefined 'it' and lack of context. The actual answer does not capture the ambiguity highlighted in the expected answer."
+  },
+  {
+    "question": "When does the law start applying to the systems and models?",
+    "expected_answer": "Could you please clarify which specific systems or models you are referring to? The AI Act has different application dates (e.g., 2 August 2026 for general provisions, 2 February 2025 for prohibitions, 2 August 2025 for general-purpose AI models and governance, etc.).",
+    "actual_answer": "The Regulation enters into force on the twentieth day after its publication in the Official Journal of the European Union, and it applies from 2\u202fAugust\u202f2026.  \nSpecific provisions also set earlier application dates for certain chapters and articles:  \n- Chapters\u202fI and\u202fII apply from 2\u202fFebruary\u202f2025;  \n- Chapter\u202fIII Section\u202f4, Chapter\u202fV, Chapter\u202fVII, Chapter\u202fXII and Article\u202f78 apply from 2\u202fAugust\u202f2025 (except Article\u202f101);  \n- Article\u202f6(1) and related obligations apply from 2\u202fAugust\u202f2027.  \n\n**References:**  \n[Article\u202f113](#chunk-1)",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly lists the relevant application dates for the AI Act, matching the expected answer's content."
+  },
+  {
+    "question": "Does the AI Act apply to importers and distributors of AI systems, and how does the Regulation define these two roles?",
+    "expected_answer": "Yes, Article 2(1)(d) states the Regulation applies to importers and distributors of AI systems. An importer is a person in the Union that places on the market an AI system bearing the name/trademark of a person established in a third country (Article 3(6)). A distributor is a person in the supply chain, other than the provider or importer, that makes an AI system available on the Union market (Article 3(7)).",
+    "actual_answer": "Yes.  \nThe Regulation explicitly applies to both importers and distributors of AI systems and defines each role in Article\u202f3 of the Act.\n\n**Definitions (Article\u202f3)**  \n- **Importer** \u2013 a natural or legal person located or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established in a third country.  \n- **Distributor** \u2013 a natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market.  \n\n**Obligations**  \n- **Importers** must verify conformity before placing a high\u2011risk AI system on the market (Article\u202f23). They must confirm that the provider has carried out the required conformity assessment, prepared the technical documentation, affixed the CE marking and EU declaration of conformity, and appointed an authorised representative. Importers also must not place a system that is non\u2011conforming or falsified, must provide contact details on the system, and must keep relevant documentation for 10\u202fyears (Article\u202f23).  \n- **Distributors** must verify that a high\u2011risk AI system bears the required CE marking, is accompanied by the EU declaration of conformity and instructions for use, and that the provider and importer have complied with their obligations (Article\u202f24). If a distributor believes a system is non\u2011conforming, it must not make it available until conformity is achieved and must inform the relevant authorities (Article\u202f24).  \n\nThus, both importers and distributors are covered by the EU AI Act and are subject to the specific obligations set out in the Regulation.\n\n**References**  \nReferences: [Article\u202f3](#chunk-1), [Article\u202f23](#chunk-5), [Article\u202f24](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "summary_vs_detail",
+    "score": 1,
+    "reason": "The answer correctly states that the AI Act applies to importers and distributors and provides the accurate definitions from Article 3(6) and 3(7). It aligns with the expected answer and includes additional relevant obligations, so it is grounded."
+  },
+  {
+    "question": "Under what circumstances can market surveillance authorities authorise the placing on the market of high-risk AI systems that have not undergone a conformity assessment?",
+    "expected_answer": "Under exceptional reasons of public security, protection of life and health of natural persons, environmental protection, and the protection of key industrial and infrastructural assets.",
+    "actual_answer": "Market surveillance authorities may grant a derogation from the conformity\u2011assessment requirement for a high\u2011risk AI system only under the following circumstances:\n\n| Circumstance | Key Conditions |\n|--------------|----------------|\n| **Exceptional public\u2011security or health reasons** | The authority must receive a *duly justified request* and the derogation must be for \u201cexceptional reasons of public security or the protection of life and health of persons, environmental protection or the protection of key industrial and infrastructural assets.\u201d The authorisation is limited to the period needed to complete the conformity assessment, which must be carried out \u201cwithout undue delay.\u201d |\n| **Urgent situations** | In a *duly justified situation of urgency* for exceptional reasons of public security, or when there is a *specific, substantial and imminent threat to the life or physical safety of natural persons, law\u2011enforcement authorities or civil\u2011protection authorities*, a high\u2011risk AI system may be put into service **without** the market\u2011surveillance\u2011authority authorisation. The authorisation must then be requested during or after use, and if refused the system must be stopped immediately. |\n| **Compliance with Section\u202f2** | The system must still meet all requirements of Section\u202f2 (risk\u2011management, data governance, transparency, etc.). The market\u2011surveillance authority must confirm compliance before issuing the derogation. |\n| **Notification** | The authority must inform the Commission and other Member States of any authorisation issued. No objection within 15\u202fcalendar days from the Commission or a Member State will render the authorisation \u201cjustified.\u201d |\n\nThese provisions are set out in **Article\u202f46** of the EU AI Act (Derogation from conformity\u2011assessment procedure). The recitals (Recital\u202f130) also reiterate that rapid availability of innovative technologies may justify such derogations.\n\n**References:**  \n[Article\u202f46](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies the exceptional reasons\u2014public security, protection of life and health, environmental protection, and key industrial/infrastructural assets\u2014under which market surveillance authorities may authorize high\u2011risk AI systems without conformity assessment, matching the expected answer."
+  },
+  {
+    "question": "Is it legal to use artificial intelligence to guess a student's feelings in a university setting if the goal is purely to monitor classroom engagement?",
+    "expected_answer": "No. Article 5 prohibits the use of AI systems to infer emotions of a natural person in the areas of workplace and education institutions, except where the use is intended for medical or safety reasons. Monitoring classroom engagement does not qualify as a medical or safety reason.",
+    "actual_answer": "No.  \nThe EU AI Act explicitly prohibits the use of AI systems that infer emotions of natural persons in workplace and education settings (Article\u202f5\u202f(f)).  Emotion\u2011recognition systems are also listed as high\u2011risk AI systems in education (Annex\u202fIII, \u00a7\u202f3\u202f(b)(c)).  Therefore, deploying such a system in a university classroom to monitor engagement would be unlawful under the Regulation.  \n\n**References**  \n[Recital\u202f44](#chunk-1), [Article\u202f5\u202f(f)](#chunk-5), [Annex\u202fIII\u202f\u00a7\u202f3\u202f(b)(c)](#chunk-4)",
+    "category": "stress-test",
+    "sub_type": "paraphrased",
+    "score": 1,
+    "reason": "The answer correctly states that it is not legal to use AI to infer emotions for monitoring classroom engagement, citing the relevant provisions of the EU AI Act, which aligns with the expected answer."
+  },
+  {
+    "question": "For how long is the power to adopt delegated acts conferred on the Commission according to Article 97, and starting from what date?",
+    "expected_answer": "It is conferred for a period of five years from 1 August 2024.",
+    "actual_answer": "The power to adopt delegated acts is conferred on the Commission for **five years** starting from **1\u202fAugust\u202f2024**.  \n\n**References:** [Article\u202f97](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "score": 1,
+    "reason": "The answer correctly states the power is conferred for five years starting from 1 August 2024, matching the expected answer."
+  },
+  {
+    "question": "What is the specific budget allocated for the Union AI testing support structures in the years 2026-2028?",
+    "expected_answer": "I cannot answer this question as the provided text does not contain information about the specific budget allocated for the Union AI testing support structures.",
+    "actual_answer": "I\u2019m sorry, but the EU AI Act does not contain any provision that specifies a budget for the Union AI testing support structures for the period 2026\u20112028. The Act only establishes the structures and their tasks (see Article\u202f84) but does not set out funding amounts or timelines for those funds.\n\n**References**\n\n- [Article\u202f84](#chunk-1) \u2013 Union AI testing support structures (tasks and designation)",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the EU AI Act does not provide a specific budget for the Union AI testing support structures for 2026\u20112028, matching the expected refusal."
+  },
+  {
+    "question": "How does the regulation balance the requirement for a quality management system with the specific needs of microenterprises to ensure proportionality?",
+    "expected_answer": "While establishing a quality management system is mandatory for high-risk AI systems, the regulation allows microenterprises to fulfil this costly obligation in a simplified manner that reduces administrative burden and costs, and tasks the Commission with developing guidelines for these simplified elements.",
+    "actual_answer": "The EU AI Act recognises that the obligation to establish a quality\u2011management system (QMS) can be burdensome for very small operators.  \nTo keep the requirement proportionate, the Act:\n\n1. **Provides a specific derogation for micro\u2011enterprises** \u2013 Article\u202f63 (see Chunk\u202f1) states that micro\u2011enterprises may comply with *certain* elements of the QMS in a simplified manner, provided they have no partner or linked enterprises.  \n2. **Leaves all other obligations intact** \u2013 the same article clarifies that this simplification does not exempt them from the rest of the Regulation (e.g., Articles\u202f9\u201115,\u202f72\u201173).  \n3. **Delegates guideline development to the Commission** \u2013 Recital\u202f146 (Chunk\u202f2) explains that the Commission will issue guidelines detailing which QMS elements can be simplified, ensuring that the level of protection for high\u2011risk AI systems is not compromised.  \n4. **Maintains the core QMS requirements** \u2013 Article\u202f17 (Chunk\u202f3) lists the mandatory QMS components for high\u2011risk AI systems. The derogation only applies to *certain* elements, not the entire system, so the fundamental safeguards remain in place.\n\nIn short, the Act balances the need for a robust QMS with proportionality by allowing micro\u2011enterprises to adopt a lighter, Commission\u2011approved version of the system while still meeting all other regulatory obligations.\n\n**References**  \n[Article\u202f63](#chunk-1), [Recital\u202f146](#chunk-2), [Article\u202f17](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer accurately reflects the expected answer: it states that microenterprises can comply with a simplified version of the QMS, that this reduces administrative burden, and that the Commission will issue guidelines for the simplified elements, thereby ensuring proportionality."
+  },
+  {
+    "question": "What are the exact criteria for the models mentioned in the document?",
+    "expected_answer": "This question is ambiguous. It requires clarification on whether it refers to the criteria for designating general-purpose AI models with systemic risk (Annex XIII) or the elements required in the technical documentation of models (Annex XI/XII).",
+    "actual_answer": "Could you please clarify which specific models or sections of the EU AI Act you are referring to? For example, are you asking about the criteria for high\u2011risk AI systems, the requirements for AI models used in certain sectors, or something else? This will help me provide the precise information you need.",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The response appropriately requests clarification, matching the expected answer's indication that the question is ambiguous."
+  },
+  {
+    "question": "Does the release of a general-purpose AI model under a free and open-source licence exempt its provider from all obligations under this Regulation?",
+    "expected_answer": "No, while an open-source license provides exemptions from certain transparency requirements, it does not exempt providers of general-purpose AI models from the obligation to produce a summary of training content, put in place a copyright policy, or comply with systemic risk obligations if the model presents a systemic risk.",
+    "actual_answer": "The Act does **not** grant a blanket exemption for providers of general\u2011purpose AI models that are released under a free and open\u2011source licence.  \n\n* **Article\u202f53** (obligations for providers of general\u2011purpose AI models) states that the technical\u2011documentation and transparency obligations *do not apply* only to models that are released under a free and open\u2011source licence **and** whose parameters, weights, architecture and usage information are publicly available.  \n  * However, the exemption is **not** applicable if the model presents a systemic risk.  \n  * Certain obligations remain: the provider must still produce a summary of the content used for training and must put in place a policy to comply with Union copyright law (see the recitals and Article\u202f53).  \n\n* **Article\u202f54** (authorised representatives of providers of general\u2011purpose AI models) confirms that the obligation to act as an authorised representative does **not** apply to free\u2011and\u2011open\u2011source models that meet the same transparency criteria, again unless the model poses a systemic risk.  \n\nThus, a free\u2011and\u2011open\u2011source release can exempt a provider from some transparency\u2011related duties, but it does **not** exempt the provider from all obligations under the Regulation. Obligations that remain include the training\u2011data summary, copyright\u2011compliance policy, and any duties that arise if the model is deemed to pose a systemic risk.  \n\n**References**  \n[Article\u202f53](#chunk-4), [Article\u202f54](#chunk-2), [Recital\u202f102](#chunk-1), [Recital\u202f104](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "contradictory",
+    "score": 1,
+    "reason": "The answer correctly states that a free and open-source release does not exempt the provider from all obligations; it still requires a training\u2011data summary, a copyright compliance policy, and systemic risk duties if applicable, matching the expected answer."
+  },
+  {
+    "question": "How does the AI Act reconcile the goal of protecting overriding reasons of public interest with its broader legal basis for the internal market when it comes to remote biometric identification for law enforcement?",
+    "expected_answer": "While the Regulation is primarily based on Article 114 TFEU for uniform protection and the internal market, specific rules concerning the processing of personal data for remote biometric identification, risk assessments, and biometric categorisation by law enforcement are based on Article 16 TFEU.",
+    "actual_answer": "No answer provided.",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 0,
+    "reason": "No answer was provided, so the response is not grounded or correct."
+  },
+  {
+    "question": "By what date must providers of general-purpose AI models that were placed on the market before 2 August 2025 comply with the obligations in the Regulation?",
+    "expected_answer": "They must take the necessary steps to comply with the obligations laid down in the Regulation by 2 August 2027.",
+    "actual_answer": "Providers of general\u2011purpose AI models that were placed on the market before **2\u202fAugust\u202f2025** must bring those models into compliance with the Regulation by **2\u202fAugust\u202f2027**.  \n\n**References:** [Article\u202f111](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that providers must comply by 2 August 2027, matching the expected answer."
+  },
+  {
+    "question": "What are the seven non-binding ethical principles for AI according to the 2019 Ethics guidelines for trustworthy AI?",
+    "expected_answer": "Human agency and oversight; technical robustness and safety; privacy and data governance; transparency; diversity, non-discrimination and fairness; societal and environmental well-being and accountability.",
+    "actual_answer": "I\u2019m sorry, but that information is not contained in the EU AI Act.",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 0,
+    "reason": "The answer does not provide the correct seven ethical principles and incorrectly claims the information is not in the EU AI Act, which is a hallucination."
+  },
+  {
+    "question": "Does the Regulation apply to AI systems developed or used exclusively for military, defence or national security purposes?",
+    "expected_answer": "No, AI systems developed or used exclusively for military, defence or national security purposes are excluded from the scope of this Regulation.",
+    "actual_answer": "Yes. The Regulation explicitly excludes AI systems that are placed on the market, put into service, or used (with or without modification) **exclusively for military, defence or national security purposes**, regardless of the type of entity carrying out those activities. This exclusion is set out in the preamble and in Article\u202f2 (Scope) of the Regulation.\n\n**References**\n\n- [Recital\u202f24](#chunk-1)\n- [Article\u202f2, paragraph\u202f15](#chunk-4)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 0,
+    "reason": "The answer incorrectly states that the Regulation applies to such AI systems, contradicting the expected answer that they are excluded. The factual conclusion is wrong."
+  },
+  {
+    "question": "What is the general rule regarding the application of Union harmonisation legislation to a product containing a high-risk AI system?",
+    "expected_answer": "The general rule is that more than one legal act of Union harmonisation legislation may be applicable to one product, since the making available or putting into service can take place only when the product complies with all applicable Union harmonisation legislation.",
+    "actual_answer": "The EU AI Act requires that **any product that contains a high\u2011risk AI system must be fully compliant with all Union harmonisation legislation that applies to that product**.  \nIn practice this means:\n\n1. **Full compliance** \u2013 The provider of the product must ensure that the product meets every applicable Union harmonisation requirement (e.g., medical device, machinery, toys, etc.) in addition to the AI\u2011specific obligations.  \n2. **Integration of procedures** \u2013 To avoid duplication and unnecessary administrative burden, the provider may integrate the AI\u2011specific testing, reporting, information and documentation into the existing conformity\u2011assessment and documentation procedures already required by the relevant Union harmonisation legislation.  \n3. **Flexibility for safety components** \u2013 If the high\u2011risk AI system is a safety component of the product, the product manufacturer is treated as the provider of that AI system and is subject to the same obligations as a standalone high\u2011risk AI system.\n\nThese principles are set out in **Article\u202f8** of the Regulation and are reinforced by the recitals that stress the need to avoid unnecessary administrative burdens while ensuring safety and fundamental\u2011rights protection.\n\n**References**  \n[Article\u202f8](#chunk-4)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that a product containing a high\u2011risk AI system must comply with all applicable Union harmonisation legislation, implying that multiple acts may apply, which matches the expected answer."
+  },
+  {
+    "question": "What enhanced human oversight requirement is established for certain biometric identification systems due to the significant consequences of an incorrect match?",
+    "expected_answer": "The regulation requires that no action or decision may be taken by the deployer on the basis of the identification resulting from the system unless this has been separately verified and confirmed by at least two natural persons.",
+    "actual_answer": "The Act requires that for biometric identification systems where an incorrect match could have significant consequences, **no action or decision may be taken based on the system\u2019s identification unless it has been separately verified and confirmed by at least two natural persons**. This enhanced human\u2011oversight requirement is intended to ensure that the system\u2019s output is independently corroborated before any consequential use.  \n\n**References:** [Article 73](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer accurately states that no action or decision may be taken based on the system\u2019s identification unless it has been separately verified and confirmed by at least two natural persons, matching the expected answer."
+  },
+  {
+    "question": "Who should a provider of a high-risk AI system established in a third country appoint before making their systems available in the Union?",
+    "expected_answer": "Prior to making their AI systems available in the Union, providers established in third countries should, by written mandate, appoint an authorised representative established in the Union.",
+    "actual_answer": "A provider of a high\u2011risk AI system that is established in a third country must appoint an **authorised representative established in the Union** before making its systems available in the Union. This representative is required by Article\u202f22 of the Regulation.  \n\n**References:** [Article\u202f22](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that a provider of a high\u2011risk AI system established in a third country must appoint an authorised representative established in the Union before making its systems available in the Union, matching the expected answer."
+  },
+  {
+    "question": "What metric is initially used as a threshold to presume that a general-purpose AI model has systemic risks?",
+    "expected_answer": "The cumulative amount of computation used for the training of the general-purpose AI model measured in floating point operations (FLOPs) is initially used as a threshold.",
+    "actual_answer": "The Act specifies that the **cumulative amount of computation used for training a general\u2011purpose AI model, measured in floating\u2011point operations (FLOPs)** is the initial metric. If this cumulative FLOPs exceeds the threshold (currently set at\u202f>\u202f10\u00b2\u2075), the model is presumed to have high\u2011impact capabilities and is classified as a general\u2011purpose AI model with systemic risk.  \n\n**References**: [Article\u202f51](#chunk-4)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies the cumulative FLOPs as the initial threshold metric for systemic risk."
+  },
+  {
+    "question": "For high-risk AI systems in the area of law enforcement, migration, asylum and border control management, how should the registration obligations in the EU database be fulfilled?",
+    "expected_answer": "They should be fulfilled in a secure non-public section of the EU database.",
+    "actual_answer": "High\u2011risk AI systems that fall under the Annex\u202fIII use\u2011cases for **law enforcement, migration, asylum and border\u2011control management** must be registered in a **secure, non\u2011public section of the EU database** (Article\u202f49).  \nThe registration process is as follows:\n\n| Step | What must be done | Where the information is stored | Who can access it |\n|------|-------------------|---------------------------------|-------------------|\n| **1. Provider / authorised representative** | Register themselves and the system in the EU database (Article\u202f49\u202f\u00a71\u20113). | Public\u2011access section for all other high\u2011risk AI systems. | Commission, national market\u2011surveillance authorities. |\n| **2. Deployers that are public authorities, Union institutions, bodies, offices or agencies** | Register themselves, select the system, and register its use (Article\u202f49\u202f\u00a73). | Public\u2011access section for all other high\u2011risk AI systems. | Commission, national market\u2011surveillance authorities. |\n| **3. High\u2011risk AI systems in Annex\u202fIII points\u202f1,\u202f6,\u202f7 (law\u2011enforcement, migration, asylum, border\u2011control)** | Registration must be in a **secure, non\u2011public section** of the EU database (Article\u202f49\u202f\u00a74). | Only the Commission and the national authorities referred to in Article\u202f74(8) can access this section. | Commission, national authorities. |\n| **4. Information to be supplied** | \u2022 Section\u202fA, points\u202f1\u201110 of Annex\u202fVIII (except points\u202f6,\u202f8,\u202f9)  <br>\u2022 Section\u202fB, points\u202f1\u20115, 8,\u202f9 of Annex\u202fVIII  <br>\u2022 Section\u202fC, points\u202f1\u20113 of Annex\u202fVIII  <br>\u2022 Points\u202f1,\u202f2,\u202f3,\u202f5 of Annex\u202fIX | Same secure, non\u2011public section. | Commission, national authorities. |\n| **5. High\u2011risk AI systems in Annex\u202fIII point\u202f2** | Must be registered at **national level** (Article\u202f49\u202f\u00a75). | National database. | National authorities. |\n\n**Key points**\n\n* The EU database is established and managed by the Commission (Article\u202f71).  \n* The secure section is strictly limited to the Commission and the national authorities listed in Article\u202f74(8).  \n* Any substantial modification of the AI system must also be registered in the same secure section.  \n* The database must be user\u2011friendly, searchable, and machine\u2011readable, but the secure section is not publicly accessible.\n\n**References**\n\nReferences: [Article\u202f49](#chunk-3), [Article\u202f71](#chunk-3)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that registration for these high\u2011risk AI systems must be done in a secure, non\u2011public section of the EU database, matching the expected answer."
+  },
+  {
+    "question": "What specific labeling obligation is imposed on deployers who use an AI system to generate or manipulate image, audio, or video content that falsely appears authentic (deep fakes)?",
+    "expected_answer": "They should clearly and distinguishably disclose that the content has been artificially created or manipulated by labelling the AI output accordingly and disclosing its artificial origin.",
+    "actual_answer": "Deployers who use an AI system to generate or manipulate image, audio or video content that would falsely appear authentic (i.e., deep\u2011fakes) must **clearly and distinguishably disclose** that the content has been artificially created or altered.  \nThe disclosure must be made in a manner that does not hamper the display or enjoyment of the work, and it should be provided to the natural persons concerned at the latest at the time of first interaction or exposure.  \n\n**References**  \n[Article 50, paragraph\u202f4](#chunk-5) \u2013 \u201cDeployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated.\u201d  \n[Recital 134](#chunk-1) \u2013 \u201cDeployers \u2026 should also clearly and distinguishably disclose that the content has been artificially created or manipulated by labelling the AI output accordingly and disclosing its artificial origin.\u201d",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that deployers must clearly and distinguishably disclose that the content has been artificially created or manipulated, matching the expected labeling obligation."
+  },
+  {
+    "question": "From what date do the prohibitions of the AI Act apply?",
+    "expected_answer": "The prohibitions as well as the general provisions of the Regulation should apply from 2 February 2025.",
+    "actual_answer": "The prohibitions in the EU AI Act become effective on **2\u202fFebruary\u202f2025**.  \n\n**References:**  \n[ Preamble & Recitals ](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the prohibitions become effective on 2 February 2025, matching the expected answer."
+  },
+  {
+    "question": "How is 'substantial modification' defined in the context of an AI system after it has been placed on the market?",
+    "expected_answer": "It means a change to an AI system after its placing on the market or putting into service which is not foreseen or planned in the initial conformity assessment carried out by the provider and as a result of which the compliance of the AI system with the requirements set out in Chapter III, Section 2 is affected or results in a modification to the intended purpose for which the AI system has been assessed.",
+    "actual_answer": "**Definition of \u201csubstantial modification\u201d**\n\nArticle\u202f3 of the EU AI Act defines a *substantial modification* as:\n\n> \u201ca change to an AI system after its placing on the market or putting into service which is not foreseen or planned in the initial conformity assessment carried out by the provider and as a result of which the compliance of the AI system with the requirements set out in Chapter\u202fIII, Section\u202f2 is affected or results in a modification to the intended purpose for which the AI system has been assessed.\u201d\n\nThis means that any post\u2011market change that was not anticipated during the original conformity assessment and that either compromises the system\u2019s compliance with the Act or alters its intended use is considered a substantial modification.\n\n**Special note for high\u2011risk AI systems**\n\nFor high\u2011risk AI systems, Article\u202f43 clarifies that changes which were *pre\u2011determined* by the provider at the time of the initial conformity assessment and are documented in the technical documentation (Annex\u202fIV, point\u202f2(f)) **do not** constitute a substantial modification. All other post\u2011market changes to a high\u2011risk system trigger a new conformity assessment.\n\n---\n\n**References**\n\n- [Article\u202f3 \u2013 Definition of substantial modification](#chunk-1)\n- [Article\u202f43 \u2013 Conformity assessment for high\u2011risk AI systems](#chunk-2)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer accurately captures the definition of 'substantial modification' as stated in the expected answer, and adds relevant context about high\u2011risk systems without contradicting the core definition."
+  },
+  {
+    "question": "What four outcomes can classify an incident or malfunctioning of an AI system as a 'serious incident'?",
+    "expected_answer": "(a) the death of a person, or serious harm to a person\u2019s health; (b) a serious and irreversible disruption of the management or operation of critical infrastructure; (c) the infringement of obligations under Union law intended to protect fundamental rights; (d) serious harm to property or the environment.",
+    "actual_answer": "I\u2019m sorry, but the specific four outcomes that define a \u201cserious incident\u201d are not included in the excerpts I retrieved. The Act\u2019s definition appears in Article\u202f3, point\u202f(49)(c), which was not part of the search results I could access. I can\u2019t provide that information without the exact text.  \n\nReferences: [Article\u202f73](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The assistant correctly declined to answer because it lacked the necessary information, which is appropriate for an unanswerable question."
+  },
+  {
+    "question": "Under Article 5, is it permissible to use an AI system for untargeted scraping of facial images from the internet to create facial recognition databases?",
+    "expected_answer": "No, Article 5 explicitly prohibits the placing on the market, putting into service, or use of AI systems that create or expand facial recognition databases through untargeted scraping of facial images from the internet or CCTV footage.",
+    "actual_answer": "No. Article\u202f5, point\u202f(e) explicitly prohibits the use of an AI system for creating or expanding facial\u2011recognition databases through untargeted scraping of facial images from the internet or CCTV footage.  \n\n**References**: [Article\u202f5](#chunk-2)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that Article\u202f5 prohibits using an AI system for untargeted scraping of facial images to create or expand facial recognition databases, matching the expected answer."
+  },
+  {
+    "question": "For how long can the use of a real-time remote biometric identification system for law enforcement be commenced in an urgent situation without prior authorisation?",
+    "expected_answer": "In a duly justified situation of urgency, the use can commence without authorization provided it is requested without undue delay, at the latest within 24 hours.",
+    "actual_answer": "The Regulation allows a real\u2011time remote biometric identification system to be started immediately in an urgent situation **without prior authorisation**, provided that the law\u2011enforcement authority:\n\n* requests the required authorisation **without undue delay and at the latest within 24\u202fhours**;  \n* ceases use immediately if the authorisation is rejected, and deletes all related data.\n\n**References**\n\n- [Article 5, paragraph\u202f3](#chunk-2) \u2013 \u201cin a duly justified situation of urgency, the use of such system may be commenced without an authorisation provided that such authorisation is requested without undue delay, at the latest within 24\u202fhours.\u201d  \n- [Recital\u202f35](#chunk-1) \u2013 \u201cIn such situations of urgency, the use of the AI system should be restricted to the absolute minimum necessary \u2026 the law\u2011enforcement authority should \u2026 request such authorisation \u2026 at the latest within 24\u202fhours.\u201d",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the system can be started immediately in an urgent situation without prior authorization, provided that authorization is requested without undue delay and at the latest within 24 hours, matching the expected answer."
+  },
+  {
+    "question": "According to Article 6, what specific AI function overrides the derogations and always causes an Annex III AI system to be considered high-risk?",
+    "expected_answer": "An AI system referred to in Annex III shall always be considered to be high-risk where the AI system performs profiling of natural persons.",
+    "actual_answer": "The EU AI Act\u2019s Article\u202f6 states that **profiling of natural persons** overrides all derogations and automatically classifies an Annex\u202fIII AI system as high\u2011risk.\n\n**References**  \n[Article\u202f6](#chunk-1), [Article\u202f6](#chunk-2)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that profiling of natural persons overrides all derogations and automatically classifies an Annex III AI system as high\u2011risk, matching the expected answer."
+  },
+  {
+    "question": "How long must a provider keep the documentation for a high-risk AI system after it has been placed on the market or put into service?",
+    "expected_answer": "For a period ending 10 years after the high-risk AI system has been placed on the market or put into service.",
+    "actual_answer": "The provider must keep the documentation for **10\u202fyears** after the high\u2011risk AI system has been placed on the market or put into service.  \nThis requirement is set out in **Article\u202f18** of the EU AI Act, which specifies that the provider shall retain at the disposal of national competent authorities:\n\n- the technical documentation (Article\u202f11);  \n- the documentation concerning the quality\u2011management system (Article\u202f17);  \n- documentation on approved changes and decisions by notified bodies; and  \n- the EU declaration of conformity (Article\u202f47).\n\n**References:**  \n[Article\u202f18](#chunk-1), [Article\u202f47](#chunk-4)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that documentation must be kept for 10 years after the high\u2011risk AI system is placed on the market or put into service, matching the expected answer."
+  },
+  {
+    "question": "What is the minimum period that automatically generated logs must be kept by providers of high-risk AI systems, assuming no other Union or national law provides otherwise?",
+    "expected_answer": "At least six months.",
+    "actual_answer": "The EU AI Act requires providers of high\u2011risk AI systems to keep automatically generated logs for **at least six months** (unless a longer period is mandated by other Union or national law).  \n\n**References**: [Article\u202f19](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that logs must be kept for at least six months, matching the expected answer."
+  },
+  {
+    "question": "According to Article 27, what type of assessment must deployers that are bodies governed by public law perform prior to deploying certain high-risk AI systems?",
+    "expected_answer": "They must perform an assessment of the impact on fundamental rights that the use of such system may produce (a fundamental rights impact assessment).",
+    "actual_answer": "Deployers that are bodies governed by public law must perform a **fundamental rights impact assessment** before deploying the specified high\u2011risk AI systems.  \n\nReferences: [Article 27](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that deployers governed by public law must perform a fundamental rights impact assessment, matching the expected answer."
+  },
+  {
+    "question": "What must accompany an application for notification by a conformity assessment body?",
+    "expected_answer": "A description of the conformity assessment activities, modules, types of AI systems, and an accreditation certificate (if it exists) issued by a national accreditation body.",
+    "actual_answer": "An application for notification must be accompanied by:\n\n1. **A description of the conformity\u2011assessment activities** the body intends to carry out.  \n2. **The conformity\u2011assessment module(s)** that will be used.  \n3. **The types of AI systems** for which the body claims competence.  \n4. **An accreditation certificate** issued by a national accreditation body (if one exists) that attests the body meets the requirements of Article\u202f31.  \n5. **Any valid documents related to existing designations** of the applicant under other Union harmonisation legislation.  \n\nIf the body does not possess an accreditation certificate, it must provide **all documentary evidence necessary for the notifying authority to verify, recognise and monitor its compliance** with Article\u202f31.  \n\nReferences: [Article\u202f29](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly lists all required items (description of activities, modules, types of AI systems, and an accreditation certificate if available) and adds additional relevant information without contradicting the expected answer."
+  },
+  {
+    "question": "How long should a notified body keep the relevant documents concerning the assessment of qualifications of a subcontractor or subsidiary?",
+    "expected_answer": "For a period of five years from the termination date of the subcontracting.",
+    "actual_answer": "The EU AI Act requires that a notified body keep the relevant documents concerning the assessment of the qualifications of a subcontractor or subsidiary for **five years from the termination date of the subcontracting**.  \n\n**References:** [Article 33](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the documents must be kept for five years from the termination date of the subcontracting, matching the expected answer."
+  },
+  {
+    "question": "Under what conditions can a law-enforcement authority put a specific high-risk AI system into service without prior authorisation from a market surveillance authority?",
+    "expected_answer": "In a duly justified situation of urgency for exceptional reasons of public security or in the case of specific, substantial and imminent threat to the life or physical safety of natural persons, provided authorisation is requested during or after use without undue delay.",
+    "actual_answer": "A law\u2011enforcement authority may deploy a specific high\u2011risk AI system without prior authorisation from a market\u2011surveillance authority only in a **duly justified situation of urgency** for exceptional reasons of public security or in the case of a **specific, substantial and imminent threat to the life or physical safety of natural persons, law\u2011enforcement authorities or civil\u2011protection authorities**. In such circumstances the authority may put the system into service **without the authorisation referred to in paragraph\u202f1 of Article\u202f46**, provided that the authorisation is requested **during or after the use without undue delay**. If the authorisation is subsequently refused, the use must be stopped immediately and all results discarded.\n\n**References:** [Article\u202f46](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 0,
+    "reason": "The answer adds extra conditions (threat to law\u2011enforcement authorities or civil\u2011protection authorities) that are not present in the expected answer, constituting a hallucination. The core conditions are correct, but the additional content makes the answer not fully grounded."
+  },
+  {
+    "question": "By what date must Member States ensure that their competent authorities establish at least one AI regulatory sandbox at the national level?",
+    "expected_answer": "By 2 August 2026.",
+    "actual_answer": "Member States must ensure that their competent authorities establish at least one AI regulatory sandbox at the national level **by 2\u202fAugust\u202f2026**.  \n\nReferences: [Article\u202f57](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states the required date, matching the expected answer."
+  },
+  {
+    "question": "How many representatives per Member State comprise the European Artificial Intelligence Board?",
+    "expected_answer": "The Board shall be composed of one representative per Member State.",
+    "actual_answer": "The European Artificial Intelligence Board is composed of **one representative per Member State**.  \n\n**References:**  \n- [Article\u202f65](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the Board is composed of one representative per Member State, matching the expected answer."
+  },
+  {
+    "question": "What specific action must be taken with the informed consent obtained for real-world testing, according to Article 61?",
+    "expected_answer": "The informed consent shall be dated and documented and a copy shall be given to the subjects of testing or their legal representative.",
+    "actual_answer": "The informed consent must be **dated and documented, and a copy must be provided to the subjects of testing or their legal representative**.  \n\nReferences: [Article\u202f61](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the informed consent must be dated and documented, and a copy must be provided to the subjects or their legal representative, matching the expected answer."
+  },
+  {
+    "question": "What is the deadline for the Commission to adopt an implementing act laying down detailed provisions establishing a template for the post-market monitoring plan?",
+    "expected_answer": "The deadline is 2 February 2026.",
+    "actual_answer": "The Commission must adopt the implementing act establishing the template for the post\u2011market monitoring plan by **2\u202fFebruary\u202f2026**.  \n\n**References:** [Article\u202f72](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states the deadline of 2 February 2026, matching the expected answer."
+  },
+  {
+    "question": "In the event of non-compliance with the prohibition of AI practices referred to in Article 5, what is the reduced period for the three-month objection window for provisional measures?",
+    "expected_answer": "The three-month period is reduced to 30 days.",
+    "actual_answer": "The objection window is shortened to **30\u202fdays** in the event of non\u2011compliance with the prohibition of AI practices referred to in Article\u202f5.  \n\nReferences: [Article\u202f79](#chunk-2)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the objection window is reduced to 30 days, matching the expected answer."
+  },
+  {
+    "question": "Under formal non-compliance, name three reasons related to documentation or marking for which a market surveillance authority can require a provider to put an end to the non-compliance.",
+    "expected_answer": "Examples include: the CE marking has not been affixed, the EU declaration of conformity has not been drawn up, or the technical documentation is not available.",
+    "actual_answer": "Under formal non\u2011compliance, a market surveillance authority may require a provider to end the non\u2011compliance for the following three documentation or marking\u2011related reasons:\n\n1. **The CE marking has been affixed in violation of Article\u202f48** \u2013 the marking is incorrect or misleading.  \n2. **The CE marking has not been affixed** \u2013 the product lacks the required conformity mark.  \n3. **The EU declaration of conformity has not been drawn up correctly** \u2013 the declaration is incomplete or inaccurate.  \n\nThese reasons are set out in Article\u202f83 of the EU AI Act.  \n\nReferences: [Article\u202f83](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 0,
+    "reason": "The answer lists two of the expected reasons (CE marking not affixed, EU declaration not drawn up) but omits the third expected reason (technical documentation not available) and adds an extra marking issue not mentioned in the expected answer. Thus it does not fully satisfy the question."
+  },
+  {
+    "question": "What specific information regarding the elements and development process of the AI system must be included in the technical documentation under Annex IV?",
+    "expected_answer": "It must include the methods/steps for development, design specifications (logic, choices, expected output), system architecture, data requirements (training methodologies, data sets), assessment of human oversight measures, pre-determined changes, and validation and testing procedures.",
+    "actual_answer": "**Annex\u202fIV \u2013 Technical documentation (Article\u202f11\u202f(1)) \u2013 Elements & Development Process**\n\nThe technical documentation must contain a *detailed description* of the AI system\u2019s elements and the development process. This is covered in point\u202f2 of Annex\u202fIV and includes the following sub\u2011items:\n\n| # | Item | Key content |\n|---|------|-------------|\n| 2(a) | **Development methods & steps** | How the system was built, including any use of pre\u2011trained models or third\u2011party tools, and how those were integrated or modified. |\n| 2(b) | **Design specifications** | General logic of the system and algorithms; key design choices, rationale, and assumptions (e.g., target user groups, classification choices, optimisation goals, trade\u2011offs to meet Chapter\u202fIII, Section\u202f2). |\n| 2(c) | **System architecture** | How software components interact, feed into each other, and integrate into the overall processing; computational resources used for development, training, testing, and validation. |\n| 2(d) | **Data requirements** | Datasheets describing training methodologies, data sets used, provenance, scope, main characteristics, data acquisition, selection, labelling procedures, and cleaning methods. |\n| 2(e) | **Human\u2011oversight measures** | Assessment of measures needed per Article\u202f14, including technical aids for interpreting outputs (Article\u202f13\u202f(3)\u202f(d)). |\n| 2(f) | **Pre\u2011determined changes** | Detailed description of any planned changes to the system and its performance, plus technical solutions ensuring continuous compliance with Chapter\u202fIII, Section\u202f2. |\n| 2(g) | **Validation & testing procedures** | Information on validation/testing data, metrics for accuracy, robustness, compliance, discriminatory impact, test logs, and reports signed by responsible persons (including for pre\u2011determined changes). |\n\nThese items collectively ensure that the technical documentation fully captures the system\u2019s architecture, data, design choices, development workflow, and ongoing compliance measures.\n\n**References**  \n[Chunk\u202f1](#chunk-1), [Chunk\u202f2](#chunk-2)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer accurately lists all required elements\u2014development methods, design specifications, system architecture, data requirements, human oversight, pre\u2011determined changes, and validation/testing\u2014matching the expected answer."
+  },
+  {
+    "question": "According to Annex V, what must be stated in the EU declaration of conformity if an AI system involves the processing of personal data?",
+    "expected_answer": "A statement that the AI system complies with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680.",
+    "actual_answer": "The EU declaration of conformity must include, among other items, the following statement when the AI system processes personal data:\n\n> \u201cThe AI system complies with Regulations (EU)\u202f2016/679 and (EU)\u202f2018/1725 and Directive (EU)\u202f2016/680.\u201d  \n\nThis requirement is set out in Annex\u202fV, Article\u202f5(5) of the EU AI Act.  \n\n**References:** [Annex\u202fV](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states the required declaration and matches the expected content."
+  },
+  {
+    "question": "Under Annex XIII, how many registered business users established in the Union create a presumption that a general-purpose AI model has a high impact on the internal market due to its reach?",
+    "expected_answer": "At least 10,000 registered business users.",
+    "actual_answer": "The presumption of a high impact on the internal market is triggered when a general\u2011purpose AI model has been made available to **at least 10\u202f000 registered business users established in the Union**.  \n\nReferences: [Annex XIII](#chunk-1)",
+    "category": "factual",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the presumption is triggered when a general\u2011purpose AI model has been made available to at least 10,000 registered business users established in the Union, matching the expected answer."
+  },
+  {
+    "question": "What specific anonymisation algorithms and cryptographic key lengths are legally required when pseudonymising judicial decisions?",
+    "expected_answer": "The text mentions that AI systems intended for anonymisation or pseudonymisation of judicial decisions are purely ancillary administrative activities and not classified as high-risk, but it does not specify any cryptographic key lengths or particular algorithms to use.",
+    "actual_answer": "The EU AI Act does not set out any specific anonymisation algorithms or cryptographic key\u2011length requirements for the pseudonymisation of judicial decisions. The relevant provisions only state that such activities are considered ancillary administrative tasks and are therefore not classified as high\u2011risk AI systems, but they do not prescribe particular technical measures.  \n\n**References**: [Recital\u202f61](#chunk-1), [Recital\u202f61](#chunk-2)",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The actual answer correctly states that no specific anonymisation algorithms or cryptographic key lengths are required, matching the expected answer."
+  },
+  {
+    "question": "What is the minimum annual budget in Euros that each Member State must allocate to their national AI regulatory sandbox?",
+    "expected_answer": "The regulation requires that Member States ensure AI regulatory sandboxes have adequate financial and human resources for their functioning, but it does not specify a specific minimum annual budget in Euros.",
+    "actual_answer": "The EU AI Act does **not** set a specific minimum annual budget in euros that Member States must allocate to their national AI regulatory sandboxes.  \nArticle\u202f57 (the provision on AI regulatory sandboxes) requires Member States to establish at least one sandbox and to ensure that competent authorities allocate \u201csufficient resources\u201d for its operation, but it does not quantify those resources in monetary terms.  \n\n**References**  \n[Article\u202f57](#chunk-1), [Article\u202f57](#chunk-2)",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the EU AI Act does not specify a minimum annual budget in euros for national AI regulatory sandboxes, matching the expected answer."
+  },
+  {
+    "question": "What are the specific financial penalties under US law for providers of high-risk AI systems who fail to comply with the EU AI Act?",
+    "expected_answer": "I cannot answer this question as the provided text pertains exclusively to the EU AI Act and does not discuss US law or penalties imposed by US jurisdictions.",
+    "actual_answer": "I\u2019m sorry, but that information is not contained in the EU AI Act.",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The response correctly declines to answer, noting the information is not in the EU AI Act, matching the expected refusal."
+  },
+  {
+    "question": "What specific programming languages and machine learning frameworks are recommended by the AI Office for developing the quality management systems of high-risk AI systems?",
+    "expected_answer": "The provided text does not specify any programming languages or machine learning frameworks for developing quality management systems.",
+    "actual_answer": "I\u2019m sorry, but the EU AI Act does not contain any provisions or recommendations regarding specific programming languages or machine learning frameworks for developing quality management systems for high\u2011risk AI systems.",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that no programming languages or machine learning frameworks are specified, matching the expected answer."
+  },
+  {
+    "question": "What specific technical metrics are required to prove the energy-efficient development of a general-purpose AI model under the harmonised standards?",
+    "expected_answer": "The text mentions that standardisation requests shall ask for deliverables on the energy-efficient development of general-purpose AI models, but it does not specify the exact technical metrics required.",
+    "actual_answer": "The EU AI Act does not prescribe a fixed list of numerical metrics that must be used to demonstrate the energy\u2011efficient development of a general\u2011purpose AI model. Instead, it requires that such metrics be defined by the harmonised standards that the Commission will develop. The relevant provisions are:\n\n* **Article\u202f40** \u2013 The Commission is mandated to issue standardisation requests that include deliverables on reporting and documentation processes to improve AI systems\u2019 resource performance, \u201csuch as reducing the high\u2011risk AI system\u2019s consumption of energy and of other resources during its lifecycle, and on the energy\u2011efficient development of general\u2011purpose AI models.\u201d  \n* **Article\u202f53** \u2013 Providers may rely on codes of practice until a harmonised standard is published. The Commission is empowered to adopt delegated acts that \u201cdetail measurement and calculation methodologies with a view to allowing for comparable and verifiable documentation.\u201d  \n* **Annex\u202fXI** \u2013 The technical documentation required of providers must contain \u201cknown or estimated energy consumption of the model.\u201d Where the energy consumption is unknown, it may be based on information about the computational resources used (e.g., number of floating\u2011point operations, training time, etc.).  \n\nThus, the Act requires that harmonised standards (once adopted) specify the exact technical metrics\u2014such as energy consumption per inference, energy per training epoch, or energy per floating\u2011point operation\u2014that must be reported. Until those standards are published, providers can demonstrate compliance through alternative adequate means, including codes of practice or the metrics outlined in the technical documentation above.\n\n**References**  \n[Article\u202f40](#chunk-1), [Article\u202f53](#chunk-2), [Annex\u202fXI](#chunk-4), [Article\u202f55](#chunk-6)",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the EU AI Act does not prescribe specific technical metrics for energy-efficient development of general-purpose AI models; instead, such metrics will be defined by future harmonised standards, matching the expected answer."
+  },
+  {
+    "question": "Which specific open-source testing frameworks must be used for adversarial testing within the national AI regulatory sandboxes?",
+    "expected_answer": "The provided text does not specify the exact open-source testing frameworks to be used within the national AI regulatory sandboxes; it only outlines general requirements and provisions for establishing these sandboxes.",
+    "actual_answer": "I\u2019m sorry, but the EU AI Act does not specify any particular open\u2011source testing frameworks that must be used for adversarial testing within national AI regulatory sandboxes. The Act does not mention national AI regulatory sandboxes or prescribe specific tools for that purpose.",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the EU AI Act does not specify any particular open-source testing frameworks for adversarial testing within national AI regulatory sandboxes, matching the expected answer."
+  },
+  {
+    "question": "Which specific independent experts were appointed by the Commission to the first scientific panel?",
+    "expected_answer": "This information is not provided in the text. The text only mentions that the Commission may appoint independent experts to the scientific panel to carry out evaluations on its behalf, but does not list specific names.",
+    "actual_answer": "The Regulation itself does not name the individuals who were appointed to the first scientific panel. Article\u202f68 of the EU AI Act only sets out the criteria and the procedure for the Commission to select and appoint independent experts; the actual names are listed in the implementing act adopted by the Commission, which is not part of the Regulation\u2019s text.\n\n**References**  \n[Article\u202f68](#chunk-1)",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the names of the independent experts are not provided in the text and that they are listed elsewhere, matching the expected answer."
+  },
+  {
+    "question": "What specific monetary budget has been allocated to the AI Office for the year 2028?",
+    "expected_answer": "I cannot answer this question because the provided text does not contain specific monetary budget allocations for the AI Office.",
+    "actual_answer": "I\u2019m sorry, but the EU AI Act does not contain any information about a monetary budget for the AI Office for the year\u202f2028.",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that the required budget information is not present in the provided text, matching the expected refusal."
+  },
+  {
+    "question": "How much does it cost in euros to train a general-purpose AI model with 1 trillion parameters according to the text?",
+    "expected_answer": "The text does not provide specific cost estimates in euros for training general-purpose AI models, though it mentions the estimated cost of training as a criteria variable.",
+    "actual_answer": "The EU AI Act does not provide a specific monetary figure for the cost of training a general\u2011purpose AI model with 1\u202ftrillion parameters. The regulation only states that the Commission may consider the \u201cestimated cost of training\u201d as one of the criteria for assessing systemic risk (see Annex\u202fXIII, point\u202fc) and that the technical documentation must include information on the computational resources used for training (Annex\u202fXI, point\u202f4). No explicit euro amount is given in the text.\n\nReferences: [Chunk\u202f1](#chunk-1), [Chunk\u202f2](#chunk-2)",
+    "category": "out-of-scope",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly states that no specific euro cost is provided in the text, matching the expected answer."
+  },
+  {
+    "question": "Who runs the testing?",
+    "expected_answer": "It is ambiguous whether the question refers to third-party conformity assessments run by notified bodies, real-world testing plans submitted by prospective providers, or testing within the AI regulatory sandboxes supervised by national competent authorities.",
+    "actual_answer": "Could you clarify what you mean by \u201ctesting\u201d? Are you asking about the testing of AI systems for compliance with the EU AI Act, or something else?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The response appropriately declines to answer due to ambiguity, matching the expected answer's indication of uncertainty."
+  },
+  {
+    "question": "Is it allowed to use the AI system in public places?",
+    "expected_answer": "This question is too vague. It does not specify what type of AI system is being used (e.g., 'real-time' remote biometric identification), what the purpose of the use is (e.g., law enforcement), or which public spaces are involved. Clarification is needed to provide an accurate answer based on the EU AI Act.",
+    "actual_answer": "Could you please specify which AI system you are referring to and in what context you intend to use it in public places?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The response appropriately requests clarification, matching the expected answer that the question is too vague."
+  },
+  {
+    "question": "Does the system need to be stopped if there's a problem during the period?",
+    "expected_answer": "This question is too vague. It is unclear what 'system', 'problem', or 'period' refers to.",
+    "actual_answer": "Could you clarify what you mean by \u201cthe period\u201d? Are you referring to the deployment period, the monitoring period, or a specific timeframe defined in the EU AI Act?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer appropriately requests clarification, matching the expected response that the question is too vague."
+  },
+  {
+    "question": "What happens if they don't do it right?",
+    "expected_answer": "Please clarify who 'they' are (e.g., notified bodies, providers, market surveillance authorities) and what action 'it' refers to (e.g., conformity assessment, notifying changes).",
+    "actual_answer": "Could you clarify what specific action or requirement you\u2019re referring to, and who \u201cthey\u201d are in this context?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The actual answer correctly requests clarification about who 'they' are and what 'it' refers to, matching the expected answer."
+  },
+  {
+    "question": "How can the threshold be changed over time?",
+    "expected_answer": "It is unclear which threshold the question refers to. It could be the computational threshold for general-purpose AI models with systemic risk, which the Commission can amend via delegated acts, or another threshold in the regulation. Please specify which threshold you are referring to.",
+    "actual_answer": "I\u2019m not sure which threshold you\u2019re referring to. Could you specify which part of the EU AI Act you mean (e.g., the risk\u2011assessment threshold, the conformity\u2011assessment threshold, or another technical parameter)?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly acknowledges uncertainty and requests clarification, matching the expected answer's intent."
+  },
+  {
+    "question": "What actions should be taken if an AI system is found to be bad?",
+    "expected_answer": "This question is too vague. 'Bad' could refer to presenting a risk to health or safety, formal non-compliance, or misclassification. Please specify the type of non-compliance or risk you are referring to.",
+    "actual_answer": "Could you please clarify what you mean by \u201cbad\u201d? For example, are you referring to a system that is non\u2011compliant with the EU AI Act, a high\u2011risk system that has failed its conformity assessment, or a system that engages in a prohibited practice? This will help me provide the precise actions required under the Act.",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies the question as too vague and requests clarification, matching the expected answer."
+  },
+  {
+    "question": "What is the maximum fine if they don't give the requested information?",
+    "expected_answer": "The question is ambiguous as it does not specify who 'they' are or what 'information' is being requested. It could refer to providers of general-purpose AI models failing to provide information under Article 91 or 92 (fines up to EUR 15 000 000 or 3% of turnover), or general operators failing to provide information to notified bodies or national competent authorities (fines up to EUR 7 500 000 or 1% of turnover).",
+    "actual_answer": "Could you clarify who \u201cthey\u201d refers to? Are you asking about the maximum fine for a provider, operator, or another entity that fails to provide requested information under the EU AI Act?",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 1,
+    "reason": "The answer correctly identifies the ambiguity and declines to answer until clarification, matching the expected response."
+  },
+  {
+    "question": "Are the systems evaluated by 2030?",
+    "expected_answer": "This question is too vague. It is unclear whether you are referring to the large-scale IT systems mentioned in Article 111(1) that must be brought into compliance by 31 December 2030, or the high-risk AI systems used by public authorities mentioned in Article 111(2) that must comply by 2 August 2030. Could you please specify?",
+    "actual_answer": "Yes.  \n- **Large\u2011scale IT systems** that contain high\u2011risk AI components and were placed on the market or put into service before **2\u202fAugust\u202f2027** must be brought into compliance with the Regulation by **31\u202fDecember\u202f2030**.  \n- **High\u2011risk AI systems** (other than those already covered in the first point) that were placed on the market or put into service before **2\u202fAugust\u202f2026** must be compliant by **2\u202fAugust\u202f2030**.  \n- **General\u2011purpose AI models** that were placed on the market before **2\u202fAugust\u202f2025** must be compliant by **2\u202fAugust\u202f2027** (so they are already covered before 2030).  \n\nThese deadlines are set in **Article\u202f111** of the EU AI Act.  \n\n**References:**  \n[Article\u202f111](#chunk-1)",
+    "category": "ambiguous",
+    "sub_type": "unknown",
+    "score": 0,
+    "reason": "The expected answer indicates the question is too vague and requests clarification, whereas the actual answer provides a detailed response assuming the question is answerable. This does not align with the expected answer, so the response is not grounded."
+  },
+  {
+    "question": "In determining whether a space is 'publicly accessible', how does the presence of an unlocked door relate to the presence of signs restricting access?",
+    "expected_answer": "The factual possibility of access alone, such as an unlocked door, does not imply the space is publicly accessible if there are indications suggesting the contrary, such as signs prohibiting or restricting access.",
+    "actual_answer": "The Act states that the mere possibility of access\u2014such as an unlocked door or an open gate\u2014does **not** automatically make a space publicly accessible if there are indications or circumstances that suggest otherwise.  In particular, signs that prohibit or restrict access are such indications.  Therefore, an unlocked door does not override a sign that limits entry; the space would still be considered non\u2011publicly accessible if the sign indicates restricted access.  \n\n**References:**  \n[Recital 18](#chunk-3) \u2013 definition of \u201cpublicly accessible space\u201d and the rule that an unlocked door alone does not imply public accessibility when signs restrict access.",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states that an unlocked door alone does not make a space publicly accessible if signs indicate restricted access, matching the expected conclusion."
+  },
+  {
+    "question": "How does the classification of AI systems used in migration and asylum relate to international obligations under the UN Convention relating to the Status of Refugees?",
+    "expected_answer": "While certain AI systems in this field are classified as high-risk, the text explicitly states their use should in no circumstances be used to circumvent international obligations under the UN Convention, such as the principle of non-refoulement or denying safe and effective legal avenues to international protection.",
+    "actual_answer": "The EU AI Act explicitly treats AI systems that are used in migration, asylum and border\u2011control contexts as **high\u2011risk**.  \n- **Recital\u202f60** states that such systems must be classified as high\u2011risk because they affect vulnerable persons and must respect fundamental rights, including the right to international protection under the 1951 UN Convention on the Status of Refugees.  \n- **Recital\u202f61** further clarifies that the use of AI in these contexts must not be employed to circumvent the Convention\u2019s obligations or the principle of non\u2011refoulement, and must not deny safe and effective legal avenues for asylum seekers.\n\nThus, the Act links the high\u2011risk classification to the Convention by:\n\n1. **Mandating high\u2011risk status** for AI used by competent public authorities or Union institutions in migration, asylum, and border\u2011control management (e.g., polygraphs, risk assessment tools, biometric identification).  \n2. **Requiring compliance with procedural safeguards** (transparency, accuracy, non\u2011discrimination, data protection) that are consistent with the Convention\u2019s protection of refugees and asylum seekers.  \n3. **Prohibiting the use of AI to circumvent international obligations** such as non\u2011refoulement, ensuring that AI deployment does not undermine the Convention\u2019s core principles.\n\nIn short, the EU AI Act\u2019s high\u2011risk classification for migration\u2011and\u2011asylum AI is designed to reinforce, not undermine, the obligations set out in the UN Convention on the Status of Refugees.\n\nReferences: [Chunk\u202f1](#chunk-1), [Chunk\u202f2](#chunk-2)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer accurately reflects the expected content: it identifies the high\u2011risk classification for migration and asylum AI, and states that such systems must not be used to circumvent UN Convention obligations, including non\u2011refoulement and safe legal avenues."
+  },
+  {
+    "question": "What relationship exists between the fundamental rights impact assessment and the instructions for use provided by the AI system's provider?",
+    "expected_answer": "When performing a fundamental rights impact assessment, the deployer must take into account information relevant to a proper assessment of the impact, which explicitly includes the information given by the provider in the instructions for use.",
+    "actual_answer": "The EU AI Act requires that a fundamental\u2011rights impact assessment (FRIA) for a high\u2011risk AI system must **incorporate the information supplied by the provider in the system\u2019s instructions for use**.  \n- Article\u202f27(1)(d) states that the FRIA must \u201ctake into account the information given by the provider pursuant to Article\u202f13\u201d (i.e., the instructions for use).  \n- Article\u202f27(1)(e) further requires that the assessment describe the implementation of human\u2011oversight measures \u201caccording to the instructions for use\u201d.  \n- The preamble (Recital\u202f97) reiterates that the FRIA should \u201ctake into account information relevant to a proper assessment of the impact, including but not limited to the information given by the provider of the high\u2011risk AI system in the instructions for use\u201d.\n\nThus, the instructions for use are a mandatory source of data for the FRIA and are explicitly referenced as part of the assessment\u2019s content and the human\u2011oversight measures it must describe.  \n\nReferences: [Article\u202f27](#chunk-1), [Article\u202f27](#chunk-2), [Recital\u202f97](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states that the fundamental rights impact assessment must incorporate information from the provider\u2019s instructions for use, matching the expected relationship."
+  },
+  {
+    "question": "How does the requirement for human oversight in Article 14 connect to the risk management system detailed in Article 9 for high-risk AI systems?",
+    "expected_answer": "The human oversight measures described in Article 14 aim to prevent or minimise risks that may persist despite the application of other requirements, complementing the continuous iterative risk management system established in Article 9 that identifies, evaluates, and adopts targeted measures to address risks throughout the AI system's lifecycle.",
+    "actual_answer": "Human\u2011oversight in Article\u202f14 is a concrete operationalisation of the risk\u2011management framework set out in Article\u202f9.  \nArticle\u202f9 requires that a high\u2011risk AI system be accompanied by a continuous risk\u2011management system that identifies, evaluates, and mitigates risks throughout its lifecycle. Article\u202f14 then specifies that, as part of that system, the design and deployment of the AI must include \u201chuman\u2011machine interface tools\u201d and other measures that allow natural persons to effectively oversee the system during use.  \n\nIn practice, the risk\u2011management steps in Article\u202f9 (identification of foreseeable risks, estimation of risk levels, and adoption of targeted mitigation measures) feed directly into the oversight measures of Article\u202f14. For example, the risk\u2011management process must determine which risks persist after other controls are applied; Article\u202f14 then mandates that oversight measures be \u201ccommensurate with the risks, level of autonomy and context of use\u201d (Article\u202f14, paragraph\u202f3). The oversight tools and procedures (e.g., monitoring, intervention, verification by two persons for certain Annex\u202fIII systems) are therefore designed to address the residual risks identified by the risk\u2011management system.  \n\nThus, Article\u202f14 operationalises the risk\u2011management outcomes of Article\u202f9 by ensuring that the system\u2019s design, deployment, and user interface provide the necessary human\u2011control mechanisms to prevent or minimise the risks that the risk\u2011management process has identified.  \n\nReferences: [Article\u202f14](#chunk-1), [Article\u202f9](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer accurately explains that Article 14's human\u2011oversight measures are designed to address residual risks identified by Article 9's continuous risk\u2011management system, aligning with the expected explanation."
+  },
+  {
+    "question": "What verification steps must both an importer and a distributor take regarding the CE marking and the EU declaration of conformity before placing or making a high-risk AI system available on the market?",
+    "expected_answer": "Both the importer (Article 23) and the distributor (Article 24) must verify that the high-risk AI system bears the required CE marking and is accompanied by a copy of the EU declaration of conformity.",
+    "actual_answer": "**Verification steps required before placing or making a high\u2011risk AI system available on the market**\n\n| Actor | Verification actions |\n|-------|----------------------|\n| **Importer** | 1. Confirm that the provider has completed the conformity\u2011assessment procedure (Article\u202f43). <br>2. Verify that the provider has produced the technical documentation (Article\u202f11, Annex\u202fIV). <br>3. Check that the system bears the required CE marking and is accompanied by the EU declaration of conformity (Article\u202f47) and instructions for use. <br>4. Ensure the provider has appointed an authorised representative (Article\u202f22(1)). <br>5. If any of the above is missing or the system appears non\u2011conformant, the importer must **not** place the system on the market until conformity is achieved. |\n| **Distributor** | 1. Verify that the system bears the required CE marking and is accompanied by the EU declaration of conformity (Article\u202f47) and instructions for use. <br>2. Confirm that the provider and the importer (where applicable) have complied with their obligations under Article\u202f16(b) and (c) and Article\u202f23(3). <br>3. If the distributor has reason to believe the system is non\u2011conformant, it must **not** make the system available on the market until conformity is restored. |\n\nThese steps are set out in **Article\u202f23** (importer obligations) and **Article\u202f24** (distributor obligations) of Chapter\u202fIII, Section\u202f3 of the EU AI Act. The requirement for the CE marking and the EU declaration of conformity is also reiterated in the pre\u2011amble (Recital\u202f129) and detailed in **Article\u202f47**.\n\n**References**\n\n- [Article\u202f23 \u2013 Obligations of importers](#chunk-2)\n- [Article\u202f24 \u2013 Obligations of distributors](#chunk-1)\n- [Article\u202f47 \u2013 EU declaration of conformity](#chunk-5)\n- [Recital\u202f129 \u2013 CE marking requirement](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer accurately explains that Article 14's human\u2011oversight measures are designed to address residual risks identified by Article 9's continuous risk\u2011management system, aligning with the expected explanation."
+  },
+  {
+    "question": "How do the rules for the validity of certificates differ when a notified body ceases activities versus when its designation is withdrawn?",
+    "expected_answer": "When a notified body ceases activities, certificates may remain valid for nine months if another notified body assumes responsibility and completes a full assessment by the end of that period. When a designation is withdrawn, certificates remain valid for nine months if the national competent authority confirms no risk and another notified body completes assessment within 12 months. The provisional validity can be extended up to 12 months.",
+    "actual_answer": "When a notified body stops its conformity\u2011assessment activities, the certificates it has issued can stay valid for **up to nine months** after the cessation, **provided that another notified body has written confirmation that it will take over responsibility for the high\u2011risk AI systems covered by those certificates** and will complete a full assessment before the nine\u2011month period ends. The notifying authority will then withdraw the notified body\u2019s designation.  \n\nWhen a notified body\u2019s designation is **withdrawn** (for example, because it no longer meets the requirements of Article\u202f31), the certificates it issued can also remain valid for **up to nine months**, but only if:  \n1. The national competent authority of the Member State where the provider is registered confirms that there is no risk to health, safety or fundamental rights; and  \n2. Another notified body confirms in writing that it will assume immediate responsibility for those AI systems and will complete its assessment within 12\u202fmonths of the withdrawal. The national competent authority may extend the provisional validity in three\u2011month increments, not exceeding 12\u202fmonths in total.  \n\n**Key difference**:  \n- **Cessation** requires a written commitment from a new notified body to assume responsibilities and complete the assessment within the nine\u2011month window.  \n- **Designation withdrawal** adds an additional requirement that the national competent authority confirms no risk and allows for a possible 12\u2011month assessment period by the new notified body, with optional extensions of the provisional validity.\n\n**References**  \n[Article\u202f36 \u2013 Changes to notifications](#chunk-1), [Article\u202f36 \u2013 Changes to notifications](#chunk-2), [Article\u202f36 \u2013 Changes to notifications](#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer accurately captures the key differences: both scenarios allow up to nine months of provisional validity, but cessation requires a new notified body to complete assessment within nine months, while withdrawal adds a national competent authority risk confirmation and allows up to 12 months for the new notified body to complete assessment, with possible extensions up to 12 months."
+  },
+  {
+    "question": "What additional obligations do providers of general-purpose AI models with systemic risk have compared to providers of standard general-purpose AI models?",
+    "expected_answer": "In addition to the obligations for standard models (Article 53), providers of models with systemic risk must perform model evaluation including adversarial testing, assess and mitigate possible systemic risks at Union level, report serious incidents without undue delay, and ensure an adequate level of cybersecurity protection (Article 55).",
+    "actual_answer": "Providers of **general\u2011purpose AI models with systemic risk** must fulfil all obligations that apply to ordinary general\u2011purpose AI models (Articles\u202f53\u202fand\u202f54) **plus** the following additional duties:\n\n| Additional obligation | What it requires |\n|-----------------------|------------------|\n| **(a) System\u2011wide model evaluation** | Conduct model evaluation using standardised protocols and tools that reflect the state of the art, including adversarial testing to identify and mitigate systemic risks. |\n| **(b) Union\u2011level systemic\u2011risk assessment** | Assess and mitigate possible systemic risks that may arise from the model\u2019s development, market placement, or use, identifying their sources at the Union level. |\n| **(c) Incident reporting** | Keep track of, document, and report serious incidents and corrective measures to the AI Office and, where appropriate, to national competent authorities without undue delay. |\n| **(d) Cybersecurity protection** | Ensure an adequate level of cybersecurity for the model and its physical infrastructure throughout its lifecycle. |\n\nProviders may demonstrate compliance by following an approved code of practice (Article\u202f56) until a harmonised standard is published; otherwise they must provide alternative adequate means of compliance for assessment by the Commission. All information and documentation obtained under these obligations, including trade secrets, are subject to the confidentiality rules in Article\u202f78.\n\n**References**: [Article\u202f55](#chunk-1)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly lists the additional obligations\u2014model evaluation with adversarial testing, Union-level systemic risk assessment, incident reporting, and cybersecurity protection\u2014matching the expected answer."
+  },
+  {
+    "question": "How does the maximum reporting deadline for a serious incident involving the death of a person compare to the standard maximum reporting deadline for a serious incident?",
+    "expected_answer": "For a serious incident involving a death, the report must be made no later than 10 days after becoming aware of it, whereas the standard maximum deadline is no later than 15 days.",
+    "actual_answer": "The EU AI Act sets two different maximum reporting deadlines for serious incidents involving high\u2011risk AI systems:\n\n| Incident type | Deadline for reporting |\n|---------------|------------------------|\n| **General serious incident** | **15 days** after the provider or deployer becomes aware of the incident (Article\u202f73, paragraph\u202f2). |\n| **Serious incident that results in the death of a person** | **10 days** after the provider or deployer becomes aware of the incident (Article\u202f73, paragraph\u202f4). |\n\nThus, when a death occurs, the reporting deadline is shortened by five days compared with the standard 15\u2011day deadline for other serious incidents.\n\n**References**  \n[Article\u202f73](#chunk-1)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states that a serious incident involving a death must be reported within 10 days, while the standard deadline for other serious incidents is 15 days, matching the expected answer."
+  },
+  {
+    "question": "According to Article 77, by what date must each Member State identify and publish the list of public authorities protecting fundamental rights, and what power do these authorities have regarding documentation?",
+    "expected_answer": "By 2 November 2024, they must identify the authorities. These authorities have the power to request and access any documentation created or maintained under the Regulation when necessary to fulfill their mandates.",
+    "actual_answer": "The Act requires that **by 2\u202fNovember\u202f2024** each Member State must identify the public authorities or bodies that supervise or enforce the respect of fundamental\u2011rights obligations in relation to high\u2011risk AI systems and publish a publicly available list of those authorities.  \n\nThese authorities are empowered to:\n\n1. **Request and access any documentation** created or maintained under the Regulation, provided it is in an accessible language and format, when such access is necessary for effectively carrying out their mandate within the limits of their jurisdiction.  \n2. If the available documentation is insufficient to determine whether a fundamental\u2011rights infringement has occurred, they may **make a reasoned request to the market\u2011surveillance authority** to organise testing of the high\u2011risk AI system through technical means, with the market\u2011surveillance authority coordinating the testing in close cooperation with the requesting authority.\n\n**References:**  \n[Article\u202f77](#chunk-1)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states the 2 November 2024 deadline and that the authorities can request and access any documentation created or maintained under the Regulation to fulfill their mandates, matching the expected answer."
+  },
+  {
+    "question": "How do the maximum administrative fines for prohibited AI practices in Article 5 compare between general offenders under Article 99 and Union institutions under Article 100?",
+    "expected_answer": "Under Article 99, general offenders face fines up to EUR 35 000 000 or 7 % of worldwide annual turnover, whichever is higher. Under Article 100, Union institutions, bodies, offices, and agencies face fines of up to EUR 1 500 000 for the same infringement.",
+    "actual_answer": "General offenders (operators, undertakings, etc.) under Article\u202f99 may be fined up to **EUR\u202f35\u202fmillion** or **7\u202f% of their total worldwide annual turnover** for the preceding financial year, whichever is higher.  \nUnion institutions, bodies, offices or agencies under Article\u202f100 may be fined up to **EUR\u202f1\u202f500\u202f000** for non\u2011compliance with the prohibition of the AI practices referred to in Article\u202f5.\n\n**References**  \n[Article\u202f99](#chunk-1), [Article\u202f100](#chunk-4)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states the maximum fines for general offenders (EUR 35\u202fmillion or 7% of worldwide turnover) and for Union institutions (EUR 1\u202f500\u202f000), matching the expected answer."
+  },
+  {
+    "question": "While Annex II lists criminal offences for which certain exceptions may apply, does Annex III classify AI systems used by law enforcement to evaluate the reliability of evidence in the prosecution of these offences as high-risk?",
+    "expected_answer": "Yes, under Annex III, AI systems intended to be used by law enforcement authorities to evaluate the reliability of evidence in the course of the investigation or prosecution of criminal offences are classified as high-risk AI systems.",
+    "actual_answer": "No answer provided.",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 0,
+    "reason": "The AI failed to provide any answer, so it does not match the expected factual conclusion."
+  },
+  {
+    "question": "What are the differences between the information a provider must submit when registering a high-risk AI system under Annex VIII Section A versus the general description they must provide for a general-purpose AI model under Annex XI Section 1?",
+    "expected_answer": "Annex VIII Section A requires details like the AI system trade name, status (on the market/in service), and certificates from a notified body. Conversely, Annex XI Section 1 requires information such as the model's tasks, architecture and number of parameters, modality, acceptable use policies, and license.",
+    "actual_answer": "No answer provided.",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 0,
+    "reason": "The answer is missing; the AI failed to provide the required comparison and thus did not correctly address the question."
+  },
+  {
+    "question": "How does the technical documentation for general-purpose AI models provided by all providers (Annex XI) differ from the transparency information given to downstream providers (Annex XII) regarding energy consumption?",
+    "expected_answer": "Annex XI Section 1 requires information on the known or estimated energy consumption of the model, whereas Annex XII does not require this information to be passed to downstream providers.",
+    "actual_answer": "Annex\u202fXI (technical documentation for all providers of general\u2011purpose AI models) explicitly requires that the documentation contain **known or estimated energy consumption of the model** (see Annex\u202fXI\u202f\u00a71\u202f(5) \u2013 \u201cknown or estimated energy consumption of the model\u201d).  \nAnnex\u202fXII (transparency information for downstream providers who integrate the model) does **not** list energy consumption as a required element; its minimum content focuses on tasks, acceptable use, release date, interaction with hardware, software versions, architecture, parameters, modality, licence, and data used for training, but omits any mention of energy consumption.\n\n**Bottom line:** Annex\u202fXI obliges providers to disclose energy consumption, whereas Annex\u202fXII does not require such disclosure to downstream providers.  \n\nReferences: [Annex\u202fXI \u00a71\u202f(5)](#chunk-2), [Annex\u202fXII] (#chunk-3)",
+    "category": "cross-reference",
+    "sub_type": "same_document",
+    "score": 1,
+    "reason": "The answer correctly states that Annex XI requires disclosure of known or estimated energy consumption, while Annex XII does not require this information for downstream providers, matching the expected answer."
+  },
+  {
+    "question": "How does the regulation emphasize the interaction between multiple Union harmonisation legislative acts for products containing high-risk AI systems across different sections?",
+    "expected_answer": "The text repeatedly emphasizes that a single product may be subject to multiple legislative acts and must comply with all of them, but offers providers flexibility to integrate testing, reporting, and documentation processes to ensure consistency and avoid unnecessary administrative burdens and costs.",
+    "actual_answer": "The Regulation stresses that products containing high\u2011risk AI systems must be evaluated under **all** applicable Union harmonisation legislation, not just the AI\u2011specific rules. It does this by:\n\n1. **Mandating simultaneous and complementary application** of the AI Regulation and any other Union harmonisation acts that apply to the product (e.g., machinery, medical devices, toys). This ensures that the AI component does not create new risks that the existing product rules do not cover.  \n2. **Providing flexibility** for providers to integrate AI\u2011specific testing, reporting, and documentation into the existing conformity\u2011assessment procedures of the other legislative acts, thereby avoiding duplication and unnecessary administrative burden.  \n3. **Clarifying that the AI Regulation does not override** the obligations of the other acts; a product must still meet all requirements of the relevant sectoral legislation.  \n4. **Defining the product manufacturer as the provider** of the AI system when the AI is a safety component of a product covered by Union harmonisation legislation, thereby extending the AI Regulation\u2019s obligations to the manufacturer.  \n5. **Encouraging voluntary contractual terms** that align with sector\u2011specific requirements, so that third\u2011party suppliers can help the AI provider meet all applicable rules.  \n\nThese provisions collectively ensure that high\u2011risk AI systems are regulated in harmony with existing product rules, preventing gaps or conflicts between the AI Regulation and other Union harmonisation legislation.  \n\nReferences: [Recital 65](#chunk-1), [Recital 50](#chunk-3), [Recital 51](#chunk-3), [Recital 47](#chunk-4), [Recital 63](#chunk-5), [Recital 64](#chunk-5), [Article 25](#chunk-2)",
+    "category": "cross-reference",
+    "sub_type": "repeated",
+    "score": 1,
+    "reason": "The answer accurately captures the key points of the expected answer: it states that a product must comply with all applicable Union harmonisation acts, highlights the flexibility to integrate AI-specific testing, reporting, and documentation into existing procedures, and notes the aim to avoid unnecessary administrative burdens. Thus, it is grounded and correct."
+  },
+  {
+    "question": "What is the general rule for the conformity assessment procedure for high-risk AI systems listed in points 2 to 8 of Annex III, and what is the specific exception regarding this rule?",
+    "expected_answer": "The general rule is to follow the conformity assessment procedure based on internal control (Annex VI) without a notified body. The exception is that the Commission is empowered to adopt delegated acts to amend this and subject them to the conformity assessment procedure involving a notified body (Annex VII).",
+    "actual_answer": "The EU AI Act requires that **high\u2011risk AI systems listed in points\u202f2\u20118 of Annex\u202fIII** be assessed through the **conformity\u2011assessment procedure based on internal control** (Annex\u202fVI). This procedure does **not** involve a notified body; the provider must verify that its quality\u2011management system, technical documentation, and post\u2011market monitoring meet the essential requirements set out in Chapter\u202fIII, Section\u202f2.\n\n**Specific exception**  \nThe Commission is empowered (Article\u202f43\u202f\u00a76) to adopt delegated acts that may **subject those same systems to the conformity\u2011assessment procedure in Annex\u202fVII or parts of it**. The decision to do so must consider how effective the internal\u2011control procedure is at preventing or minimising risks to health, safety, and fundamental rights, and whether sufficient notified\u2011body capacity exists.\n\n---\n\n**References**  \n[Article\u202f43\u202f\u00a72](#chunk-1), [Article\u202f43\u202f\u00a76](#chunk-5)",
+    "category": "cross-reference",
+    "sub_type": "summary_vs_detail",
+    "score": 1,
+    "reason": "The answer correctly states the general rule (internal control procedure without a notified body) and the specific exception (Commission can adopt delegated acts to involve a notified body via Annex VII)."
+  },
+  {
+    "question": "Does the AI Act completely override the UNCRC General Comment No 25 (2021) regarding children's rights in the digital environment?",
+    "expected_answer": "No, the Act states that national law on the protection of minors, taking into account the UNCRC General Comment No 25 (2021), should not be affected by this Regulation insofar as they are not specific to AI systems and pursue other legitimate public interest objectives.",
+    "actual_answer": "The EU AI Act does **not** override the United Nations Convention on the Rights of the Child (UNCRC) or its General Comment\u202fNo\u202f25 (2021).  \nIn its recitals the Act explicitly cites the UNCRC and its General Comment\u202fNo\u202f25, stating that children\u2019s specific rights \u201care enshrined in Article\u202f24 of the Charter and in the United Nations Convention on the Rights of the Child, further developed in the UNCRC General Comment\u202fNo\u202f25 as regards the digital environment.\u201d The Act therefore incorporates those principles rather than superseding them.  \n\n**References**: [Recital\u202f48](#chunk-1), [Recital\u202f48](#chunk-4)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer correctly states that the AI Act does not override the UNCRC General Comment No 25 and that it incorporates its principles, matching the expected answer."
+  },
+  {
+    "question": "Does the exception for free and open-source AI components apply to components provided against a price or otherwise monetised?",
+    "expected_answer": "No, AI components that are provided against a price or otherwise monetised should not benefit from the exceptions provided to free and open-source AI components, with the exception of transactions between microenterprises.",
+    "actual_answer": "The exception for free and open\u2011source AI components **does not** extend to components that are sold or otherwise monetised.  \nRecital\u202f103 states that AI components \u201cprovided against a price or otherwise monetised \u2026 should not benefit from the exceptions provided to free and open\u2011source AI components.\u201d  \nRecital\u202f104 reiterates that the exception applies only to components released under a free and open\u2011source licence and that monetised offerings are excluded.\n\n**References**: [Recital\u202f103](#chunk-1), [Recital\u202f104](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer correctly states that the exception does not apply to monetised components, matching the factual conclusion of the expected answer. The omission of the microenterprise nuance does not affect the correctness of the response to the question asked."
+  },
+  {
+    "question": "Does the transparency obligation for deep fakes impede the display or enjoyment of an evidently satirical or artistic work?",
+    "expected_answer": "No, the transparency obligation is limited to disclosing the existence of such generated content in an appropriate manner that does not hamper the display, enjoyment, or normal exploitation of the work, while maintaining its utility and quality.",
+    "actual_answer": "The EU AI Act explicitly states that the transparency obligation for deep\u2011fakes is **not** intended to restrict the display or enjoyment of works that are evidently creative, satirical, artistic, fictional or analogous.  \nIn Article\u202f50, paragraph\u202f4, it says:\n\n> \u201cWhere the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does **not hamper the display or enjoyment of the work**.\u201d\n\nThus, the requirement to label deep\u2011fake content does not impede the rights to freedom of expression or the arts, provided the disclosure is made in a way that does not interfere with the work\u2019s display or enjoyment.\n\n**References**  \n[Article\u202f50, paragraph\u202f4](#chunk-2)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer accurately reflects the expected conclusion that the transparency obligation does not impede the display or enjoyment of satirical or artistic works, matching the factual content of the expected answer."
+  },
+  {
+    "question": "Are AI systems released under free and open-source licenses completely exempt from the AI Act without any exceptions?",
+    "expected_answer": "No, the regulation does not apply to free and open-source AI systems unless they are placed on the market or put into service as high-risk AI systems or as an AI system that falls under Article 5 or 50.",
+    "actual_answer": "No.  \nThe EU AI Act explicitly excludes AI systems that are released under free and open\u2011source licences **only** when they are not placed on the market or put into service as a high\u2011risk system, or as an AI system that falls under Article\u202f5 (prohibited practices) or Article\u202f50 (high\u2011risk AI systems). In all other cases, such systems are still subject to the Act\u2019s obligations, including transparency and risk\u2011management requirements.  \n\n**References**:  \n[Article\u202f12](#chunk-4) \u2013 \u201cThis Regulation does not apply to AI systems released under free and open\u2011source licences, unless they are placed on the market or put into service as high\u2011risk AI systems or as an AI system that falls under Article\u202f5 or 50.\u201d",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer correctly states that free and open-source AI systems are not fully exempt; they are exempt only if not placed on the market or used as high\u2011risk or prohibited systems, matching the expected answer."
+  },
+  {
+    "question": "Which AI practices are NOT prohibited by Article 5 when it comes to biometric categorisation systems based on biometric data?",
+    "expected_answer": "The prohibition does not cover any labelling or filtering of lawfully acquired biometric datasets, such as images, based on biometric data or categorizing of biometric data in the area of law enforcement.",
+    "actual_answer": "The EU AI Act\u2019s Article\u202f5 explicitly excludes the following from its prohibition on biometric\u2011categorisation systems:\n\n1. **Labelling or filtering of lawfully acquired biometric datasets** \u2013 e.g., sorting images by hair colour, eye colour, or other biometric traits when the data were obtained in compliance with Union or national law.  \n2. **Categorising biometric data for law\u2011enforcement purposes** \u2013 e.g., using biometric categorisation to support police investigations or other lawful security activities.\n\nThese are the only AI practices involving biometric categorisation that Article\u202f5 does not prohibit.\n\nReferences: [Article\u202f5](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer correctly identifies that Article\u202f5 does not prohibit labelling or filtering of lawfully acquired biometric datasets and does not prohibit categorising biometric data for law\u2011enforcement purposes, matching the expected answer."
+  },
+  {
+    "question": "What is NOT considered a substantial modification for high-risk AI systems that continue to learn after being placed on the market?",
+    "expected_answer": "Changes to the high-risk AI system and its performance that have been pre-determined by the provider at the moment of the initial conformity assessment and are part of the information contained in the technical documentation.",
+    "actual_answer": "For high\u2011risk AI systems that continue to learn after being placed on the market or put into service, a change **is not considered a substantial modification** if:\n\n* the change was **pre\u2011determined by the provider at the time of the initial conformity assessment**, and  \n* it is **included in the technical documentation** referred to in point\u202f2(f) of Annex\u202fIV.\n\nIn other words, any pre\u2011planned, documented learning updates that were part of the original conformity assessment do not trigger a new conformity assessment or constitute a substantial modification.  \n\nReferences: [Article\u202f43](#chunk-2)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer correctly states that changes pre\u2011determined at the initial conformity assessment and documented in the technical documentation are not considered substantial modifications."
+  },
+  {
+    "question": "Is the withdrawal of informed consent by a subject in real-world testing permitted to retroactively invalidate the testing activities that were already carried out?",
+    "expected_answer": "No, the withdrawal of the informed consent shall not affect the activities already carried out.",
+    "actual_answer": "The EU AI Act explicitly states that a subject\u2019s withdrawal of informed consent **does not affect the activities already carried out** during real\u2011world testing.  \nThis is set out in **Article\u202f60(5)**, which reads:\n\n> \u201cAny subjects of the testing in real\u2011world conditions, or their legally designated representative, \u2026 may, without any resulting detriment and without having to provide any justification, withdraw from the testing at any time by revoking their informed consent and may request the immediate and permanent deletion of their personal data. **The withdrawal of the informed consent shall not affect the activities already carried out.**\u201d\n\n**References:**  \n[Article\u202f60(5)](#chunk-2)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer correctly states that withdrawal of informed consent does not affect activities already carried out, matching the expected answer."
+  },
+  {
+    "question": "Are national competent authorities allowed to unconditionally disclose confidential information exchanged among themselves regarding high-risk AI systems used for border control?",
+    "expected_answer": "No. Information exchanged on a confidential basis shall not be disclosed without prior consultation of the originating national competent authority and the deployer when it would jeopardise public and national security interests.",
+    "actual_answer": "National competent authorities **cannot** unconditionally disclose confidential information that has been exchanged among themselves about high\u2011risk AI systems used for border control.  \n\nArticle\u202f78 of the EU AI Act sets out strict confidentiality obligations. It states that any information exchanged on a confidential basis between national competent authorities (or between a national competent authority and the Commission) **shall not be disclosed without prior consultation of the originating national competent authority and the deployer** when the AI system is used by law\u2011enforcement, border\u2011control, immigration or asylum authorities, and only if such disclosure would not jeopardise public and national security interests. The article also clarifies that the exchange must not include sensitive operational data of law\u2011enforcement activities.\n\n**References**  \n[Article\u202f78](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The answer correctly states that national competent authorities cannot unconditionally disclose confidential information about high\u2011risk AI systems used for border control, and it accurately reflects the requirement for prior consultation and the security exception, matching the expected answer."
+  },
+  {
+    "question": "Under Annex VII, is the notified body forbidden from directly carrying out adequate tests if they are not satisfied with the tests carried out by the provider?",
+    "expected_answer": "No, the notified body is not forbidden. If they are not satisfied with the tests carried out by the provider, the notified body shall itself directly carry out adequate tests, as appropriate.",
+    "actual_answer": "Under Annex\u202fVII the notified body is **not** forbidden from carrying out its own tests.  \nWhen the notified body is not satisfied with the tests performed by the provider, it is expressly authorized to \u201cdirectly carry out adequate tests, as appropriate\u201d (Annex\u202fVII, \u00a74.4).  \n\n**References**  \n[Annex\u202fVII, \u00a74.4](#chunk-2)",
+    "category": "stress-test",
+    "sub_type": "negation",
+    "score": 1,
+    "reason": "The actual answer correctly states that the notified body is not forbidden from carrying out its own tests and is authorized to do so if unsatisfied with the provider's tests, matching the expected answer."
+  },
+  {
+    "question": "According to the definitions provided, is an emotion recognition system permitted to detect the state of fatigue of professional pilots?",
+    "expected_answer": "The definition of 'emotion recognition system' does not include physical states such as fatigue. Therefore, systems used in detecting the state of fatigue of professional pilots for the purpose of preventing accidents do not fall under this specific definition, meaning they are not regulated as emotion recognition systems.",
+    "actual_answer": "No.  \nThe EU AI Act\u2019s definition of an \u201cemotion recognition system\u201d (Recital\u202f18) explicitly excludes the detection of physical states such as fatigue. It states that systems used to detect the state of fatigue of professional pilots or drivers for the purpose of preventing accidents are **not** considered emotion\u2011recognition systems. Therefore, an emotion\u2011recognition system is not permitted to perform fatigue detection of pilots.  \n\n**References:**  \n[Recital\u202f18](#chunk-1), [Recital\u202f18](#chunk-3)",
+    "category": "stress-test",
+    "sub_type": "edge_of_chunk",
+    "score": 1,
+    "reason": "The answer correctly states that fatigue detection of professional pilots is excluded from the definition of an emotion recognition system, matching the expected conclusion."
+  },
+  {
+    "question": "Is an AI system used to monitor the performance of individuals providing services through platforms considered a high-risk system?",
+    "expected_answer": "Yes, AI systems used in employment and workers management, which meaningfully involve persons providing services through platforms, are classified as high-risk since they may impact career prospects, livelihoods, and workers' rights.",
+    "actual_answer": "Yes.  \nThe EU AI Act classifies AI systems that **monitor or evaluate the performance and behaviour of persons in work\u2011related contractual relationships**\u2014including those who provide services through platforms\u2014as **high\u2011risk**.  \n\n- **Annex\u202fIII, Article\u202f6(2) (area\u202f4\u202f(b))** lists such systems under the \u201cEmployment, workers\u2019 management and access to self\u2011employment\u201d category.  \n- **Recital\u202f57** explicitly states that AI systems used to monitor performance and behaviour of individuals in work\u2011related contractual relationships should be classified as high\u2011risk.\n\n**References**  \n[Annex\u202fIII](#chunk-3), [Recital\u202f57](#chunk-5)",
+    "category": "stress-test",
+    "sub_type": "edge_of_chunk",
+    "score": 1,
+    "reason": "Answer correctly states that AI systems monitoring performance of platform workers are high\u2011risk and cites relevant EU AI Act provisions."
+  },
+  {
+    "question": "Is an AI model used exclusively for research and prototyping before its placement on the market covered by the definition of general-purpose AI models under this Regulation?",
+    "expected_answer": "No, the definition explicitly does not cover AI models used before their placing on the market for the sole purpose of research, development, and prototyping activities.",
+    "actual_answer": "No.  \nThe Regulation explicitly excludes AI models that are used **solely for research, development and prototyping activities before they are placed on the market** from the definition of general\u2011purpose AI models.  \n\n**References**  \n[Article 1, Recital 97](#chunk-1), [Recital 5](#chunk-5)",
+    "category": "stress-test",
+    "sub_type": "edge_of_chunk",
+    "score": 1,
+    "reason": "The answer correctly states that such AI models are excluded from the definition of general\u2011purpose AI models, matching the expected answer."
+  },
+  {
+    "question": "Is it true that AI systems always operate with complete independence from human involvement?",
+    "expected_answer": "No, AI systems are designed to operate with varying levels of autonomy, meaning they have some degree of independence from human involvement, but not necessarily complete independence.",
+    "actual_answer": "Could you clarify what you mean by \u201ccomplete independence from human involvement\u201d? Are you asking whether the EU AI Act requires AI systems to operate without any human oversight, or are you referring to a specific type of AI system or context?",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 0,
+    "reason": "The response does not provide the factual conclusion that AI systems do not always operate with complete independence; instead it asks for clarification, which is not a correct or grounded answer to the question."
+  },
+  {
+    "question": "Are deployers of high-risk AI systems required to ensure that persons assigned to implement human oversight have the necessary competence and training?",
+    "expected_answer": "Yes, deployers should ensure that the persons assigned to implement the instructions for use and human oversight have the necessary competence, in particular an adequate level of AI literacy, training, and authority.",
+    "actual_answer": "Yes.  \nDeployers of high\u2011risk AI systems must assign human oversight to natural persons who possess the **necessary competence, training and authority** (Article\u202f26\u202f\u00a72). This obligation is reinforced in the recitals, which state that the persons assigned to human oversight must have the required competence, training and authority to carry out that role (Recital\u202f73).  \n\n**References**  \n[Article\u202f26](#chunk-1), [Recital\u202f73](#chunk-2)",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 1,
+    "reason": "The answer correctly states that deployers must ensure the persons assigned to human oversight have the necessary competence, training, and authority, matching the expected answer."
+  },
+  {
+    "question": "Are high-risk AI systems in the area of critical infrastructure required to be registered in the public section of the EU database?",
+    "expected_answer": "No, high-risk AI systems in the area of critical infrastructure should only be registered at the national level.",
+    "actual_answer": "High\u2011risk AI systems that are used in **critical infrastructure** are **not required to be registered in the public section of the EU database**.  \nAccording to the preamble and recitals of the Regulation, such systems must be registered **only at the national level** and are excluded from the publicly accessible EU database.\n\n**References**  \n[Recital 131](#chunk-3), [Recital 132](#chunk-4)",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 1,
+    "reason": "The answer correctly states that high\u2011risk AI systems in critical infrastructure are not required to be registered in the public EU database and must be registered only at the national level, matching the expected answer."
+  },
+  {
+    "question": "Does the AI Act govern AI systems that are placed on the market exclusively for military, defence, or national security purposes?",
+    "expected_answer": "No, the AI Act explicitly states it does not apply to AI systems placed on the market, put into service, or used exclusively for military, defence or national security purposes.",
+    "actual_answer": "The EU AI Act explicitly excludes AI systems that are placed on the market (or put into service) **exclusively for military, defence or national\u2011security purposes**.  \n- **Recital\u202f24** states that such systems are excluded from the scope of the Regulation, regardless of the type of entity that places them on the market.  \n- **Article\u202f2(15\u201116)** reiterates that the Regulation does not apply to AI systems placed on the market or put into service for those excluded purposes.\n\n**References:**  \n[Recital\u202f24](#chunk-1), [Article\u202f2](#chunk-4)",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 1,
+    "reason": "The actual answer correctly states that the AI Act excludes AI systems placed on the market exclusively for military, defence, or national security purposes, matching the expected answer."
+  },
+  {
+    "question": "Yes or No: Can a start-up developing a high-risk AI system provide the elements of the technical documentation in a simplified manner?",
+    "expected_answer": "Yes. SMEs, including start-ups, may provide the elements of the technical documentation specified in Annex IV in a simplified manner.",
+    "actual_answer": "Yes.  \n\nThe Act allows SMEs, including start\u2011ups, to submit the elements of the technical documentation for a high\u2011risk AI system in a simplified form. This is set out in Article\u202f11, which states that SMEs may provide the required information in a simplified manner using a form established by the Commission.  \n\nReferences: [Article\u202f11](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 1,
+    "reason": "The answer correctly states that SMEs, including start-ups, can provide the required technical documentation in a simplified manner, matching the expected answer."
+  },
+  {
+    "question": "Is a general-purpose AI model presumed to have high impact capabilities if the cumulative amount of computation used for its training is greater than 10^24 floating point operations?",
+    "expected_answer": "No, according to Article 51(2), it is presumed to have high impact capabilities when the cumulative amount of computation is greater than 10^25 floating point operations.",
+    "actual_answer": "No.  \nArticle\u202f51(2) of the EU AI Act presumes a general\u2011purpose AI model has high\u2011impact capabilities only when the cumulative amount of computation used for its training **exceeds\u202f10\u00b2\u2075 floating\u2011point operations**. The threshold of\u202f10\u00b2\u2074 is not sufficient for the presumption.  \n\nReferences: [Article\u202f51](#chunk-3)",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 1,
+    "reason": "The answer correctly states that the presumption applies only when the computation exceeds 10^25 floating-point operations, matching the expected answer."
+  },
+  {
+    "question": "Can a Member State maintain a national measure against an AI system if the Commission evaluates and considers the measure to be unjustified?",
+    "expected_answer": "No. If the Commission considers the national measure to be unjustified, the Member State concerned shall withdraw the measure.",
+    "actual_answer": "No.  \nArticle\u202f81 of the EU AI Act requires that if the Commission evaluates a national measure and finds it **unjustified**, the Member State must **withdraw** that measure and inform the Commission.  \n\n**References**  \n[Article\u202f81](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 1,
+    "reason": "The answer correctly states that the Member State must withdraw the measure if the Commission finds it unjustified, matching the expected answer."
+  },
+  {
+    "question": "Does the Court of Justice of the European Union have the power to cancel or increase the fines imposed by the Commission on providers of general-purpose AI models?",
+    "expected_answer": "Yes, under Article 101(5), the Court of Justice of the European Union has unlimited jurisdiction to review decisions fixing a fine and may cancel, reduce or increase the fine imposed.",
+    "actual_answer": "Yes. Article\u202f101(5) of the EU AI Act expressly gives the Court of Justice of the European Union unlimited jurisdiction to review the Commission\u2019s decisions on fines for providers of general\u2011purpose AI models. The Court may **cancel, reduce or increase** such fines.\n\n**References**\n\n- [Article\u202f101](#chunk-1) \u2013 \u201cThe Court of Justice of the European Union shall have unlimited jurisdiction to review decisions of the Commission fixing a fine under this Article. It may cancel, reduce or increase the fine imposed.\u201d",
+    "category": "stress-test",
+    "sub_type": "yes_no",
+    "score": 1,
+    "reason": "The answer correctly states that the Court of Justice of the European Union has unlimited jurisdiction to review, cancel, reduce, or increase fines under Article\u202f101(5) of the EU AI Act, matching the expected answer."
+  },
+  {
+    "question": "If a deployer is submitting information under Annex VIII Section C, do they need to provide a scanned copy of the notified body certificate?",
+    "expected_answer": "No, providing a scanned copy of the notified body certificate is a requirement for providers submitting information under Section A, not for deployers under Section C. Deployers must submit details like a summary of the fundamental rights impact assessment and the URL of the entry in the EU database.",
+    "actual_answer": "No.  \nUnder Annex\u202fVIII\u202fSection\u202fC, only points\u202f1\u20133 of Annex\u202fVIII are required to be submitted.  \nThe requirement to attach a scanned copy of the notified\u2011body certificate is point\u202f9 of Annex\u202fVIII\u202fSection\u202fA, which is **not** part of the points that Section\u202fC covers. Therefore a deployer submitting information under Section\u202fC does not need to provide a scanned copy of the notified\u2011body certificate.  \n\nReferences: [Article\u202f49](#chunk-7)",
+    "category": "stress-test",
+    "sub_type": "multi_hop",
+    "score": 1,
+    "reason": "The answer correctly states that deployers under Annex VIII Section C do not need to provide a scanned copy of the notified body certificate, matching the expected answer."
+  },
+  {
+    "question": "Are high-risk AI systems required to address \"model poisoning\" and \"data poisoning\", and what do these terms mean in the context of AI-specific vulnerabilities?",
+    "expected_answer": "Yes, technical solutions shall include measures to prevent and control attacks trying to manipulate the training data set (data poisoning) or pre-trained components used in training (model poisoning).",
+    "actual_answer": "High\u2011risk AI systems must be **resilient against attacks that manipulate the data or the model itself**.  \nArticle\u202f15(10) of the EU AI Act explicitly requires that the technical solutions to ensure cybersecurity \u201c**include, where appropriate, measures to prevent, detect, respond to, resolve and control for attacks trying to manipulate the training data set (data poisoning), or pre\u2011trained components used in training (model poisoning)**, as well as other AI\u2011specific vulnerabilities such as adversarial examples.\u201d\n\n**Definitions in the Act**\n\n| Term | Meaning in the Act |\n|------|--------------------|\n| **Data poisoning** | An attack that alters the training data set (e.g., inserting, deleting, or modifying records) so that the model learns incorrect or biased patterns. |\n| **Model poisoning** | An attack that targets pre\u2011trained components or models used during training, modifying them so that the resulting system behaves incorrectly or maliciously. |\n\nThese concepts are discussed in the preamble (Recital\u202f76) and reinforced in Article\u202f15, which mandates that high\u2011risk AI systems incorporate technical and organisational measures to counter such attacks.\n\n**References**\n\nReferences: [Article\u202f15](#chunk-6), [Recital\u202f76](#chunk-7)",
+    "category": "stress-test",
+    "sub_type": "exact_term",
+    "score": 1,
+    "reason": "The answer correctly states that high\u2011risk AI systems must address both data poisoning and model poisoning, and it provides accurate definitions of each term, matching the expected answer."
+  },
+  {
+    "question": "When the Commission updates the 'functional specifications' of the EU database for high-risk AI systems, whom are they strictly required to consult?",
+    "expected_answer": "The Commission shall consult the Board.",
+    "actual_answer": "The Commission must consult **the Board** when updating the functional specifications of the EU database for high-risk AI systems.  \n\nReferences: [Article 71](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "exact_term",
+    "score": 1,
+    "reason": "The answer correctly states that the Commission must consult the Board when updating the functional specifications, matching the factual conclusion of the expected answer."
+  },
+  {
+    "question": "Are 'environmental crime' and 'sabotage' specifically listed as criminal offences in Annex II?",
+    "expected_answer": "Yes, both 'environmental crime' and 'sabotage' are specifically listed as criminal offences in Annex II.",
+    "actual_answer": "Yes. Annex\u202fII of the EU AI Act lists both **environmental crime** and **sabotage** as criminal offences referred to in Article\u202f5(1), first subparagraph, point\u202f(h)(iii).\n\n**References:**  \n[Annex\u202fII](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "exact_term",
+    "score": 1,
+    "reason": "The answer correctly states that both 'environmental crime' and 'sabotage' are listed as criminal offences in Annex II, matching the expected answer."
+  },
+  {
+    "question": "Within what timeframe must a deployer of a high-risk AI system for post-remote biometric identification request an authorisation for its use in a targeted search?",
+    "expected_answer": "Ex ante (beforehand), or without undue delay and no later than 48 hours.",
+    "actual_answer": "The deployer of a high\u2011risk AI system for post\u2011remote biometric identification must request an authorisation **ex ante or without undue delay and no later than 48\u202fhours** from the judicial or administrative authority.  \n\n**References:** [Article 26](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "score": 1,
+    "reason": "The answer correctly states that the deployer must request authorization ex ante or within 48 hours, matching the expected answer."
+  },
+  {
+    "question": "After what minimum timeframe can a provider request a reassessment of a general-purpose AI model that has been designated as presenting systemic risks by the Commission?",
+    "expected_answer": "Providers may request reassessment at the earliest six months after the designation decision, and if the designation is maintained, at the earliest six months after that subsequent decision.",
+    "actual_answer": "Providers may request a reassessment no earlier than **six months** after the Commission\u2019s designation decision. If the Commission subsequently maintains the designation, a new request can again be made only after a further six\u2011month period.  \n\n**References:** [Article\u202f52](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "score": 1,
+    "reason": "The answer correctly states that a provider can request a reassessment no earlier than six months after the initial designation, and if the designation is maintained, another reassessment can be requested after an additional six months. This matches the expected answer."
+  },
+  {
+    "question": "What is the maximum initial duration allowed for testing high-risk AI systems in real world conditions before an extension is required, and how long can the extension be?",
+    "expected_answer": "It must not last longer than six months, which may be extended for an additional period of six months.",
+    "actual_answer": "The EU AI Act sets the maximum initial period for real\u2011world testing of high\u2011risk AI systems at **six months**.  \nAn extension may be granted for an **additional six months**, provided the provider or prospective provider notifies the relevant market\u2011surveillance authority in advance and explains the need for the extension.  \n\n**References**  \n- [Article 60](#chunk-1) (lines\u202f9\u201110)",
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "score": 1,
+    "reason": "The answer correctly states the maximum initial duration of six months and the possibility of an additional six\u2011month extension, matching the expected answer."
+  },
+  {
+    "question": "If a provider becomes aware of a widespread infringement on a Monday, what is the latest day by which they must report it to the market surveillance authorities?",
+    "expected_answer": "They must report it no later than two days after becoming aware, which would be Wednesday.",
+    "actual_answer": "The provider must report the widespread infringement **no later than two days after becoming aware**.  \nIf awareness occurs on a Monday, the latest permissible reporting day is **Wednesday**.\n\n**References**  \n[Article\u202f73](#chunk-6) \u2013 Reporting of serious incidents, paragraph\u202f3.",
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "score": 1,
+    "reason": "The answer correctly states that the provider must report no later than two days after becoming aware, which for a Monday is Wednesday, matching the expected answer."
+  },
+  {
+    "question": "Will the third report on the progress of standardisation deliverables for the energy-efficient development of general-purpose AI models be due by 2 August 2036?",
+    "expected_answer": "Yes. According to Article 112, the first report is due by 2 August 2028, and they are submitted every four years thereafter. The second would be in 2032, and the third by 2 August 2036.",
+    "actual_answer": "Yes.  \nThe Act specifies that the Commission must submit a report on the progress of standardisation deliverables for the energy\u2011efficient development of general\u2011purpose AI models **by 2\u202fAugust\u202f2028 and every four years thereafter**.  \nThus the sequence of reports is:\n\n1. 2\u202fAugust\u202f2028  \n2. 2\u202fAugust\u202f2032  \n3. **2\u202fAugust\u202f2036**  \n\nSo the third report will indeed be due by 2\u202fAugust\u202f2036.  \n\nReferences: [Article\u202f112](#chunk-1)",
+    "category": "stress-test",
+    "sub_type": "temporal",
+    "score": 1,
+    "reason": "The actual answer correctly states that the third report is due by 2 August 2036, matching the expected answer."
+  }
+]

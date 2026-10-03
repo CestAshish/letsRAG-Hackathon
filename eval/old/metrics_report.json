@@ -1,0 +1,82 @@
+{
+  "overall": {
+    "correct": 127,
+    "total": 140
+  },
+  "by_category": {
+    "stress-test": {
+      "correct": 40,
+      "total": 42
+    },
+    "cross-reference": {
+      "correct": 24,
+      "total": 28
+    },
+    "out-of-scope": {
+      "correct": 13,
+      "total": 14
+    },
+    "ambiguous": {
+      "correct": 12,
+      "total": 14
+    },
+    "factual": {
+      "correct": 38,
+      "total": 42
+    }
+  },
+  "by_subtype": {
+    "negation": {
+      "correct": 12,
+      "total": 13
+    },
+    "yes_no": {
+      "correct": 9,
+      "total": 10
+    },
+    "same_document": {
+      "correct": 17,
+      "total": 20
+    },
+    "unknown": {
+      "correct": 63,
+      "total": 70
+    },
+    "edge_of_chunk": {
+      "correct": 4,
+      "total": 4
+    },
+    "multi_part": {
+      "correct": 1,
+      "total": 1
+    },
+    "summary_vs_detail": {
+      "correct": 3,
+      "total": 4
+    },
+    "multi_hop": {
+      "correct": 3,
+      "total": 3
+    },
+    "contradictory": {
+      "correct": 2,
+      "total": 2
+    },
+    "repeated": {
+      "correct": 2,
+      "total": 2
+    },
+    "exact_term": {
+      "correct": 4,
+      "total": 4
+    },
+    "paraphrased": {
+      "correct": 1,
+      "total": 1
+    },
+    "temporal": {
+      "correct": 6,
+      "total": 6
+    }
+  }
+}

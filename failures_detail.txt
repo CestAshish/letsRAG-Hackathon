@@ -1,0 +1,95 @@
+F1 | Q: Which operators are NOT subject to fines based on their worldwide annual turnover for non-compliance with the prohibition of AI practices referred to in Article 5?
+EXPECTED: Union institutions, bodies, offices, and agencies are not subject to turnover-based fines; their maximum fine is a fixed amount of up to EUR 1 500 000.
+ACTUAL: Operators that are **not** subject to fines based on their worldwide annual turnover for non‑compliance with the prohibition of AI practices referred to in Article 5 are those that are **not undertakings**.  
+This includes public authorities, bodies, agencies and other non‑entrepreneurial entities. For such operators the fine is capped at a fixed amount (up to €35 million) rather than a percentage of turnover.  
+
+References: [Article 99](#chunk-1)
+REASON: The answer correctly identifies that non-entrepreneurial entities such as public authorities, bodies, and agencies are exempt from turnover-based fines, but it incorrectly states the fixed fine cap as up to €35 million instead of the correct €1.5 million. This factual error makes the answer not fully grounded.
+
+F2 | Q: Do the obligations to draw up technical documentation and provide information to downstream providers apply to all free and open-source general-purpose AI models, and does this include those with systemic risks?
+EXPECTED: No, these obligations generally do not apply to providers of AI models released under a free and open-source licence whose parameters are made publicly available. However, this exception does not apply to general-purpose AI models with systemic risks.
+ACTUAL: Yes.  
+The Regulation requires that **any provider of a general‑purpose AI model**—including those released under a free or open‑source licence—must prepare and keep up‑to‑date technical documentation and must supply the required information to downstream providers that integrate the model.  This obligation is set out in the provisions that apply to providers of general‑purpose AI models (see the text that defines the role of such providers and the transparency measures that must be taken).  
+
+The same set of obligations also covers general‑purpose AI models that are identified as having **systemic risk**.  The Regulation explicitly allows the Commission to amend the list of high‑risk AI systems to include general‑purpose AI models with systemic risk, and the technical‑documentation and transparency requirements for those models are the same as for all other general‑purpose AI models.
+
+**References**  
+References: [Chunk 6](#chunk-6), [Chunk 9](#chunk-9), [Chunk 4](#chunk-4), [Chunk 7](#chunk-7)
+REASON: The actual answer incorrectly states that the obligations apply to all free and open-source general-purpose AI models, whereas the expected answer clarifies that these obligations do not apply to such models unless they have systemic risks. The answer is factually wrong.
+
+F3 | Q: Are conformity assessment bodies allowed to offer consultancy services to the providers of high-risk AI systems they are assessing?
+EXPECTED: No. Notified bodies and their personnel must not engage in any activity that might conflict with their independence of judgement, particularly consultancy services.
+ACTUAL: Not explicitly prohibited.  
+The Regulation does not contain a provision that bars a notified body (the conformity‑assessment body) from providing consultancy or advisory services to a provider of a high‑risk AI system. However, Article 34 sets out the operational obligations of notified bodies, including:
+
+* **Independence and absence of conflicts of interest** – notified bodies must act independently and must avoid any situation that could give rise to a conflict of interest with the provider they are assessing.  
+* **Avoiding unnecessary burdens** – they must not impose undue administrative or compliance costs on the provider.
+
+Therefore, a notified body may offer consultancy services, but only if it can demonstrate that such services do not compromise its independence or create a conflict of interest with the assessment it is performing.  
+
+**References**  
+[Article 34](#chunk-3)
+REASON: The actual answer incorrectly states that consultancy services are permissible under certain conditions, whereas the expected answer clearly states that they are not allowed. The answer does not align with the factual conclusion of the expected answer.
+
+F4 | Q: Does Regulation (EU) 2018/1860 concern the Visa Information System according to Annex X?
+EXPECTED: No, Regulation (EU) 2018/1860 concerns the use of the Schengen Information System for the return of illegally staying third-country nationals. The Visa Information System is covered by Regulations like 2021/1133 and 2021/1134.
+ACTUAL: The EU AI Act does not contain Regulation (EU) 2018/1860, so it does not address the Visa Information System in Annex X.
+REASON: The answer incorrectly states that the EU AI Act does not contain Regulation 2018/1860, which is irrelevant and does not address the Visa Information System. It fails to correctly state that Regulation 2018/1860 does not concern the Visa Information System.
+
+F5 | Q: How does the AI Act reconcile the goal of protecting overriding reasons of public interest with its broader legal basis for the internal market when it comes to remote biometric identification for law enforcement?
+EXPECTED: While the Regulation is primarily based on Article 114 TFEU for uniform protection and the internal market, specific rules concerning the processing of personal data for remote biometric identification, risk assessments, and biometric categorisation by law enforcement are based on Article 16 TFEU.
+ACTUAL: The EU AI Act bases its general legal authority on **Article 16 TFEU** – the principle that the Union may adopt measures to ensure the functioning of the internal market.  In the same breath, the Act’s recitals make it clear that the use of **real‑time remote biometric identification (RBI) systems in publicly accessible spaces for law‑enforcement purposes is “particularly intrusive”** and therefore must be **prohibited except in narrowly defined, high‑public‑interest situations** (e.g., locating missing persons, preventing terrorist attacks, or identifying suspects in serious crimes).  
+
+This dual framing reconciles the two goals in the following way:
+
+| Element | How it is treated in the Act |
+|---------|------------------------------|
+| **Internal‑market basis** | The Act cites Article 16 TFEU as the legal basis for its provisions, ensuring that any restrictions on RBI systems are compatible with the internal‑market framework. |
+| **Public‑interest protection** | Recitals 32‑33 explicitly prohibit RBI for law‑enforcement except where the “substantial public interest outweighs the risks.”  The Act therefore limits the scope of RBI use to a handful of specific, high‑risk scenarios, thereby safeguarding fundamental rights and public interest. |
+| **Lex specialis** | Recital 38 states that the Regulation’s rules on RBI “should apply as lex specialis in respect of the rules on the processing of biometric data contained in Article 10 of Directive 2016/680.”  This means that the AI Act’s stricter, purpose‑specific rules override more general data‑protection rules when it comes to RBI for law‑enforcement. |
+| **National implementation** | Article 5 allows Member States to authorise RBI use only under the conditions listed in paragraph 1, first subparagraph, point (h), and to set detailed national rules.  This gives national authorities the flexibility to balance internal‑market interests with public‑interest safeguards. |
+
+In short, the Act uses the internal‑market legal basis to give itself authority, but it immediately limits that authority through a strict prohibition and narrowly defined exceptions that protect overriding public‑interest concerns.  
+
+**References**  
+[Recital 32](#chunk-1), [Recital 33](#chunk-1), [Recital 38](#chunk-3), [Article 5](#chunk-2)
+REASON: The answer incorrectly identifies the legal basis: it states Article 16 TFEU as the general authority, whereas the expected answer specifies Article 114 TFEU for the internal‑market basis and Article 16 TFEU for the specific RBI rules. Thus the answer does not correctly capture the factual conclusion of the expected answer.
+
+F6 | Q: What are the seven non-binding ethical principles for AI according to the 2019 Ethics guidelines for trustworthy AI?
+EXPECTED: Human agency and oversight; technical robustness and safety; privacy and data governance; transparency; diversity, non-discrimination and fairness; societal and environmental well-being and accountability.
+ACTUAL: I’m sorry, but that information is not contained in the EU AI Act.
+REASON: The answer does not provide the correct seven ethical principles and incorrectly claims the information is not in the EU AI Act, which is a hallucination.
+
+F7 | Q: Does the Regulation apply to AI systems developed or used exclusively for military, defence or national security purposes?
+EXPECTED: No, AI systems developed or used exclusively for military, defence or national security purposes are excluded from the scope of this Regulation.
+ACTUAL: Yes. The Regulation explicitly excludes AI systems that are placed on the market, put into service, or used (with or without modification) exclusively for military, defence or national security purposes, regardless of the type of entity carrying out those activities. This exclusion is set out in Article 2 (1) and (15) of the Regulation.  
+
+**References**  
+[Article 2](#chunk-3) – Scope, paragraphs 1 and 15.
+REASON: The actual answer incorrectly states that the Regulation applies to AI systems used exclusively for military, defence or national security purposes, whereas the correct conclusion is that such systems are excluded from the scope of the Regulation.
+
+F8 | Q: What specific technical metrics are required to prove the energy-efficient development of a general-purpose AI model under the harmonised standards?
+EXPECTED: The text mentions that standardisation requests shall ask for deliverables on the energy-efficient development of general-purpose AI models, but it does not specify the exact technical metrics required.
+ACTUAL: The EU AI Act requires that a general‑purpose AI model’s technical documentation demonstrate **energy‑efficient development** by providing the following measurable metrics:
+
+| Metric | What it measures | Where it is required |
+|--------|------------------|----------------------|
+| **Number of floating‑point operations (FLOPs)** used during training | Quantifies the computational effort and, indirectly, the energy required | Annex XI, point (d) – “the computational resources used to train the model (e.g., number of floating point operations)” |
+| **Training time** | Indicates the duration of the training process, which correlates with energy consumption | Annex XI, point (d) – “training time” |
+| **Known or estimated energy consumption** | Directly shows the amount of energy the model consumes (e.g., in kWh) | Annex XI, point (e) – “known or estimated energy consumption of the model” |
+| **Other relevant training details** | Includes any additional data that helps assess resource performance (e.g., hardware type, batch size) | Annex XI, point (d) – “other relevant details related to the training” |
+
+The Act also allows the Commission to adopt delegated acts that **detail measurement and calculation methodologies** for these metrics (Article 53(5)). This ensures that the metrics are comparable and verifiable across providers.
+
+**References**
+
+- [Article 40](#chunk-1) – Harmonised standards and standardisation deliverables, requiring reporting on energy‑efficient development.  
+- [Annex XI, Section 1](#chunk-3) – Technical documentation for general‑purpose AI models, specifying the required metrics.  
+- [Article 53(5)](#chunk-4) – Commission’s power to adopt delegated acts detailing measurement and calculation methodologies.
+REASON: The expected answer states that the text does not specify exact technical metrics, whereas the actual answer provides a list of specific metrics. This contradicts the expected answer, so the response is not grounded.
+
+F9 | Q: Is it true that AI systems always operate with complete independence from human involvement?
+EXPECTED: No, AI systems are designed to operate with varying levels of autonomy, meaning they have some degree of independence from human involvement, but not necessarily complete independence.
+ACTUAL: Could you clarify what you mean by “complete independence from human involvement”? Are you asking whether the EU AI Act states that AI systems must operate autonomously, or are you referring to a specific type of AI system or context?
+REASON: The answer does not provide the expected factual conclusion and instead requests clarification.
+

@@ -9,12 +9,11 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 WORKDIR /app
 
-# 1. CPU-only torch first (skips ~5GB of NVIDIA/CUDA junk)
-# 2. Then sync the rest of the deps
-COPY pyproject.toml uv.lock ./
+# Skip uv.lock to avoid universal lockfile enforcing PyPI's CUDA dependencies
+COPY pyproject.toml ./
 RUN uv venv && \
-    uv pip install torch --index-url https://download.pytorch.org/whl/cpu && \
-    uv sync --no-dev
+    uv pip install -r pyproject.toml --extra-index-url https://download.pytorch.org/whl/cpu
+
 
 # Playwright Chromium + all its system deps
 RUN uv run playwright install --with-deps chromium

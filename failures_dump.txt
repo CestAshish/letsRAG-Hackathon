@@ -1,0 +1,9 @@
+F1 | Q: Which operators are NOT subject to fines based on their worldwide annual turnover for non-compliance with the prohibition of AI practices referred to in Article 5?
+F2 | Q: Do the obligations to draw up technical documentation and provide information to downstream providers apply to all free and open-source general-purpose AI models, and does this include those with systemic risks?
+F3 | Q: Are conformity assessment bodies allowed to offer consultancy services to the providers of high-risk AI systems they are assessing?
+F4 | Q: Does Regulation (EU) 2018/1860 concern the Visa Information System according to Annex X?
+F5 | Q: How does the AI Act reconcile the goal of protecting overriding reasons of public interest with its broader legal basis for the internal market when it comes to remote biometric identification for law enforcement?
+F6 | Q: What are the seven non-binding ethical principles for AI according to the 2019 Ethics guidelines for trustworthy AI?
+F7 | Q: Does the Regulation apply to AI systems developed or used exclusively for military, defence or national security purposes?
+F8 | Q: What specific technical metrics are required to prove the energy-efficient development of a general-purpose AI model under the harmonised standards?
+F9 | Q: Is it true that AI systems always operate with complete independence from human involvement?

@@ -1,0 +1,117 @@
+
+--- QUESTION 1 ---
+Q: Are the rules for it applied everywhere?
+EXPECTED: It is unclear what 'it' and 'everywhere' refer to. Clarification is needed to determine whether 'it' refers to the AI Act or a specific AI system, and whether 'everywhere' refers to the EU, specific sectors, or globally.
+ACTUAL: I’m not sure what “it” refers to. Could you clarify which rules or which part of the EU AI Act you’re asking about?
+SCORE: 1
+
+--- QUESTION 2 ---
+Q: What does the threshold mean for the systems?
+EXPECTED: It is unclear which threshold is being referred to (e.g., the floating point operations threshold for systemic risk) and what type of 'systems' (general-purpose models, high-risk AI systems) is being discussed.
+ACTUAL: Could you please clarify which threshold you are referring to? For example, are you asking about the data quality threshold, the risk‑level threshold for high‑risk AI, or another specific threshold defined in the EU AI Act?
+SCORE: 1
+
+--- QUESTION 3 ---
+Q: What happens if they don't respond in time during the testing phase?
+EXPECTED: Clarification needed: Who is 'they' and what testing phase are you referring to? (e.g., a market surveillance authority responding to a real-world testing plan within 30 days).
+ACTUAL: I’m not sure which party you’re referring to with “they” and what kind of response you mean (e.g., to a market‑surveillance request, to a testing deadline, or to participants’ consent). Could you clarify who “they” are and what response you’re concerned about during the testing phase?
+SCORE: 1
+
+--- QUESTION 4 ---
+Q: Does it apply to my biometric data?
+EXPECTED: This is ambiguous because 'it' is not defined (could refer to a specific system or the regulation as a whole) and 'my' does not provide the context of where or how the biometric data is being processed, which is crucial for determining how the regulation applies.
+ACTUAL: Yes. The EU AI Act specifically addresses the processing of biometric data.  
+- **Article 3** defines “biometric data” as personal data derived from physical, physiological or behavioural characteristics (e.g., facial images, fingerprints).  
+- The Act classifies AI systems that use biometric data for identification, verification, categorisation or emotion‑recognition as **high‑risk** (Recital 54) and, in certain cases, **prohibited** (Recital 30).  
+- For law‑enforcement use of real‑time remote biometric identification, the Act imposes strict safeguards and authorisation requirements (Recital 38).  
+
+Therefore, if your biometric data is processed by an AI system—especially for identification, verification, categorisation, or emotion‑recognition—the EU AI Act applies to that processing.  
+
+References: [Article 3](#chunk-1), [Recital 30](#chunk-5), [Recital 38](#chunk-4)
+SCORE: 1
+
+--- QUESTION 5 ---
+Q: When does the law start applying to the systems and models?
+EXPECTED: Could you please clarify which specific systems or models you are referring to? The AI Act has different application dates (e.g., 2 August 2026 for general provisions, 2 February 2025 for prohibitions, 2 August 2025 for general-purpose AI models and governance, etc.).
+ACTUAL: The EU AI Act becomes applicable to AI systems and models on the following dates:
+
+| Provision | Effective date | What it covers |
+|-----------|----------------|----------------|
+| **Full regulation** (all obligations, conformity‑assessment, governance, etc.) | **2 August 2026** | Applies to all AI systems and models that are placed on the market or put into service after this date. |
+| **Prohibited practices** (e.g., emotion‑recognition in the workplace, social scoring, etc.) | **2 February 2025** | These prohibitions take effect earlier to mitigate unacceptable risks. |
+| **Governance and enforcement framework** (notified bodies, conformity‑assessment procedures, etc.) | **2 August 2025** | The infrastructure needed to enforce the regulation must be operational by this date. |
+| **Obligations for providers of general‑purpose AI models** | **2 August 2025** | Providers must comply with the regulation’s requirements for general‑purpose models placed on the market before this date. |
+| **Administrative‑fine regime** | **2 August 2025** | Penalties for non‑compliance become enforceable from this date. |
+
+These dates are set in the preamble and recitals of the regulation (see Recital 178‑180).  
+
+**References:**  
+[Recital 178‑180](#chunk-1)
+SCORE: 1
+
+--- QUESTION 6 ---
+Q: What are the exact criteria for the models mentioned in the document?
+EXPECTED: This question is ambiguous. It requires clarification on whether it refers to the criteria for designating general-purpose AI models with systemic risk (Annex XIII) or the elements required in the technical documentation of models (Annex XI/XII).
+ACTUAL: Could you please clarify which specific models or AI system categories you are referring to in the EU AI Act? This will help me provide the exact criteria you need.
+SCORE: 1
+
+--- QUESTION 7 ---
+Q: Who runs the testing?
+EXPECTED: It is ambiguous whether the question refers to third-party conformity assessments run by notified bodies, real-world testing plans submitted by prospective providers, or testing within the AI regulatory sandboxes supervised by national competent authorities.
+ACTUAL: Could you clarify what you mean by “testing”? Are you asking about the conformity‑assessment testing of AI systems under the EU AI Act, or something else?
+SCORE: 1
+
+--- QUESTION 8 ---
+Q: Is it allowed to use the AI system in public places?
+EXPECTED: This question is too vague. It does not specify what type of AI system is being used (e.g., 'real-time' remote biometric identification), what the purpose of the use is (e.g., law enforcement), or which public spaces are involved. Clarification is needed to provide an accurate answer based on the EU AI Act.
+ACTUAL: Could you clarify which AI system you are referring to?
+SCORE: 1
+
+--- QUESTION 9 ---
+Q: Does the system need to be stopped if there's a problem during the period?
+EXPECTED: This question is too vague. It is unclear what 'system', 'problem', or 'period' refers to.
+ACTUAL: Could you clarify which “period” you’re referring to? For example, are you asking about the deployment period, the conformity‑assessment period, or another timeframe specified in the Act?
+SCORE: 1
+
+--- QUESTION 10 ---
+Q: What happens if they don't do it right?
+EXPECTED: Please clarify who 'they' are (e.g., notified bodies, providers, market surveillance authorities) and what action 'it' refers to (e.g., conformity assessment, notifying changes).
+ACTUAL: Could you clarify what you’re referring to with “they” and “it”?
+SCORE: 1
+
+--- QUESTION 11 ---
+Q: How can the threshold be changed over time?
+EXPECTED: It is unclear which threshold the question refers to. It could be the computational threshold for general-purpose AI models with systemic risk, which the Commission can amend via delegated acts, or another threshold in the regulation. Please specify which threshold you are referring to.
+ACTUAL: I’m not sure which threshold you’re referring to. Could you specify whether you mean the risk‑threshold for high‑risk AI, the data‑quality threshold, or another parameter in the EU AI Act?
+SCORE: 1
+
+--- QUESTION 12 ---
+Q: What actions should be taken if an AI system is found to be bad?
+EXPECTED: This question is too vague. 'Bad' could refer to presenting a risk to health or safety, formal non-compliance, or misclassification. Please specify the type of non-compliance or risk you are referring to.
+ACTUAL: Could you please clarify what you mean by “bad”? For example, are you referring to a system that is non‑compliant with the EU AI Act, a high‑risk system that has failed its conformity assessment, or a system that engages in a prohibited practice? This will help me provide the precise actions required under the Act.
+SCORE: 1
+
+--- QUESTION 13 ---
+Q: What is the maximum fine if they don't give the requested information?
+EXPECTED: The question is ambiguous as it does not specify who 'they' are or what 'information' is being requested. It could refer to providers of general-purpose AI models failing to provide information under Article 91 or 92 (fines up to EUR 15 000 000 or 3% of turnover), or general operators failing to provide information to notified bodies or national competent authorities (fines up to EUR 7 500 000 or 1% of turnover).
+ACTUAL: The EU AI Act sets the maximum fine for a provider of a general‑purpose AI model that fails to comply with a request for documentation or information (Article 101) at **the higher of:**
+
+* **3 % of the provider’s total worldwide turnover in the preceding financial year**, or  
+* **EUR 15 000 000**.
+
+Thus, the fine can reach up to the greater of those two amounts.  
+
+**References:** [Article 101](#chunk-2)
+SCORE: 1
+
+--- QUESTION 14 ---
+Q: Are the systems evaluated by 2030?
+EXPECTED: This question is too vague. It is unclear whether you are referring to the large-scale IT systems mentioned in Article 111(1) that must be brought into compliance by 31 December 2030, or the high-risk AI systems used by public authorities mentioned in Article 111(2) that must comply by 2 August 2030. Could you please specify?
+ACTUAL: Yes.  
+- **Article 111** requires that AI systems which were placed on the market or put into service before 2 August 2027 must be brought into compliance with the Regulation by 31 December 2030.  
+- **Article 112** sets out the Commission’s evaluation and review schedule, with reports due by 2 August 2028, 2029, and 2031, and an overall assessment of enforcement by 2 August 2031.  
+
+These provisions mean that the relevant AI systems are subject to evaluation and compliance checks that culminate in 2030 (and beyond).  
+
+References: [Article 111](#chunk-2), [Article 112](#chunk-4)
+SCORE: 1

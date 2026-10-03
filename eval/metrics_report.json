@@ -1,6 +1,6 @@
 {
   "overall": {
-    "correct": 125,
+    "correct": 131,
     "total": 140
   },
   "by_category": {
@@ -9,29 +9,29 @@
       "total": 42
     },
     "cross-reference": {
-      "correct": 25,
+      "correct": 27,
       "total": 28
     },
     "out-of-scope": {
-      "correct": 11,
-      "total": 14
-    },
-    "ambiguous": {
       "correct": 13,
       "total": 14
     },
+    "ambiguous": {
+      "correct": 14,
+      "total": 14
+    },
     "factual": {
-      "correct": 39,
+      "correct": 40,
       "total": 42
     }
   },
   "by_subtype": {
     "negation": {
-      "correct": 11,
+      "correct": 12,
       "total": 13
     },
     "yes_no": {
-      "correct": 10,
+      "correct": 8,
       "total": 10
     },
     "same_document": {
@@ -39,7 +39,7 @@
       "total": 20
     },
     "unknown": {
-      "correct": 63,
+      "correct": 67,
       "total": 70
     },
     "edge_of_chunk": {
@@ -47,11 +47,11 @@
       "total": 4
     },
     "multi_part": {
-      "correct": 1,
+      "correct": 0,
       "total": 1
     },
     "summary_vs_detail": {
-      "correct": 3,
+      "correct": 4,
       "total": 4
     },
     "multi_hop": {
@@ -63,7 +63,7 @@
       "total": 2
     },
     "repeated": {
-      "correct": 1,
+      "correct": 2,
       "total": 2
     },
     "exact_term": {
@@ -71,11 +71,11 @@
       "total": 4
     },
     "paraphrased": {
-      "correct": 0,
+      "correct": 1,
       "total": 1
     },
     "temporal": {
-      "correct": 5,
+      "correct": 6,
       "total": 6
     }
   }

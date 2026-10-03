@@ -184,11 +184,13 @@ class SOTAAgent:
                         qs = args.get("queries") or args.get("query") or [query]
                         if isinstance(qs, str): qs = [qs]
                         
-                        # Aggressive defensive sanitization
+                        # Defensive sanitization — only strip full boilerplate phrases, not standalone words
                         import re
                         cleaned_qs = []
                         for q in qs:
-                            clean_q = re.sub(r'(?i)\b(eu ai act|ai act|the act|act)\b', '', q).strip()
+                            clean_q = re.sub(r'(?i)\b(the\s+)?eu\s+ai\s+act\b', '', q).strip()
+                            clean_q = re.sub(r'(?i)\b(the\s+)?ai\s+act\b', '', clean_q).strip()
+                            clean_q = re.sub(r'(?i)\bthe\s+act\b', '', clean_q).strip()
                             clean_q = re.sub(r'\s+', ' ', clean_q).strip()
                             if clean_q != q.strip():
                                 logger.warning(f"DEBUG INTERCEPT: Stripped boilerplate from query: '{q}' -> '{clean_q}'")
